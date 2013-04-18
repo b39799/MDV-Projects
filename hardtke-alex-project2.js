@@ -8,7 +8,7 @@
 
 var lunchTime = "It's lunchtime!",
 	numSandwiches = 2,
-	bagTypes = ["paper bag", "plastic bag"]
+	breakOptions = ["play video games", " watch TV"];
 
 // Procedure
 
@@ -41,9 +41,9 @@ var yesIngredients = getPeanutButterJelly(2,1);
 
 if (yesIngredients === true){
 
-	console.log("It is " + yesIngredients + " that I can make a peanut butter and jelly sandwich. That sounds good!");
+	console.log("It is " + yesIngredients + " that I made a peanut butter and jelly sandwich. That sounds good!");
 } else {
-	console.log("It is " + yesIngredients + " that I can make a peanut butter and jelly sandwich. I need to find something else to make!");
+	console.log("It is " + yesIngredients + " that I made a peanut butter and jelly sandwich. Oh well, ham and cheese sounds good too!");
 };
 
 
@@ -70,12 +70,47 @@ var getChips = function(chips){
 var fullChips = getChips(0);
 console.log("I've got " + fullChips + " chips! That's all I need.");
 
-//
+// String Function
 
+var getFruit = function(fruit1, fruit2){
+	
+	console.log("Let's see what kind of fruit I packed.");
+	
+	var fruit1 = 1,
+		fruit2 = 1;
+	
+	console.log("Ooh! Looks like I packed " + fruit1 + " apple and " + fruit2 + " banana. Tasty!");
+	
+	return "That hit the spot!"
+};
 
+var eatFruit = getFruit("apple", "banana");
+console.log(eatFruit);
 
+// Array Function
 
+var breakCount = breakOptions.length;
 
+breakOptions.push(" read a book");
+
+var myBreakOptions = function(breakOptions, timeLeft){
+	
+	for (var i = 20; i <= timeLeft; i = i + 10) 
+	
+	if (i < timeLeft){
+		
+		console.log("I'm going to " + breakOptions + " for " + i + " minutes, until my break is over.");
+		
+		console.log("Sweet, I've still got some time left. I'm going to continue for another ten minutes!");
+		
+	} else {
+		console.log("Ok, break's over... time to get back to work!");
+	}
+	return breakOptions;
+};
+
+var myActivity = myBreakOptions(breakOptions[1], 30);
+console.log("Man, I would much rather" + myActivity + " or " + breakOptions.shift(1) + ", rather than be at work!");
 
 
 
