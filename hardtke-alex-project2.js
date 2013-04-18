@@ -38,9 +38,46 @@ var getPeanutButterJelly = function(hasPeanutButter, hasJelly){
 };
 
 var yesIngredients = getPeanutButterJelly(2,1);
+
 if (yesIngredients === true){
-console.log("It is " + yesIngredients + " that I can make a peanut butter and jelly sandwich. That sounds good!");
+
+	console.log("It is " + yesIngredients + " that I can make a peanut butter and jelly sandwich. That sounds good!");
 } else {
 	console.log("It is " + yesIngredients + " that I can make a peanut butter and jelly sandwich. I need to find something else to make!");
 };
+
+
+// Number Function
+
+var getChips = function(chips){
+	
+	console.log("Now that I've got my sandwich made, it's time to pack some chips.");
+	
+	while (chips < 30){
+		
+		chips = chips + 10;
+		
+		if (chips < 30){
+			console.log("I still need more chips... maybe I'll add ten more.");
+		} else {
+			console.log("Ok, thats enough.");
+		}
+	
+	}
+	return 30;
+};
+
+var fullChips = getChips(0);
+console.log("I've got " + fullChips + " chips! That's all I need.");
+
+//
+
+
+
+
+
+
+
+
+
 
