@@ -48,7 +48,8 @@ var getTeam = function(currentPlayers){
 	var totalPlayers = 4;
 		
 	while (currentPlayers < totalPlayers){  //While Loop
-		console.log(currentPlayers + " players found. Searching for more players.");
+		console.log(currentPlayers + " players found.");
+		console.log("Searching for more players.");
 		currentPlayers++;
 	}
 	return totalPlayers;  //Return Number
@@ -61,7 +62,7 @@ var getMaps = function(){
 	for (var i = 0; i < maps.length; i++){ // For Loop
 		if (i < maps.length){
 			
-			console.log("Let's play a game of " + gameType + " on " + maps[i] + ".");
+			console.log("Let's play a warmup game of " + gameType + " on " + maps[i] + " to get ready for the tournament.");
 			console.log("We won!");
 			
 		}
@@ -130,7 +131,13 @@ var map1 = {
 	}
 };
 
+var getScore = {
 
+	"weapon": weapon1.name,
+	"points": 40,
+	"place": "First Place"
+	
+};
 
 // OUTPUTS
 var fullTeam = getTeam(3); //Number Argument
@@ -154,3 +161,6 @@ console.log("It weighs " + weapon2.weight + "lbs, so it's heavy but it's a good 
 console.log("The first round begins with " + map1.name + " so it looks like I picked the perfect weapons for this map."); // Object 3
 map1.setLength(1100);
 console.log("It's huge! It is a whopping " + map1.surfaceArea() + " sq. ft.!");
+
+var fullScore = getScore.weapon;
+console.log("In the championship game, I ended up with " + getScore.points + " points using the " + fullScore + " and our team won the championship!");
