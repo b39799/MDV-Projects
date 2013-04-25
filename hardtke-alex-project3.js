@@ -61,10 +61,14 @@ var getMaps = function(){
 	
 	for (var i = 0; i < maps.length; i++){ // For Loop
 		if (i < maps.length){
+			while ( i < maps.length ){
+				console.log("Let's play a warmup game of " + gameType + " on " + maps[i] + " to get ready for the tournament.");
+				console.log("We won!");
+				i++;
+			}
 			
-			console.log("Let's play a warmup game of " + gameType + " on " + maps[i] + " to get ready for the tournament.");
-			console.log("We won!");
-			
+		}else{
+			console.log("We need more practice!");
 		}
 	}
 	return maps;
@@ -131,6 +135,21 @@ var map1 = {
 	}
 };
 
+var map2 = {
+	"name": "Snowbound",
+	"scenery": "wilderness",
+	"length": 700,
+	"width": 800,
+	"surfaceArea": function(){ //Method: Accessor
+		var totalArea = (this.length * this.width);
+		return totalArea;
+	}	
+	
+	
+};
+
+//Object Function
+
 var getScore = {
 
 	"weapon": weapon1.name,
@@ -160,7 +179,9 @@ console.log("It weighs " + weapon2.weight + "lbs, so it's heavy but it's a good 
 
 console.log("The first round begins with " + map1.name + " so it looks like I picked the perfect weapons for this map."); // Object 3
 map1.setLength(1100);
-console.log("It's huge! It is a whopping " + map1.surfaceArea() + " sq. ft.!");
+console.log("It's huge! It is a whopping " + map1.surfaceArea() + " sq. ft.! And hey! We won!!");
+
+console.log("Our semifinal game on " + map2.name + " went very well! I think we're ready for the championship!");
 
 var fullScore = getScore.weapon;
 console.log("In the championship game, I ended up with " + getScore.points + " points using the " + fullScore + " and our team won the championship!");
