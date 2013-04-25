@@ -82,6 +82,15 @@ var getLevels = function(rank){
 	}
 };
 
+// String Function
+
+var getArmor = function(armor1, armor2){
+	
+	console.log("Before we start, I'm going to change my armor.");
+	console.log("I'm going to change my " + armor1 + " and my " + armor2 + ".");
+	return "There we go. Much better."
+		
+};
 
 
 
@@ -96,3 +105,7 @@ console.log("Now that we've played " + fullMaps + " maps, we are ready for the t
 
 var fullLevel = getLevels(teamLevel); // Boolean Argument
 console.log("It is " + fullLevel + " that we've got a chance to win the tournament!");
+
+var fullArmor = getArmor("helmet", "shield"); // String Argument
+console.log(fullArmor);
+
