@@ -37,7 +37,9 @@ var gameTitle = "Halo 3",
 	numOfPlayers = 3,
 	roundLength= 10,
 	gameType = "Team Slayer",
-	maps = ["Valhalla", " Last Resort", " Standoff"]
+	maps = ["Valhalla", " Last Resort", " Standoff"],
+	teamLevel = true,
+	teamRank = 130
 ;
 
 // Number Function
@@ -56,7 +58,7 @@ var getTeam = function(currentPlayers){
 
 var getMaps = function(){
 	
-	for (var i = 0; i < maps.length; i++){
+	for (var i = 0; i < maps.length; i++){ // For Loop
 		if (i < maps.length){
 			
 			console.log("Let's play a game of " + gameType + " on " + maps[i] + ".");
@@ -67,7 +69,18 @@ var getMaps = function(){
 	return maps;
 };
 
+// Boolean Function
 
+var getLevels = function(rank){
+	if(rank === true){
+		if(teamRank > 120){
+			console.log("Our team's total ranking qualifies us for the 2nd seed!");
+		} else {
+			console.log("Our team's total ranking qualifies us for the 4th seed...");	
+	}
+	return true;
+	}
+};
 
 
 
@@ -80,3 +93,6 @@ console.log(fullTeam + " players found. Beginning game!");
 
 var fullMaps = getMaps(maps); // Array Argument
 console.log("Now that we've played " + fullMaps + " maps, we are ready for the tournament.");
+
+var fullLevel = getLevels(teamLevel); // Boolean Argument
+console.log("It is " + fullLevel + " that we've got a chance to win the tournament!");
