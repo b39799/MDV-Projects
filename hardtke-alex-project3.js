@@ -34,4 +34,21 @@ var playerInfo = {
 // Global Variables
 
 var gameTitle = "Halo 3",
-	
+	numOfPlayers = 3,
+	roundLength= 10,
+	gameType = "Team Slayer"
+;
+
+// Number Function
+
+var getTeam = function(currentPlayers){
+	var totalPlayers = 4;
+		
+	while (currentPlayers < totalPlayers) { //While Loop
+		console.log(currentPlayers + " players found. Searching for more players.");
+		currentPlayers++;
+	}
+	return totalPlayers;
+};
+var fullTeam = getTeam(3); //Number
+console.log(fullTeam + " players found. Beginning game!");
