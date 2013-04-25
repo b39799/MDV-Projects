@@ -92,7 +92,43 @@ var getArmor = function(armor1, armor2){
 		
 };
 
+// Objects
 
+var weapon1 = {
+	
+	"name": "Sniper Rifle",
+	"color": "black",
+	"weight": 30,
+	"length": 54,
+	"range": function(){ // Method: Function
+		var totalRange = (this.weight * this.length) / 500;
+		return totalRange;
+	}
+};
+
+var weapon2 = {
+	"name": "Rocket Launcher",
+	"color": "gray",
+	"weight": 50,
+	"length": 20,
+	"range": function(){ // Method: Procedure
+		var totalRange = (this.weight * this.length) / 1000;
+	} // Back
+}
+
+var map1 = {
+	"name": "The Pit",
+	"scenery": "warehouse",
+	"length": 1000,
+	"width": 2000,
+	"surfaceArea": function(){
+		var totalArea = (this.length * this.width);
+		return totalArea;
+	},
+	"setLength": function(newLength){ // Method: Mutator
+		this.length = newLength;
+	}
+};
 
 
 
@@ -109,3 +145,12 @@ console.log("It is " + fullLevel + " that we've got a chance to win the tourname
 var fullArmor = getArmor("helmet", "shield"); // String Argument
 console.log(fullArmor);
 
+console.log("I will be using the " + weapon1.name + " for this round."); // Object 1
+console.log("The range of this weapon is " + weapon1.range() + " miles.");
+
+console.log("My next weapon will be the " + weapon2.name + "."); // Object 2
+console.log("It weighs " + weapon2.weight + "lbs, so it's heavy but it's a good short range weapon.");
+
+console.log("The first round begins with " + map1.name + " so it looks like I picked the perfect weapons for this map."); // Object 3
+map1.setLength(1100);
+console.log("It's huge! It is a whopping " + map1.surfaceArea() + " sq. ft.!");
