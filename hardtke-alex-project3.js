@@ -42,6 +42,58 @@ var gameTitle = "Halo 3",
 	teamRank = 130
 ;
 
+// Objects
+
+var weapon1 = {
+	
+	"name": "Sniper Rifle",
+	"color": "black",
+	"weight": 30,
+	"length": 54,
+	"range": function(){ // Method: Function
+		var totalRange = (this.weight * this.length) / 500;
+		return totalRange;
+	}
+};
+
+var weapon2 = {
+	"name": "Rocket Launcher",
+	"color": "gray",
+	"weight": 50,
+	"length": 20,
+	"range": function(){ // Method: Procedure
+		var totalRange = (this.weight * this.length) / 1000;
+	} // Back
+}
+
+var map1 = {
+	"name": "The Pit",
+	"scenery": "warehouse",
+	"length": 1000,
+	"width": 2000,
+	"surfaceArea": function(){
+		var totalArea = (this.length * this.width);
+		return totalArea;
+	},
+	"setLength": function(newLength){ // Method: Mutator
+		this.length = newLength;
+	}
+};
+
+var map2 = {
+	"name": "Snowbound",
+	"scenery": "wilderness",
+	"length": 700,
+	"width": 800,
+	"surfaceArea": function(){ //Method: Accessor
+		var totalArea = (this.length * this.width);
+		return totalArea;
+	}	
+	
+	
+};
+
+
 // Number Function
 
 var getTeam = function(currentPlayers){
@@ -97,56 +149,6 @@ var getArmor = function(armor1, armor2){
 		
 };
 
-// Objects
-
-var weapon1 = {
-	
-	"name": "Sniper Rifle",
-	"color": "black",
-	"weight": 30,
-	"length": 54,
-	"range": function(){ // Method: Function
-		var totalRange = (this.weight * this.length) / 500;
-		return totalRange;
-	}
-};
-
-var weapon2 = {
-	"name": "Rocket Launcher",
-	"color": "gray",
-	"weight": 50,
-	"length": 20,
-	"range": function(){ // Method: Procedure
-		var totalRange = (this.weight * this.length) / 1000;
-	} // Back
-}
-
-var map1 = {
-	"name": "The Pit",
-	"scenery": "warehouse",
-	"length": 1000,
-	"width": 2000,
-	"surfaceArea": function(){
-		var totalArea = (this.length * this.width);
-		return totalArea;
-	},
-	"setLength": function(newLength){ // Method: Mutator
-		this.length = newLength;
-	}
-};
-
-var map2 = {
-	"name": "Snowbound",
-	"scenery": "wilderness",
-	"length": 700,
-	"width": 800,
-	"surfaceArea": function(){ //Method: Accessor
-		var totalArea = (this.length * this.width);
-		return totalArea;
-	}	
-	
-	
-};
 
 //Object Function
 
