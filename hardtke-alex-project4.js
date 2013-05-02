@@ -46,13 +46,23 @@ var myLibrary = function(){
 		var atPosition = email.indexOf("@");
 		var dotPosition = email.lastIndexOf(".");
 		
-		if ( atPosition < 1, dotPosition < atPosition + 2, dotPosition +2 >= email.length){
-			return false;
-		} else {
-			return true;
-		}
+		if (Number(atPosition) > 1){
+			
+			if (Number(dotPosition > Number(atPosition + 2))){
+				
+				if (Number(dotPosition + 2) <= email.length){
+					
+					return true;
+				
+				} else {
+				
+					return false;
+				
+				}
+			
+			} else { return false; }
 		
-		
+		} else { return false; }
 	}
 	
 
@@ -76,4 +86,4 @@ var newLib = new myLibrary();
 
 console.log("This is a valid phone number: " + newLib.checkPhone("123-456-7890")); // Phone Number Call
 
-console.log("This is a valid email address: " + newLib.checkEmail("user@example.com")); // Email Call
+console.log("This is a valid email address: " + newLib.checkEmail("alex@example.com")); // Email Call
