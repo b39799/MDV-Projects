@@ -106,12 +106,30 @@ var myLibrary = function(){
 	
 	// 5. Number-Place Format: Number Function
 	
+	var checkDecimal = function(num){
+		
+		if (isNaN(num)){
+		
+			return 0;
+		
+		} else {
+			
+			return num.toFixed(2);
+			
+		}
+		
+	};
+	
+	
+	
+	
 	// 6. Return Number from String: Number Function
 	return {
 		"checkPhone": checkPhone,
 		"checkEmail": checkEmail,
 		"checkUrl":   checkUrl,
-		"checkTitle": checkTitle
+		"checkTitle": checkTitle,
+		"checkDecimal": checkDecimal
 	}
 };
 
@@ -124,3 +142,5 @@ console.log("This is a valid email address: " + newLib.checkEmail("alex@example.
 console.log("This is a valid URL: " + newLib.checkUrl("http://www.site.com")); // URL Call
 
 console.log("This is the result when changing the first letter of each word to upper case: " + newLib.checkTitle("ron burgundy has a red blazer")); // Title Call
+
+console.log("I have $" + newLib.checkDecimal(345.9845) + "."); // Decimal Call
