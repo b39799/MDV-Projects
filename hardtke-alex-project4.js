@@ -5,9 +5,11 @@
 // Project 4
 // Function Library
 
+//Start
+
 var myLibrary = function(){
 	
-	// Check Phone Number: String Function
+	// 1. Check Phone Number: String Function
 	
 	var checkPhone = function(val){
 		
@@ -40,7 +42,8 @@ var myLibrary = function(){
 	
 	};
 	
-	// Check Email: String Function
+	// 2. Check Email: String Function
+	 
 	 var checkEmail = function(email){
 		
 		var atPosition = email.indexOf("@");
@@ -63,22 +66,37 @@ var myLibrary = function(){
 			} else { return false; }
 		
 		} else { return false; }
-	}
+	};
 	
-
+	// 3. Check URL: String Function
 	
+	var checkUrl = function(url){
+		
+		if (url.substring(0,7) === "http://"){
+			
+			return true;
+			
+		} else if(url.substring(0,8) === "https://"){
+			
+			return true;
+			
+		} else {
+			
+			return false;
+			
+		}
+		
+	};
 	
+	// 4. Title-case: String Function
 	
-	// Check URL: String Function
+	// 5. Number-Place Format: Number Function
 	
-	// Title-case: String Function
-	
-	// Number-Place Format: Number Function
-	
-	// Return Number from String: Number Function
+	// 6. Return Number from String: Number Function
 	return {
 		"checkPhone": checkPhone,
-		"checkEmail": checkEmail
+		"checkEmail": checkEmail,
+		"checkUrl": checkUrl
 	}
 };
 
@@ -87,3 +105,5 @@ var newLib = new myLibrary();
 console.log("This is a valid phone number: " + newLib.checkPhone("123-456-7890")); // Phone Number Call
 
 console.log("This is a valid email address: " + newLib.checkEmail("alex@example.com")); // Email Call
+
+console.log("This is a valid URL: " + newLib.checkUrl("http://www.site.com")); // URL Call
