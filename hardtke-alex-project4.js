@@ -93,11 +93,12 @@ var myLibrary = function(){
 	var checkTitle = function(str){
 		
 		var words = str.split(" ");
+		var testWord = words[i];
+		var firstLetter = testWord.substr(0,1);
+		var otherLetters = testWord.substr(1, testWord.length -1)
 		
 		for (var i = 0 ; i < words.length ; i++){
-			var testWord = words[i];
-			var firstLetter = testWord.substr(0,1);
-			var otherLetters = testWord.substr(1, testWord.length -1)
+			
 			words[i] = firstLetter.toUpperCase() + otherLetters
 		}
 		return (words.join(" "));
