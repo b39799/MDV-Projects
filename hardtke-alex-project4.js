@@ -90,13 +90,28 @@ var myLibrary = function(){
 	
 	// 4. Title-case: String Function
 	
+	var checkTitle = function(str){
+		
+		var words = str.split(" ");
+		
+		for (var i = 0 ; i < words.length ; i++){
+			var testWord = words[i];
+			var firstLetter = testWord.substr(0,1);
+			var otherLetters = testWord.substr(1, testWord.length -1)
+			words[i] = firstLetter.toUpperCase() + otherLetters
+		}
+		return (words.join(" "));
+		
+	};
+	
 	// 5. Number-Place Format: Number Function
 	
 	// 6. Return Number from String: Number Function
 	return {
 		"checkPhone": checkPhone,
 		"checkEmail": checkEmail,
-		"checkUrl": checkUrl
+		"checkUrl":   checkUrl,
+		"checkTitle": checkTitle
 	}
 };
 
@@ -107,3 +122,5 @@ console.log("This is a valid phone number: " + newLib.checkPhone("123-456-7890")
 console.log("This is a valid email address: " + newLib.checkEmail("alex@example.com")); // Email Call
 
 console.log("This is a valid URL: " + newLib.checkUrl("http://www.site.com")); // URL Call
+
+console.log("This is the result when changing the first letter of each word to upper case: " + newLib.checkTitle("ron burgundy has a red blazer")); // Title Call
