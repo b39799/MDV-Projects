@@ -120,18 +120,34 @@ var myLibrary = function(){
 		
 	};
 	
-	
-	
-	
 	// 6. Return Number from String: Number Function
+	
+	var checkNumber = function(num){
+		
+		if (isNaN(num)){
+		
+			return "That is not a number.";
+			
+		} else {
+			
+			return Number(num);
+			
+		}
+		
+	};
+	
+	// Library Returns
 	return {
-		"checkPhone": checkPhone,
-		"checkEmail": checkEmail,
-		"checkUrl":   checkUrl,
-		"checkTitle": checkTitle,
-		"checkDecimal": checkDecimal
+		"checkPhone":   checkPhone,
+		"checkEmail":   checkEmail,
+		"checkUrl":     checkUrl,
+		"checkTitle":   checkTitle,
+		"checkDecimal": checkDecimal,
+		"checkNumber":  checkNumber
 	}
 };
+
+// Function Calls
 
 var newLib = new myLibrary();
 
@@ -144,3 +160,5 @@ console.log("This is a valid URL: " + newLib.checkUrl("http://www.site.com")); /
 console.log("This is the result when changing the first letter of each word to upper case: " + newLib.checkTitle("ron burgundy has a red blazer")); // Title Call
 
 console.log("I have $" + newLib.checkDecimal(345.9845) + "."); // Decimal Call
+
+console.log("This is a string converted to a number data type: " + newLib.checkNumber("42")); // Number Call
