@@ -1,0 +1,82 @@
+/*
+
+Alex Hardtke
+MDV 1305
+5-16-13
+Project 2
+
+*/
+
+body{
+	font-family: Arial, Helvetica, sans-serif; 
+	margin: auto; 
+	padding: 10px; 
+	background:#b5bade;
+}
+
+h1 {
+	margin: 20px;
+	padding: 20px;
+	border: 1px solid black;
+	outline: ;
+	width: ;
+	height: ;
+	display: ;
+	overflow: ;
+	visibility: ;
+	word-wrap: ;
+	background: #425cd1;
+	text-align: center;
+	color: white;
+}
+
+h2 {
+	margin: 20px;
+	padding-top: 20px;
+	text-align: center;
+	font-style: italic;
+}
+
+nav {
+	display: block;
+	text-align: center;
+}
+
+a {
+	color: blue;
+	text-align: center;
+	font: normal 12px sans-serif;
+	letter-spacing: .081em;
+	
+}
+
+a:hover {
+	color: white;
+	outline: 1px dotted white;
+	text-decoration: none;
+}
+
+fieldset {
+	border: 1px solid white;
+}
+
+legend {
+	font: normal 18px sans-serif;
+	text-align: center;
+}
+
+ul {
+	font: normal 14px sans-serif;
+	list-style-type: none;
+	padding: 0;
+	margin-left: 1em;
+}
+
+li {
+	margin: .5em 0;
+}
+
+input[type=text]:hover {background: #F0F0F0;}
+input[type=email]:hover {background: #F0F0F0;}
+input[type=password]:hover {background: #F0F0F0;}
+textarea:hover {background: #F0F0F0;}
