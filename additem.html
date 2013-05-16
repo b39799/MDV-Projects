@@ -2,8 +2,8 @@
 
 <!-- Alex Hardtke -->
 <!-- VFW 1305 -->
-<!-- 5-8-13 -->
-<!-- Project 1 -->
+<!-- 5-16-13 -->
+<!-- Project 2 -->
 
 <html>
 	<head>
@@ -11,15 +11,14 @@
 		<meta name="description" content="Manage accounts in your address book." />
 		<meta name="keywords" content="add, organize, accounts, passwords" />
 		<meta name="robots" content="index, follow" />
-		<meta name="viewport" content="user-scaleable=no, width=device-width" />
+		<meta name="viewport" content="user-scalable=no, width=device-width" />
 		<title>Account and Password Book</title>
 		<link href="css/styles.css" rel="stylesheet" type="text/css" />
-		<script src="js/main.js" type="text/javascript"></script>
 	</head>
 	<body>
-		<h1>Add An Account</h1>
-		<form action="#" method="post">
-			<fieldset>
+		<header><h1 id="add">Add An Account</h1></header>
+		<form action="#" method="post" id="addForm">
+			<fieldset id="infoFieldset">
 				<legend>Account Information</legend>
 				<ul>
 					<li><label for="account">Account Name:</label><input type="text" id="account" placeholder="ex. Google"/></li>
@@ -29,36 +28,36 @@
 					<li><label for="confirm">Confirm Password:</label><input type="password" id="confirm" disabled /></li>
 				</ul>	
 			</fieldset>
-			<fieldset>
+			<fieldset id="detailsFieldset">
 				<legend>Account Details</legend>
 				<ul>
 					<li>Is this your primary account?
-						<ul>
+						<ul class="radio">
 							<li><input type="radio" checked value="Yes" id="Yes" name="primary" /><label for="Yes">Yes</label></li>
 							<li><input type="radio" value="No" id="No" name="primary" /><label for="No">No</label></li>
 						</ul>
 					</li>
 					<li>Sign-Up Date:
-						<ul>
+						<ul class="date">
 							<input type="date" value="date" id="date" /><label for="date"><small>Select</small></label>
 						</ul>
 					</li>
 					<li>How often do you use this account?
-						<ul>
+						<ul class="range">
 							<input type="range" value="5" id="range" min="1" max="10" step="1" /><label for="range"><small>(Rate 1 to 10)</small></label>
 						</ul>
 					</li>
-					<li>What kind of account is this?
-						<select>
+					<li id="select">What kind of account is this?
+						<!--<select>
 							<option value="Shopping">Shopping</option>
 							<option value="Entertainment">Entertainment</option>
 							<option value="Business">Business</option>
 							<option value="School">School</option>
 							<option value="Personal" selected>Personal</option>
 							<option value="Other">Other</option>
-						</select>
+						</select>  -->
 					</li>
-					<li>Notes:
+					<li id="notes">Notes:
 						<ul>
 							<textarea rows="3" cols="30" placeholder="Enter notes here..."></textarea>
 						</ul>
@@ -66,9 +65,10 @@
 					<li><input type="hidden" value="true" /></li>
 				</ul>
 			</fieldset>
-			<input type="submit" value="Submit" />
-			<br><a href="#">Clear Stored Data</a> <a href="#"> Display Data</a>
+			<input type="button" value="Save Account" id="submit"/>
 		</form>
+			<br><a href="#" id="clear">Clear Stored Data</a> <a href="#" id="displayLink"> Display Data</a> <a href="additem.html" id="addNew" style="display:none;"> Add Another Account</a>
+		<script src="js/main.js" type="text/javascript"></script>
 	</body>
 </html>
 
