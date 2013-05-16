@@ -101,7 +101,7 @@ window.addEventListener("DOMContentLoaded", function(){
 			}
 		}
 	};
-	
+	//Clear LocalStorage
 	function clearLocal(){
 		if(localStorage.length === 0){
 			alert("There is no data to clear.")
@@ -113,7 +113,7 @@ window.addEventListener("DOMContentLoaded", function(){
 		}
 	}
 
-	//variable defaults
+	//Variable Defaults
 	var accountList = ["Shopping", "Entertainment", "Business", "School", "Personal", "Other"],
 		primaryValue
 	;
@@ -121,10 +121,10 @@ window.addEventListener("DOMContentLoaded", function(){
 	
 	//Set Link and Submit Click Events
 	var displayLink = $('displayLink');
-	displayLink.addEventListener("click", getData);
+	displayLink.addEventListener("click", getData); //GET DATA
 	var clearLink = $('clear');
-	clearLink.addEventListener("click", clearLocal);
+	clearLink.addEventListener("click", clearLocal); //CLEAR DATA
 	var save = $('submit');
-	save.addEventListener("click", saveData);
+	save.addEventListener("click", saveData); //SAVE DATA
 
 });
