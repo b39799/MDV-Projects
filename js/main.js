@@ -4,6 +4,7 @@
 // Project 3
 
 window.addEventListener("DOMContentLoaded", function(){
+
 	
 	//getElementById function
 	function $(x){
@@ -11,6 +12,14 @@ window.addEventListener("DOMContentLoaded", function(){
 		return element;
 	}
 	
+	//enableConfirm field function
+	
+	
+	function enableConfirm(){
+		if($('password').value !== ""){
+			$('confirm').removeAttribute("disabled");
+		}
+	}
 	//create select field element and populate with options.
 	function makeCategories(){
 		var formTag = document.getElementsByTagName("form");
@@ -59,7 +68,15 @@ window.addEventListener("DOMContentLoaded", function(){
 	
 		
 	function saveData(){
-		var id            = Math.floor(Math.random()*100000001);
+		//If there is no key, this means this is a brand new item and we need a new key.
+		if(!key){
+			var id        = Math.floor(Math.random()*100000001);
+		}else{
+			//Set the id to the existing key we're editing so it will save over the data
+			//The key is the same key that's been passed along from the editSubmit event handler.
+			//To the validate function and then passed here into the saveData function.
+			id= key
+		}
 		getSelectedRadio();
 		var item          = {};
 			item.account  = ["Account:", $('account').value];	
@@ -155,6 +172,17 @@ window.addEventListener("DOMContentLoaded", function(){
 		$('date').value = item.date[1];
 		$('range').value = item.range[1];
 		$('notes').value = item.notes[1];
+		
+		//Remove the initial listener for the input 'save account' button.
+		save.removeEventListener("click", saveData);
+		//Change submit button value to edit button
+		$('submit').value = "Edit Account";
+		var editSubmit = $('submit');
+		//Save the key value established in this function as a property of the editSubmit event
+		//So we can use that value when we save the data we edited.
+		editSubmit.addEventListener("click", validate);
+		editSubmit.key = this.key;
+		
 	}
 	
 	//Clear LocalStorage
@@ -168,10 +196,77 @@ window.addEventListener("DOMContentLoaded", function(){
 			return false;
 		}
 	}
+	
+	//Validate function
+	function validate(e){
+		//Define the elements we want to check
+		var getAccount = $('account');
+		var getEmail = $('email');
+		var getPassword = $('password');
+		var getConfirm = $('confirm');
+		
+		//Reset error messages
+		errMsg.innerHTML = "";
+			getAccount.style.border = "1px solid black";
+			getEmail.style.border = "1px solid black";
+			getPassword.style.border = "1px solid black";
+			getConfirm.style.border = "1px solid black";
+
+		
+		//Get error messages
+		var messageAry = [];
+		
+		//Account validation
+		if(getAccount.value === ""){
+			var accountError = "Please enter the Account name.";
+			getAccount.style.border = "1px solid red";
+			messageAry.push(accountError);
+		}
+		
+		//Email validation
+		var re = /^\w+([\.-]?\w+)*@\w+([\.-]?\w+)*(\.\w{2,3})+$/;
+		if(!(re.exec(getEmail.value))){
+			var emailError = "Please enter a valid email address.";
+			getEmail.style.border = "1px solid red";
+			messageAry.push(emailError);
+		}
+		
+		
+		//Password validation
+		if(getPassword.value === ""){
+			var passwordError = "Please enter the password for this account.";
+			getPassword.style.border = "1px solid red";
+			messageAry.push(passwordError);
+		}
+		
+		//Confirm password validation
+		if(getConfirm.value !== getPassword.value){
+			var confirmError = "Please re-enter your password.";
+			getConfirm.style.border = "1px solid red";
+			messageAry.push(confirmError);
+		}
+		
+		//If there were errors, display them on the screen.
+		if(messageAry.length >= 1){
+			for(var i=0, j=messageAry.length; i < j; i++){
+				var txt = document.createElement('li');
+				txt.innerHTML = messageAry[i];
+				errMsg.appendChild(txt);
+			}
+			e.preventDefault();
+			return false;
+		}else{
+			//If all is OK, save the data! Send the key value (which came from the getData funciton).
+			//Remember this key value was passed through the editSubmit event listener as a property.
+			saveData(this.key);
+		}
+		
+	}
 
 	//Variable Defaults
 	var accountList = ["Shopping", "Entertainment", "Business", "School", "Personal", "Other"],
-		primaryValue
+		primaryValue,
+		errMsg = $('errors');
 	;
 	makeCategories();
 	
@@ -181,6 +276,8 @@ window.addEventListener("DOMContentLoaded", function(){
 	var clearLink = $('clear');
 	clearLink.addEventListener("click", clearLocal); //CLEAR DATA
 	var save = $('submit');
-	save.addEventListener("click", saveData); //SAVE DATA
+	save.addEventListener("click", validate); //SAVE DATA
+	var confirm = $('password');
+	confirm.addEventListener("blur", enableConfirm);
 
 });
