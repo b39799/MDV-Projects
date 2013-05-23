@@ -48,17 +48,17 @@ window.addEventListener("DOMContentLoaded", function() {
 	function toggleControls(n){
 		switch(n){
 			case "on":
-				$('addForm').style.display = "none";
-				$('clear').style.display = "inline";
+				$('addForm').style.display     = "none";
+				$('clear').style.display       = "inline";
 				$('displayLink').style.display = "none";
-				$('addNew').style.display = "inline";
+				$('addNew').style.display      = "inline";
 				break;
 			case "off":
-				$('addForm').style.display = "block";
-				$('clear').style.display = "inline";
+				$('addForm').style.display     = "block";
+				$('clear').style.display       = "inline";
 				$('displayLink').style.display = "inline";
-				$('addNew').style.display = "none";
-				$('items').style.display = "none";
+				$('addNew').style.display      = "none";
+				$('items').style.display       = "none";
 				break;
 			default:
 				return false;
@@ -69,7 +69,7 @@ window.addEventListener("DOMContentLoaded", function() {
 	function saveData(key){
 		//If there is no key, this means this is a brand new item and we need a new key.
 		if(!key){
-			var id        = Math.floor(Math.random()*100000001);
+			var id = Math.floor(Math.random()*100000001);
 		}else{
 			//Set the id to the existing key we're editing so it will save over the data
 			//The key is the same key that's been passed along from the editSubmit event handler.
@@ -159,11 +159,11 @@ window.addEventListener("DOMContentLoaded", function() {
 		toggleControls("off");
 		
 		//Populates the form fields with current localStorage values.
-		$('account').value = item.account[1];
-		$('email').value = item.email[1];
-		$('user').value = item.user[1];
+		$('account').value  = item.account[1];
+		$('email').value    = item.email[1];
+		$('user').value     = item.user[1];
 		$('password').value = item.password[1];
-		$('confirm').value = item.confirm[1];
+		$('confirm').value  = item.confirm[1];
 		var radios = document.forms[0].primary;
 		for(var i=0; i<radios.length; i++){
 			if(radios[i].value == "Yes" && item.primary[1] == "Yes"){
@@ -172,9 +172,9 @@ window.addEventListener("DOMContentLoaded", function() {
 				radios[i].setAttribute("checked", "checked");
 			}
 		}
-		$('date').value = item.date[1];
-		$('range').value = item.range[1];
-		$('notes').value = item.notes[1];
+		$('date').value     = item.date[1];
+		$('range').value    = item.range[1];
+		$('notes').value    = item.notes[1];
 		
 		//Remove the initial listener for the input 'save account' button.
 		save.removeEventListener("click", saveData);
@@ -185,12 +185,13 @@ window.addEventListener("DOMContentLoaded", function() {
 		//So we can use that value when we save the data we edited.
 		editSubmit.addEventListener("click", validate);
 		editSubmit.key = this.key;
+
 		
 	}
 	
 	function deleteItem() {
 		
-		if(confirm("Are you sure?")){
+		if(confirm("Are you sure you want to delete this account?")){
 			localStorage.removeItem(this.key);
 			alert("Account was deleted!");
 			window.location.reload();
@@ -214,17 +215,17 @@ window.addEventListener("DOMContentLoaded", function() {
 	//Validate function
 	function validate(e){
 		//Define the elements we want to check
-		var getAccount = $('account');
-		var getEmail = $('email');
+		var getAccount  = $('account');
+		var getEmail    = $('email');
 		var getPassword = $('password');
-		var getConfirm = $('confirm');
+		var getConfirm  = $('confirm');
 		
 		//Reset error messages
 		errMsg.innerHTML = "";
-			getAccount.style.border = "1px solid black";
-			getEmail.style.border = "1px solid black";
+			getAccount.style.border  = "1px solid black";
+			getEmail.style.border    = "1px solid black";
 			getPassword.style.border = "1px solid black";
-			getConfirm.style.border = "1px solid black";
+			getConfirm.style.border  = "1px solid black";
 
 		
 		//Get error messages
@@ -273,8 +274,9 @@ window.addEventListener("DOMContentLoaded", function() {
 			//If all is OK, save the data! Send the key value (which came from the getData funciton).
 			//Remember this key value was passed through the editSubmit event listener as a property.
 			saveData(this.key);
+			window.location.reload();
+
 		}
-		
 	}
 
 	//Variable Defaults
@@ -285,13 +287,13 @@ window.addEventListener("DOMContentLoaded", function() {
 	makeCategories();
 	
 	//Set Link and Submit Click Events
+	var confirmEm = $('password');
+	confirmEm.addEventListener("blur", enableConfirm);
 	var displayLink = $('displayLink');
 	displayLink.addEventListener("click", getData); //GET DATA
 	var clearLink = $('clear');
 	clearLink.addEventListener("click", clearLocal); //CLEAR DATA
 	var save = $('submit');
 	save.addEventListener("click", validate); //SAVE DATA
-	var confirmEm = $('password');
-	confirmEm.addEventListener("blur", enableConfirm);
 
 });
