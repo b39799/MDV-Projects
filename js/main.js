@@ -1,7 +1,7 @@
 // Alex Hardtke
 // VFW 1305
-// 5-16-13
-// Project 2
+// 5-22-13
+// Project 3
 
 window.addEventListener("DOMContentLoaded", function(){
 	
@@ -87,6 +87,7 @@ window.addEventListener("DOMContentLoaded", function(){
 		$('items').style.display = "block";
 		for(var i=0,len=localStorage.length; i<len; i++){
 			var makeLi = document.createElement('li');
+			var linksLi  = document.createElement('li');
 			makeList.appendChild(makeLi);
 			var key = localStorage.key(i);
 			var value = localStorage.getItem(key);
@@ -98,9 +99,64 @@ window.addEventListener("DOMContentLoaded", function(){
 				makeSubList.appendChild(makeSubLi);
 				var optSubText = object[n][0]+" "+object[n][1];
 				makeSubLi.innerHTML = optSubText;
+				makeSubList.appendChild(linksLi);
 			}
+			makeItemLinks(localStorage.key(i), linksLi);// Create our edit and delete buttons/links for each item in Local Storage.
 		}
 	};
+	
+	//Make Item Links
+	function makeItemLinks(key, linksLi){
+		var editLink = document.createElement('a');
+		editLink.href = "#";
+		editLink.key = key;
+		var editText = "Edit Account";
+		editLink.addEventListener("click", editItem);
+		editLink.innerHTML = editText;
+		linksLi.appendChild(editLink);
+		
+		//Add Line break
+		var breakTag = document.createElement('br');
+		linksLi.appendChild(breakTag);
+		
+		var deleteLink = document.createElement('a');
+		deleteLink.href = "#";
+		deleteLink.key = key;
+		var deleteText = "Delete Account";
+		//deleteLink.addEventListener("click", deleteItem);
+		deleteLink.innerHTML = deleteText;
+		linksLi.appendChild(deleteLink);
+	}
+	
+	//Edit Item function
+	function editItem(){
+		//Grab the data from our item from Local Storage.
+		var value = localStorage.getItem(this.key);
+		var item = JSON.parse(value);
+		
+		//Show the form
+		toggleControls("off");
+		
+		//Populate the form fields with current localStorage values.
+		$('account').value = item.account[1];
+		$('email').value = item.email[1];
+		$('user').value = item.user[1];
+		$('password').value = item.password[1];
+		$('confirm').value = item.confirm[1];
+		var radios = document.forms[0].primary;
+		for(var i=0; i<radios.length; i++){
+			if(radios[i].value == "Yes" && item.primary[1] == "Yes"){
+				radios[i].setAttribute("checked", "checked");
+			} else if(radios[i].value == "No" && item.primary[1] == "No"){
+				radios[i].setAttribute("checked", "checked");
+			}
+		}
+		
+		$('date').value = item.date[1];
+		$('range').value = item.range[1];
+		$('notes').value = item.notes[1];
+	}
+	
 	//Clear LocalStorage
 	function clearLocal(){
 		if(localStorage.length === 0){
