@@ -76,6 +76,7 @@ li {
 	margin: .5em 0;
 }
 
+
 input[type=text]:hover {background: #F0F0F0;}
 input[type=email]:hover {background: #F0F0F0;}
 input[type=password]:hover {background: #F0F0F0;}
