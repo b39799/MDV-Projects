@@ -1,3 +1,8 @@
+//Alex Hardtke
+//VFW 1305
+//5-30-2013
+//Project 4
+
 var json = {
 	"account1": {
 		"account": ["Account:", "Google"],
@@ -8,10 +13,11 @@ var json = {
 		"primary": ["Primary Account?:", "Yes"],
 		"date": ["Date:", "2013-05-01"],
 		"range": ["Rate How Much You Use Account:", "8"],
-		"notes": ["Notes", "Google Plus account"]
+		"type": ["Account Type:", "Personal"],
+		"notes": ["Notes:", "Google Plus account"]
 	},
 	"account2": {
-		"account": ["Account:", "School"],
+		"account": ["Account:", "Full Sail"],
 		"email": ["Email:", "alex@fullsail.edu"],
 		"user": ["Username:", "Alex123"],
 		"password": ["Password:", "alexh"],
@@ -19,7 +25,8 @@ var json = {
 		"primary": ["Primary Account?:", "Yes"],
 		"date": ["Date:", "2012-10-01"],
 		"range": ["Rate How Much You Use Account:", "10"],
-		"notes": ["Notes", "Full Sail student account"]
+		"type": ["Account Type:", "School"],
+		"notes": ["Notes:", "Full Sail student account"]
 	},
 	"account3": {
 		"account": ["Account:", "Yahoo"],
@@ -30,6 +37,7 @@ var json = {
 		"primary": ["Primary Account?:", "No"],
 		"date": ["Date:", "2006-06-01"],
 		"range": ["Rate How Much You Use Account:", "4"],
-		"notes": ["Notes", "Yahoo mail account"]
+		"type": ["Account Type:", "Business"],
+		"notes": ["Notes:", "Yahoo mail account"]
 	}
 }

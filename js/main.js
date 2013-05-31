@@ -1,7 +1,7 @@
 // Alex Hardtke
 // VFW 1305
-// 5-22-13
-// Project 3
+// 5-30-13
+// Project 4
 
 window.addEventListener("DOMContentLoaded", function() {
 
@@ -18,7 +18,7 @@ window.addEventListener("DOMContentLoaded", function() {
 		}
 	}
 	
-	//Create select field element and populate with options.
+	//Create Account Type select field element and populate with options.
 	function makeCategories(){
 		var formTag = document.getElementsByTagName("form");
 		var	selectLi = $('select');
@@ -40,6 +40,16 @@ window.addEventListener("DOMContentLoaded", function() {
 		for(var i=0; i<radios.length; i++){
 			if(radios[i].checked){
 			primaryValue = radios[i].value;
+			}
+		}
+	}
+	
+	//Find value of selected Drop Down menu field
+	function getSelectedDrop(){
+		var drop = document.forms[0].groups;
+		for(var i=0; i<drop.length; i++){
+			if(drop[i].selected){
+				typeValue = drop[i].value;
 			}
 		}
 	}
@@ -77,6 +87,7 @@ window.addEventListener("DOMContentLoaded", function() {
 			id = key;
 		}
 		getSelectedRadio();
+		getSelectedDrop();
 		var item          = {};
 			item.account  = ["Account:", $('account').value];	
 			item.email	  = ["Email:", $('email').value];
@@ -86,6 +97,7 @@ window.addEventListener("DOMContentLoaded", function() {
 			item.primary  = ["Primary account?", primaryValue];
 			item.date     = ["Date:", $('date').value];
 			item.range    = ["Account use:", $('range').value];
+			item.type     = ["Account Type:", typeValue];
 			item.notes    = ["Notes:", $('notes').value];
 		//Save data into LocalStorage.
 		localStorage.setItem(id, JSON.stringify(item));
@@ -95,6 +107,10 @@ window.addEventListener("DOMContentLoaded", function() {
 	//getData function
 	function getData(){
 		toggleControls("on");
+		if(localStorage.length === 0){
+			alert("There is no data in Local Storage. Default data has been added.");
+			autoFillData();
+		}
 		
 		//Write data from Local Storage to the browser.
 		var makeDiv = document.createElement('div');
@@ -113,6 +129,7 @@ window.addEventListener("DOMContentLoaded", function() {
 			var obj = JSON.parse(value);
 			var makeSubList = document.createElement('ul');
 			makeLi.appendChild(makeSubList);
+			getImage(obj.type[1], makeSubList);
 			for(var n in obj){
 				var makeSubLi = document.createElement('li');
 				makeSubList.appendChild(makeSubLi);
@@ -123,6 +140,32 @@ window.addEventListener("DOMContentLoaded", function() {
 			makeItemLinks(localStorage.key(i), linksLi);// Create our edit and delete buttons/links for each item in Local Storage.
 		}
 	}
+	
+	//Get the image for the correct category that's being displayed
+	function getImage(catName, makeSubList){
+		var imageLi = document.createElement('li');
+		makeSubList.appendChild(imageLi);
+		var newImg = document.createElement('img');
+		var setSrc = newImg.setAttribute("src", "images/"+ catName + ".png");
+		imageLi.appendChild(newImg);
+	}
+	
+	
+	
+	//Auto Populate Local Storage
+	function autoFillData(){
+		//The actual JSON object data required for this to work comes from our json.js file which is loaded from our html page.
+		//Store the JSON object into Local Storage.
+		for(var n in json){
+			var id = Math.floor(Math.random()*100000001);
+			localStorage.setItem(id, JSON.stringify(json[n]));
+		}
+	}
+	
+	
+	
+	
+	
 	
 	//makeItemLinks function
 	function makeItemLinks(key, linksLi){
@@ -280,8 +323,9 @@ window.addEventListener("DOMContentLoaded", function() {
 	}
 
 	//Variable Defaults
-	var accountList = ["Shopping", "Entertainment", "Business", "School", "Personal", "Other"],
+	var accountList = ["Entertainment", "Business", "School", "Personal", "Other"],
 		primaryValue,
+		typeValue,
 		errMsg = $('errors')
 	;
 	makeCategories();
