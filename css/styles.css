@@ -10,7 +10,8 @@ Project 1
 body{
 	font-family: Arial, Helvetica, sans-serif; 
 	margin: auto; 
-	padding: 10px; 
+	padding-top: 5px;
+	padding-bottom: 5px; 
 	background:#b5bade;
 }
 
@@ -46,15 +47,6 @@ h3 {
 	color: white;
 }
 
-p {
-	margin: 0px;
-	padding-left: 100px;
-	padding-right: 10px;
-	text-align: right;
-	font: italic 12px sans-serif;
-	color: white;
-}
-
 .cta {
 	margin: 0px;
 	padding: 4px;
@@ -65,10 +57,20 @@ p {
 	color: white;
 }
 
+.ctatext {
+	margin: 0px;
+	padding-left: 100px;
+	padding-right: 10px;
+	text-align: right;
+	font: italic 12px sans-serif;
+	color: white;
+}
+
 .button {
 	margin-top: 5px;
 	margin-right: 10px;
 	margin-bottom: 5px;
+	margin-left: 205px;
 	color: white;
 	display: inline-block;
 	list-style: none;
@@ -76,12 +78,14 @@ p {
 	background: #2222ff;
 	padding: 3px;
 	border: solid 1px black;
-	border-radius: 15px; 
+	border-radius: 8px;
+	
+	
 }
 
 .searchbar {
 	margin-top: 10px;
-	margin-left: 19px;
+	margin-left: 28px;
 	color: white;
 	width: 195px;
 }
@@ -99,9 +103,32 @@ p {
 	border-radius: 5px;
 }
 
+.browsetitle {
+	font: normal 11pt sans-serif;
+	color: black;
+	text-align: left;
+	border: solid 1px black;
+	padding: 7px;
+	padding-left: 10px;
+	margin-top: 10px;
+	margin-bottom: 0px;
+}
+
+.browse {
+	margin-top: 0px;
+	font: bold 12pt sans-serif;
+	color: white;
+	display: block;
+	list-style: none;
+	text-decoration: none;
+	background: #425cd1;
+	padding: 10px;
+	border: solid 1px black;
+}
+
 nav {
 	display: block;
-	text-align: right;
+	text-align: left;
 }
 
 a {
