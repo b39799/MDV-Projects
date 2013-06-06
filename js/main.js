@@ -6,7 +6,7 @@
 window.addEventListener("DOMContentLoaded", function() {
 
 	//getElementById function
-	function $(x){
+	function ge(x){
 		var element = document.getElementById(x);
 		return element;
 	}
@@ -14,8 +14,8 @@ window.addEventListener("DOMContentLoaded", function() {
 	/*
 //enableConfirm field function
 	function enableConfirm(){
-		if($('password').value !== ""){
-			$('confirm').removeAttribute("disabled");
+		if(ge('password').value !== ""){
+			ge('confirm').removeAttribute("disabled");
 		}
 	}
 */
@@ -23,7 +23,7 @@ window.addEventListener("DOMContentLoaded", function() {
 	//Create Account Type select field element and populate with options.
 	function makeCategories(){
 		var formTag = document.getElementsByTagName("form");
-		var	selectLi = $('select');
+		var	selectLi = ge('select');
 		var	makeSelect = document.createElement('select');
 		makeSelect.setAttribute("id", "groups");
 		for(var i=0, j=accountList.length; i<j; i++){
@@ -60,17 +60,17 @@ window.addEventListener("DOMContentLoaded", function() {
 	function toggleControls(n){
 		switch(n){
 			case "on":
-				$('addForm').style.display     = "none";
-				$('clear').style.display       = "inline";
-				$('displayLink').style.display = "none";
-				$('addNew').style.display      = "inline";
+				ge('addForm').style.display     = "none";
+				ge('clear').style.display       = "inline";
+				ge('displayLink').style.display = "none";
+				ge('addNew').style.display      = "inline";
 				break;
 			case "off":
-				$('addForm').style.display     = "block";
-				$('clear').style.display       = "inline";
-				$('displayLink').style.display = "inline";
-				$('addNew').style.display      = "none";
-				$('items').style.display       = "none";
+				ge('addForm').style.display     = "block";
+				ge('clear').style.display       = "inline";
+				ge('displayLink').style.display = "inline";
+				ge('addNew').style.display      = "none";
+				ge('items').style.display       = "none";
 				break;
 			default:
 				return false;
@@ -91,16 +91,16 @@ window.addEventListener("DOMContentLoaded", function() {
 		getSelectedRadio();
 		getSelectedDrop();
 		var item          = {};
-			item.account  = ["Account:", $('account').value];	
-			item.email	  = ["Email:", $('email').value];
-			item.user	  = ["Username:", $('user').value];
-			item.password = ["Password:", $('password').value];
-			//item.confirm  = ["Confirm Password:", $('confirm').value];
+			item.account  = ["Account:", ge('account').value];	
+			item.email	  = ["Email:", ge('email').value];
+			item.user	  = ["Username:", ge('user').value];
+			item.password = ["Password:", ge('password').value];
+			//item.confirm  = ["Confirm Password:", ge('confirm').value];
 			item.primary  = ["Primary account?", primaryValue];
-			item.date     = ["Date:", $('date').value];
-			item.range    = ["Account use:", $('range').value];
+			item.date     = ["Date:", ge('date').value];
+			item.range    = ["Account use:", ge('range').value];
 			item.type     = ["Account Type:", typeValue];
-			item.notes    = ["Notes:", $('notes').value];
+			item.notes    = ["Notes:", ge('notes').value];
 		//Save data into LocalStorage.
 		localStorage.setItem(id, JSON.stringify(item));
 		alert("Account Saved!");
@@ -120,7 +120,7 @@ window.addEventListener("DOMContentLoaded", function() {
 		var makeList = document.createElement('ul');
 		makeDiv.appendChild(makeList);
 		document.body.appendChild(makeDiv);
-		$('items').style.display = "block";
+		ge('items').style.display = "block";
 		for(var i=0,len=localStorage.length; i<len; i++){
 			var makeLi = document.createElement('li');
 			var linksLi = document.createElement('li');
@@ -204,11 +204,11 @@ window.addEventListener("DOMContentLoaded", function() {
 		toggleControls("off");
 		
 		//Populates the form fields with current localStorage values.
-		$('account').value  = item.account[1];
-		$('email').value    = item.email[1];
-		$('user').value     = item.user[1];
-		$('password').value = item.password[1];
-		//$('confirm').value  = item.confirm[1];
+		ge('account').value  = item.account[1];
+		ge('email').value    = item.email[1];
+		ge('user').value     = item.user[1];
+		ge('password').value = item.password[1];
+		//ge('confirm').value  = item.confirm[1];
 		var radios = document.forms[0].primary;
 		for(var i=0; i<radios.length; i++){
 			if(radios[i].value == "Yes" && item.primary[1] == "Yes"){
@@ -217,15 +217,15 @@ window.addEventListener("DOMContentLoaded", function() {
 				radios[i].setAttribute("checked", "checked");
 			}
 		}
-		$('date').value     = item.date[1];
-		$('range').value    = item.range[1];
-		$('notes').value    = item.notes[1];
+		ge('date').value     = item.date[1];
+		ge('range').value    = item.range[1];
+		ge('notes').value    = item.notes[1];
 		
 		//Remove the initial listener for the input 'save account' button.
 		save.removeEventListener("click", saveData);
 		//Change submit button value to edit button
-		$('submit').value = "Edit Account";
-		var editSubmit = $('submit');
+		ge('submit').value = "Edit Account";
+		var editSubmit = ge('submit');
 		//Save the key value established in this function as a property of the editSubmit event
 		//So we can use that value when we save the data we edited.
 		editSubmit.addEventListener("click", validate);
@@ -260,10 +260,10 @@ window.addEventListener("DOMContentLoaded", function() {
 	//Validate function
 	function validate(e){
 		//Define the elements we want to check
-		var getAccount  = $('account');
-		var getEmail    = $('email');
-		var getPassword = $('password');
-		//var getConfirm  = $('confirm');
+		var getAccount  = ge('account');
+		var getEmail    = ge('email');
+		var getPassword = ge('password');
+		//var getConfirm  = ge('confirm');
 		
 		//Reset error messages
 		errMsg.innerHTML = "";
@@ -328,30 +328,30 @@ window.addEventListener("DOMContentLoaded", function() {
 	var accountList = ["--Choose A Category--", "Entertainment", "Business", "School", "Personal", "Other"],
 		primaryValue,
 		typeValue,
-		errMsg = $('errors')
+		errMsg = ge('errors')
 	;
 	makeCategories();
 	
 	//Set Link and Submit Click Events
-	//if($('confirmEm')){
-	//	var confirmEm = $('password');
+	//if(ge('confirmEm')){
+	//	var confirmEm = ge('password');
 	//	confirmEm.addEventListener("blur", enableConfirm);
 	//}
-	var displayLink = $('displayLink');
+	var displayLink = ge('displayLink');
 	displayLink.addEventListener("click", getData); //GET DATA
-	var clearLink = $('clear');
+	var clearLink = ge('clear');
 	clearLink.addEventListener("click", clearLocal); //CLEAR DATA
-	if($('save')){
-		var save = $('submit');
+	if(ge('save')){
+		var save = ge('submit');
 		save.addEventListener("click", validate); //SAVE DATA
 	}
 	
 	//Search
-	var searchButton = $('searchBtn');
+	var searchButton = ge('searchBtn');
 	
 	var getSearch = function(){
-		var category = $('groups').value;
-		var term = $('search').value;
+		var category = ge('groups').value;
+		var term = ge('search').value;
 		
 		//Search by category only
 		if(category != "--Choose A Category--" && term === ""){
