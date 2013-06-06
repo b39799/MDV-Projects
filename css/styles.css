@@ -1,9 +1,9 @@
 /*
 
 Alex Hardtke
-MDV 1305
-5-22-13
-Project 3
+MiU 1306
+6-6-13
+Project 1
 
 */
 
@@ -15,8 +15,8 @@ body{
 }
 
 h1 {
-	margin: 20px;
-	padding: 20px;
+	margin: 0px;
+	padding: 0px;
 	border: 1px solid black;
 	outline: ;
 	width: ;
@@ -37,9 +37,39 @@ h2 {
 	font-style: italic;
 }
 
+h3 {
+	margin: 0px;
+	padding: 5px;
+	border: 1px solid black;
+	text-align: center;
+	background: #425cd1;
+	color: white;
+}
+
+p {
+	margin: 0px;
+	padding-left: 100px;
+	padding-right: 10px;
+	text-align: right;
+	font: italic 12px sans-serif;
+	color: white;
+}
+
+.cta {
+	margin: 0px;
+	padding: 4px;
+	border: 1px solid black;
+	background-image: url(Background.png) no-repeat center;
+	color: white;
+}
+
+.add {
+	background-color: green;
+}
+
 nav {
 	display: block;
-	text-align: center;
+	text-align: right;
 }
 
 a {

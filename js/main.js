@@ -1,7 +1,7 @@
 // Alex Hardtke
-// VFW 1305
-// 5-30-13
-// Project 4
+// MiU 1306
+// 6-6-13
+// Project 1
 
 window.addEventListener("DOMContentLoaded", function() {
 
@@ -11,12 +11,14 @@ window.addEventListener("DOMContentLoaded", function() {
 		return element;
 	}
 	
-	//enableConfirm field function
+	/*
+//enableConfirm field function
 	function enableConfirm(){
 		if($('password').value !== ""){
 			$('confirm').removeAttribute("disabled");
 		}
 	}
+*/
 	
 	//Create Account Type select field element and populate with options.
 	function makeCategories(){
@@ -93,7 +95,7 @@ window.addEventListener("DOMContentLoaded", function() {
 			item.email	  = ["Email:", $('email').value];
 			item.user	  = ["Username:", $('user').value];
 			item.password = ["Password:", $('password').value];
-			item.confirm  = ["Confirm Password:", $('confirm').value];
+			//item.confirm  = ["Confirm Password:", $('confirm').value];
 			item.primary  = ["Primary account?", primaryValue];
 			item.date     = ["Date:", $('date').value];
 			item.range    = ["Account use:", $('range').value];
@@ -206,7 +208,7 @@ window.addEventListener("DOMContentLoaded", function() {
 		$('email').value    = item.email[1];
 		$('user').value     = item.user[1];
 		$('password').value = item.password[1];
-		$('confirm').value  = item.confirm[1];
+		//$('confirm').value  = item.confirm[1];
 		var radios = document.forms[0].primary;
 		for(var i=0; i<radios.length; i++){
 			if(radios[i].value == "Yes" && item.primary[1] == "Yes"){
@@ -261,14 +263,14 @@ window.addEventListener("DOMContentLoaded", function() {
 		var getAccount  = $('account');
 		var getEmail    = $('email');
 		var getPassword = $('password');
-		var getConfirm  = $('confirm');
+		//var getConfirm  = $('confirm');
 		
 		//Reset error messages
 		errMsg.innerHTML = "";
 			getAccount.style.border  = "1px solid black";
 			getEmail.style.border    = "1px solid black";
 			getPassword.style.border = "1px solid black";
-			getConfirm.style.border  = "1px solid black";
+			//getConfirm.style.border  = "1px solid black";
 
 		
 		//Get error messages
@@ -298,11 +300,11 @@ window.addEventListener("DOMContentLoaded", function() {
 		}
 		
 		//Confirm password validation
-		if(getConfirm.value !== getPassword.value){
-			var confirmError = "Please re-enter your password.";
-			getConfirm.style.border = "1px solid red";
-			messageAry.push(confirmError);
-		}
+		//if(getConfirm.value !== getPassword.value){
+		//	var confirmError = "Please re-enter your password.";
+		//	getConfirm.style.border = "1px solid red";
+		//	messageAry.push(confirmError);
+		//}
 		
 		//If there were errors, display them on the screen.
 		if(messageAry.length >= 1){
@@ -323,7 +325,7 @@ window.addEventListener("DOMContentLoaded", function() {
 	}
 
 	//Variable Defaults
-	var accountList = ["Entertainment", "Business", "School", "Personal", "Other"],
+	var accountList = ["--Choose A Category--", "Entertainment", "Business", "School", "Personal", "Other"],
 		primaryValue,
 		typeValue,
 		errMsg = $('errors')
@@ -331,13 +333,107 @@ window.addEventListener("DOMContentLoaded", function() {
 	makeCategories();
 	
 	//Set Link and Submit Click Events
-	var confirmEm = $('password');
-	confirmEm.addEventListener("blur", enableConfirm);
+	//if($('confirmEm')){
+	//	var confirmEm = $('password');
+	//	confirmEm.addEventListener("blur", enableConfirm);
+	//}
 	var displayLink = $('displayLink');
 	displayLink.addEventListener("click", getData); //GET DATA
 	var clearLink = $('clear');
 	clearLink.addEventListener("click", clearLocal); //CLEAR DATA
-	var save = $('submit');
-	save.addEventListener("click", validate); //SAVE DATA
+	if($('save')){
+		var save = $('submit');
+		save.addEventListener("click", validate); //SAVE DATA
+	}
+	
+	//Search
+	var searchButton = $('searchBtn');
+	
+	var getSearch = function(){
+		var category = $('groups').value;
+		var term = $('search').value;
+		
+		//Search by category only
+		if(category != "--Choose A Category--" && term === ""){
+			var makeList = document.createElement("ul");
+			document.getElementById("results").appendChild(makeList);
+			//go find the category items
+			for(var i=0,len=localStorage.length; i<len; i++){
+				var key = localStorage.key(i);
+				var value = localStorage.getItem(key);
+				var obj = JSON.parse(value);
+				if(category === obj.type[1]){
+					var listItem = document.createElement("li");
+					var subList = document.createElement("ul");
+					listItem.appendChild(subList);
+					makeList.appendChild(listItem);
+					for(n in obj){
+						var finalLi = document.createElement("li");
+						subList.appendChild(finalLi);
+						finalLi.innerHTML = obj[n][0]+ " " + obj[n][1];
+					}
+				}
+			}
+		}
+		
+		//Search by term only
+		if(category === "--Choose A Category--" && term != ""){
+			var makeList = document.createElement("ul");
+			document.getElementById("results").appendChild(makeList);
+			for(var i=0,len=localStorage.length; i<len; i++){
+				var key = localStorage.key(i);
+				var value = localStorage.getItem(key);
+				var obj = JSON.parse(value);
+				for(n in obj){
+					var listItem = document.createElement("li");
+					var subList = document.createElement("ul");
+					listItem.appendChild(subList);
+					makeList.appendChild(listItem);
+					if(term === obj[n][1]){
+						for(m in obj){
+							var finalLi = document.createElement("li");
+							subList.appendChild(finalLi);
+							finalLi.innerHTML = obj[m][0]+ " " + obj[m][1];
+						}
+					}
+				}
+			}
+		}
+		
+		//Search by both term and category
+		if(category != "--Choose A Category--" && term != ""){
+			var makeList = document.createElement("ul");
+			document.getElementById("results").appendChild(makeList);
+			for(var i=0,len=localStorage.length; i<len; i++){
+				var key = localStorage.key(i);
+				var value = localStorage.getItem(key);
+				var obj = JSON.parse(value);
+				for(n in obj){
+					var listItem = document.createElement("li");
+					var subList = document.createElement("ul");
+					listItem.appendChild(subList);
+					makeList.appendChild(listItem);
+					if(term === obj[n][1] && category === obj.type[1]){
+						for(m in obj){
+							var finalLi = document.createElement("li");
+							subList.appendChild(finalLi);
+							finalLi.innerHTML = obj[m][0]+ " " + obj[m][1];
+						}
+					}
+				}
+			}
+		}
+	
+
+	};
+	
+	searchButton.addEventListener("click", getSearch);
+
+	
+	
+	
+	
+	
+	
 
 });
