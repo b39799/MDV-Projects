@@ -23,31 +23,36 @@
 	<body>
 	
 		<div data-role="page" id="home">
+		
 			<!--Company Branding-->
 			<div data-role="header" data-position="fixed" data-theme="a">
 				<h3>Account and Password Book</h3>
 			</div>
 		
 			<!--CTA-->
-			<div class="cta" data-role="content">
+			<div class="cta">
 				<p class="ctatext">Organize your accounts and passwords in this easy-to-use application!</p>
 				<a class="button" href="additem.html">Add Account!</a>
 			</div>
+			
 			<!--Search Bar-->
-			<div>
+			<div data-role="content" data-theme="a">
 				<input type="text" class="searchbar" id="searchbar" placeholder="Enter search terms here..." /><a class="searchlink" href="search.html">Search</a>
 			</div>
+			
 			<!--Browse Section-->
-			<div>	
-				<p class="browsetitle">Browse Accounts:</p>
+			<div data-role="content" data-theme="a">	
+				<p>Browse Accounts:</p>
 				<div>
-					<a class="browse" href="additem.html">By Account Name</a>
-					<a class="browse" href="additem.html">By Username</a>
-					<a class="browse" href="additem.html">By Email</a>
-					<a class="browse" href="search.html">By Password</a>
-					<a class="browse" href="search.html">By Account Type</a>
+					<a href="search.html" data-role="button" data-icon="arrow-r" data-iconpos="right">By Account Name</a>
+					<a href="search.html" data-role="button" data-icon="arrow-r" data-iconpos="right">By Username</a>
+					<a href="search.html" data-role="button" data-icon="arrow-r" data-iconpos="right">By Email</a>
+					<a href="search.html" data-role="button" data-icon="arrow-r" data-iconpos="right">By Password</a>
+					<a href="search.html" data-role="button" data-icon="arrow-r" data-iconpos="right">By Account Type</a>
 				</div>
 			</div>
+			
+			<!--Footer-->
 			<div data-role="footer" data-position="fixed">
 				<h4>Footer</h4>
 			</div>
