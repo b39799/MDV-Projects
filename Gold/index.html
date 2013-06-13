@@ -21,10 +21,10 @@
 		<script src="js/libs/modernizr.custom.min.js"></script>
 	</head>
 	<body>
-	
+		<!-- Home Page -->
 		<div data-role="page" id="home">
 		
-			<!--Company Branding-->
+			<!--Header-->
 			<div data-role="header" data-position="fixed" data-theme="a">
 				<h3>Account and Password Book</h3>
 			</div>
@@ -32,34 +32,379 @@
 			<!--CTA-->
 			<div class="cta">
 				<p class="ctatext">Organize your accounts and passwords in this easy-to-use application!</p>
-				<a class="button" href="additem.html">Add Account!</a>
+				<a class="button" href="additem.html" data-role="button" data-icon="plus"  data-inline="true" data-theme="b">Add Account!</a>
 			</div>
 			
 			<!--Search Bar-->
-			<div data-role="content" data-theme="a">
-				<input type="text" class="searchbar" id="searchbar" placeholder="Enter search terms here..." /><a class="searchlink" href="search.html">Search</a>
-			</div>
+			<!--<div data-role="fieldcontain">
+				<input type="search" name="search" id="search-basic" value="" data-inline="false" placeholder="Enter search term here"/>
+				<a href="search.html" data-role="button" data-mini="true" data-inline="true" data-icon="search" data-theme="a">Search</a>
+			</div>-->
 			
 			<!--Browse Section-->
 			<div data-role="content" data-theme="a">	
-				<p>Browse Accounts:</p>
-				<div>
-					<a href="search.html" data-role="button" data-icon="arrow-r" data-iconpos="right">By Account Name</a>
-					<a href="search.html" data-role="button" data-icon="arrow-r" data-iconpos="right">By Username</a>
-					<a href="search.html" data-role="button" data-icon="arrow-r" data-iconpos="right">By Email</a>
-					<a href="search.html" data-role="button" data-icon="arrow-r" data-iconpos="right">By Password</a>
-					<a href="search.html" data-role="button" data-icon="arrow-r" data-iconpos="right">By Account Type</a>
+				
+				<div data-role="content">
+					<ul data-role="listview" data-inset="true" data-filter="true" data-filter-placeholder="Search">
+					
+						<li data-role="list-divider">Browse by:</li>
+					
+						<li>
+							<a href="#namepage">
+							<h3>Account Name</h3>
+							</a>
+						</li>
+						<li>
+							<a href="#userpage">
+							<h3>Username</h3>
+							</a>
+						</li>
+						<li>
+							<a href="#emailpage">
+							<h3>Email</h3>
+							</a>
+						</li>
+						<li>
+							<a href="passwordpage">
+							<h3>Password</h3>
+							</a>
+						</li>
+						<li>
+							<a href="catpage">
+							<h3>Account Category</h3>
+							</a>
+						</li>
+					</ul>
 				</div>
 			</div>
 			
-			<!--Footer-->
-			<div data-role="footer" data-position="fixed">
-				<h4>Footer</h4>
+			<!--Navbar/Footer-->
+			<div data-role="navbar" data-position="fixed" data-id="nav">
+				<ul>
+					<li><a href="#home" id="homeNav" data-icon="home" data-theme="a">Home</a></li>
+					<li><a href="#about" id="aboutNav" data-icon="info" data-theme="a">About</a></li>
+					<li><a href="#news" id="newsNav" data-icon="grid" data-theme="a">Newsfeed</a></li>
+				</ul>
+			</div>
+			
+		</div>
+		
+		
+		<!-- Name Page -->
+		<div data-role="page" id="namepage">
+		
+			<!--Header-->
+			<div data-role="header" data-position="fixed" data-theme="a">
+				<h3>Accounts by Name</h3>
+			</div>
+			
+			<div data-role="content" data-theme="a">	
+				
+				<div data-role="content">
+					<ul data-role="listview" data-inset="true" data-filter="true" data-filter-placeholder="Search">
+					
+						<li data-role="list-divider">A</li>
+					
+							<li>
+								<a href="#blank">
+								<h3>Adobe</h3>
+								</a>
+							</li>
+							<li>
+								<a href="#blank">
+								<h3>Amazon</h3>
+								</a>
+							</li>
+							<li>
+								<a href="#blank">
+								<h3>Avid</h3>
+								</a>
+							</li>
+						
+						<li data-role="list-divider">D</li>
+						
+							<li>
+								<a href="#blank">
+								<h3>Dominos</h3>
+								</a>
+							</li>
+						
+						<li data-role="list-divider">E</li>
+						
+							<li>
+								<a href="#blank">
+								<h3>ESPN</h3>
+								</a>
+							</li>
+						
+						<li data-role="list-divider">F</li>
+						
+							<li>
+								<a href="#blank">
+								<h3>Facebook</h3>
+								</a>
+							</li>
+							<li>
+								<a href="#blank">
+								<h3>Full Sail</h3>
+								</a>
+							</li>
+						
+						<li data-role="list-divider">G</li>
+						
+							<li>
+								<a href="#blank">
+								<h3>GAIN</h3>
+								</a>
+							</li>
+							<li>
+								<a href="#blank">
+								<h3>Guitar Center</h3>
+								</a>
+							</li>
+						
+						<li data-role="list-divider">I</li>
+						
+							<li>
+								<a href="#blank">
+								<h3>iTunes</h3>
+								</a>
+							</li>
+							<li>
+								<a href="#blank">
+								<h3>iTunes Alternate</h3>
+								</a>
+							</li>
+						
+						<li data-role="list-divider">L</li>
+						
+							<li>
+								<a href="#blank">
+								<h3>Lynda</h3>
+								</a>
+							</li>
+						
+						<li data-role="list-divider">N</li>
+						
+							<li>
+								<a href="#blank">
+								<h3>Netflix</h3>
+								</a>
+							</li>
+						
+						<li data-role="list-divider">R</li>
+						
+							<li>
+								<a href="#blank">
+								<h3>Reddit</h3>
+								</a>
+							</li>
+						
+						<li data-role="list-divider">S</li>
+						
+							<li>
+								<a href="#blank">
+								<h3>Star Tribune</h3>
+								</a>
+							</li>
+						
+						<li data-role="list-divider">Y</li>
+						
+							<li>
+								<a href="#blank">
+								<h3>Yahoo</h3>
+								</a>
+							</li>
+							<li>
+								<a href="#blank">
+								<h3>Yahoo Alternate</h3>
+								</a>
+							</li>
+							<li>
+								<a href="#blank">
+								<h3>Youtube</h3>
+								</a>
+							</li>
+							<li>
+								<a href="#blank">
+								<h3>Youtube Band</h3>
+								</a>
+							</li>
+						
+					</ul>
+				</div>
+			</div>
+			
+			<!--Navbar/Footer-->
+			<div data-role="navbar" data-position="fixed" data-id="nav">
+				<ul>
+					<li><a href="#home" id="homeNav" data-icon="home" data-theme="a">Home</a></li>
+					<li><a href="#about" id="aboutNav" data-icon="info" data-theme="a">About</a></li>
+					<li><a href="#news" id="newsNav" data-icon="grid" data-theme="a">Newsfeed</a></li>
+				</ul>
 			</div>
 		</div>
+
+
+		<!-- User Page -->
+		<div data-role="page" id="userpage">
+		
+			<!--Header-->
+			<div data-role="header" data-position="fixed" data-theme="a">
+				<h3>Accounts by Username</h3>
+			</div>
+			
+			<div data-role="content" data-theme="a">
+				<div data-role="collapsible" data-icon="arrow-d" data-iconpos="right" data-collapsed="false">
+					<h3>ADAM12</h3>
+					<p>Yahoo Alternate</p>
+				</div>
+				<div data-role="collapsible" data-icon="arrow-d" data-iconpos="right" data-collapsed="true">
+					<h3>Alex</h3>
+					<p>Avid</p>
+					<p>GAIN</p>
+					<p>Star Tribune</p>
+				</div>
+				<div data-role="collapsible" data-icon="arrow-d" data-iconpos="right" data-collapsed="true">
+					<h3>AlexH</h3>
+					<p>Google</p>
+					<p>Lynda</p>
+					<p>Reddit</p>
+					<p>Youtube</p>
+				</div>
+				<div data-role="collapsible" data-icon="arrow-d" data-iconpos="right" data-collapsed="true">
+					<h3>Alex123</h3>
+					<p>Amazon</p>
+					<p>Full Sail</p>
+					<p>Guitar Center</p>
+				</div>
+				<div data-role="collapsible" data-icon="arrow-d" data-iconpos="right" data-collapsed="true">
+					<h3>AlexHardtke</h3>
+					<p>Adobe</p>
+					<p>Dominos</p>
+					<p>ESPN</p>
+				</div>
+				<div data-role="collapsible" data-icon="arrow-d" data-iconpos="right" data-collapsed="true">
+					<h3>Alex Hardtke</h3>
+					<p>Facebook</p>
+				</div>
+				<div data-role="collapsible" data-icon="arrow-d" data-iconpos="right" data-collapsed="true">
+					<h3>alex@gmail.com</h3>
+					<p>iTunes</p>
+				</div>
+				<div data-role="collapsible" data-icon="arrow-d" data-iconpos="right" data-collapsed="true">
+					<h3>alex@yahoo.com</h3>
+					<p>Yahoo</p>
+				</div>
+				<div data-role="collapsible" data-icon="arrow-d" data-iconpos="right" data-collapsed="true">
+					<h3>LLE</h3>
+					<p>Youtube Band</p>
+				</div>
+				<div data-role="collapsible" data-icon="arrow-d" data-iconpos="right" data-collapsed="true">
+					<h3>Hardtke1</h3>
+					<p>Netflix</p>
+				</div>
+				<div data-role="collapsible" data-icon="arrow-d" data-iconpos="right" data-collapsed="true">
+					<h3>ryan123</h3>
+					<p>iTunes Alternate</p>
+				</div>
+				
+			</div>
+			
+			<!--Navbar/Footer-->
+			<div data-role="navbar" data-position="fixed" data-id="nav">
+				<ul>
+					<li><a href="#home" id="homeNav" data-icon="home" data-theme="a">Home</a></li>
+					<li><a href="#about" id="aboutNav" data-icon="info" data-theme="a">About</a></li>
+					<li><a href="#news" id="newsNav" data-icon="grid" data-theme="a">Newsfeed</a></li>
+				</ul>
+			</div>
+		</div>
+		
+		
+		<!-- Email Page -->
+		<div data-role="page" id="emailpage">
+		
+			<!--Header-->
+			<div data-role="header" data-position="fixed" data-theme="a">
+				<h3>Accounts by Email</h3>
+			</div>
+			
+		</div>
+		
+		
+		<!-- Password Page -->
+		<div data-role="page" id="passwordpage">
+		
+			<!--Header-->
+			<div data-role="header" data-position="fixed" data-theme="a">
+				<h3>Accounts by Password</h3>
+			</div>
+			
+		</div>
+		
+		
+		<!-- Type Page -->
+		<div data-role="page" id="catpage">
+		
+			<!--Header-->
+			<div data-role="header" data-position="fixed" data-theme="a">
+				<h3>Accounts by Category</h3>
+			</div>
+			
+		</div>
+		
+		
+		<!-- About Page -->
+		<div data-role="page" id="about" data-add-back-btn="true">
+		
+			<!--Header-->
+			<div data-role="header" data-position="fixed" data-theme="a">
+				<h3>About</h3>
+			</div>
+		
+		</div>
+		
+		
+		<!-- Newsstream Page -->
+		<div data-role="page" id="news" data-add-back-btn="true">
+		
+			<!--Header-->
+			<div data-role="header" data-position="fixed" data-theme="a">
+				<h3>Newsstream</h3>
+			</div>
+			
+		</div>
+		
+		
+		<!--Blank Page-->
+		<div data-role="page" id="blank" data-add-back-btn="true">
+		
+			<!--Header-->
+			<div data-role="header" data-position="fixed" data-theme="a">
+				<h3>Under Construction</h3>
+			</div>
+			
+			<!--Message-->
+			<div data-role="content" data-theme="b">
+				<p>Sorry, this page is currently under construction</p>
+			</div>
+			
+			<!--Navbar/Footer-->
+			<div data-role="navbar" data-position="fixed" data-id="nav">
+				<ul>
+					<li><a href="#home" id="homeNav" data-icon="home" data-theme="a">Home</a></li>
+					<li><a href="#about" id="aboutNav" data-icon="info" data-theme="a">About</a></li>
+					<li><a href="#news" id="newsNav" data-icon="grid" data-theme="a">Newsfeed</a></li>
+				</ul>
+			</div>
+			
+		</div>
+						
 		<script src="http://code.jquery.com/jquery-1.9.1.min.js"></script>
 		<script src="http://code.jquery.com/mobile/1.3.1/jquery.mobile-1.3.1.min.js"></script>
-		<script src="js/main.js" type="text/javascript"></script>
-		<script src="js/json.js" type="text/javascript"></script>
+		<script src="Gold/js/json.js" type="text/javascript"></script>
+		<script src="Gold/js/main.js" type="text/javascript"></script>
+		
 	</body>
 </html>

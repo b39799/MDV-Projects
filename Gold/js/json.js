@@ -93,7 +93,7 @@ var json = {
 		"notes": ["Notes:", "Main YouTube account"]
 	},
 	"account9": {
-		"account": ["Account:", "YouTube"],
+		"account": ["Account:", "YouTube Band"],
 		"email": ["Email:", "alex@gmail.com"],
 		"user": ["Username:", "LLE"],
 		"password": ["Password:", "lle123"],
@@ -214,7 +214,7 @@ var json = {
 		"notes": ["Notes:", "Family's Netflix account"]
 	},
 	"account20": {
-		"account": ["Account:", "Yahoo"],
+		"account": ["Account:", "Yahoo Alternate"],
 		"email": ["Email:", "adam@yahoo.com"],
 		"user": ["Username:", "ADAM12"],
 		"password": ["Password:", "adam123"],
