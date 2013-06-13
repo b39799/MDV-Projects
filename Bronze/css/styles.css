@@ -2,8 +2,8 @@
 
 Alex Hardtke
 MiU 1306
-6-6-13
-Project 1
+6-13-13
+Project 2
 
 */
 
@@ -13,6 +13,15 @@ body{
 	padding-top: 5px;
 	padding-bottom: 5px; 
 	background:#b5bade;
+}
+
+.ui-page { 
+	background: #999;
+}
+
+.ui-header .ui-title {
+	margin-left: 10%;
+	margin-right: 10%;
 }
 
 h1 {
@@ -38,6 +47,7 @@ h2 {
 	font-style: italic;
 }
 
+/*
 h3 {
 	margin: 0px;
 	padding: 5px;
@@ -46,15 +56,20 @@ h3 {
 	background: #425cd1;
 	color: white;
 }
+*/
 
 .cta {
 	margin: 0px;
-	padding: 4px;
+	padding-top: 10px;
+	padding-right: 15px;
+	padding-left: 15px;
 	border: 1px solid black;
 	background-image: url(../images/Background.png);
 	background-repeat: no-repeat;
 	background-color: black;
 	color: white;
+	text-align: right;
+	letter-spacing: .081em;
 }
 
 .ctatext {
@@ -67,29 +82,22 @@ h3 {
 }
 
 .button {
-	margin-top: 5px;
+	margin-top: 10px;
 	margin-right: 10px;
 	margin-bottom: 5px;
-	margin-left: 205px;
-	color: white;
-	display: inline-block;
-	list-style: none;
-	text-decoration: none;
-	background: #2222ff;
-	padding: 3px;
-	border: solid 1px black;
-	border-radius: 8px;
-	
-	
+	margin-left: 110px;
 }
 
+/*
 .searchbar {
 	margin-top: 10px;
 	margin-left: 28px;
 	color: white;
 	width: 195px;
 }
+*/
 
+/*
 .searchlink {
 	margin-top: 10px;
 	margin-left: 3px;
@@ -102,18 +110,13 @@ h3 {
 	border: solid 1px black;
 	border-radius: 5px;
 }
+*/
 
-.browsetitle {
-	font: normal 11pt sans-serif;
-	color: black;
-	text-align: left;
-	border: solid 1px black;
-	padding: 7px;
-	padding-left: 10px;
-	margin-top: 10px;
-	margin-bottom: 0px;
+.searchtitle {
+	margin-bottom: 5px;
 }
 
+/*
 .browse {
 	margin-top: 0px;
 	font: bold 12pt sans-serif;
@@ -125,6 +128,7 @@ h3 {
 	padding: 10px;
 	border: solid 1px black;
 }
+*/
 
 nav {
 	display: block;
