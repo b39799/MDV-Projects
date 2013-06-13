@@ -330,6 +330,7 @@ window.addEventListener("DOMContentLoaded", function() {
 		typeValue,
 		errMsg = ge('errors')
 	;
+	
 	makeCategories();
 
 	//Set Link and Submit Click Events
