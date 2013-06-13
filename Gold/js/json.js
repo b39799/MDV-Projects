@@ -1,7 +1,7 @@
 //Alex Hardtke
 //MiU 1306
-//6-6-2013
-//Project 1
+//6-13-2013
+//Project 2
 
 var json = {
 	"account1": {
