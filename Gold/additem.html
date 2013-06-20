@@ -88,6 +88,7 @@
 						<label for="range"><small>(Rate 1 to 10)</small></label>
 					</div>		
 					
+					<!--Categories-->
 					<div data-role="fieldcontain">
 							<label for="type"> What kind of account is this?</label>
 							<select name="type" id="type" data-theme="a">
@@ -100,11 +101,13 @@
 							</select>
 					</div>						
 					
+					<!--Notes-->
 					<div data-role="fieldcontain">			
 							<label for="notes">Notes:</label>
 							<textarea id ="notes" data-theme="a" placeholder="Enter notes here..."></textarea>
 					</div>
 					
+					<!--Submit Buttons-->
 					<div data-role="fieldcontain">			
 							<input type="submit" value="Save Account" data-theme="b" />
 							<br />
@@ -119,7 +122,7 @@
 			<!--Navbar/Footer-->
 			<div data-role="navbar" data-position="fixed" data-id="nav">
 				<ul>
-					<li><a href="index.html" id="homeNav" data-icon="home" data-theme="a">Home</a></li>
+					<li><a href="index.html" id="homeNav" rel="external" data-icon="home" data-theme="a">Home</a></li>
 					<li><a href="search.html" id="newsNav" rel="external" data-icon="search" data-theme="a">Search</a></li>
 					<li><a href="#" id="displayLink" data-icon="arrow-r"> Display Data</a></li>
 				</ul>
