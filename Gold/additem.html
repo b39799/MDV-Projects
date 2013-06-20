@@ -2,8 +2,8 @@
 
 <!-- Alex Hardtke -->
 <!-- MiU 1306 -->
-<!-- 6-13-13 -->
-<!-- Project 2 -->
+<!-- 6-20-13 -->
+<!-- Project 3 -->
 
 <html>
 	<head>
@@ -16,62 +16,134 @@
 		<meta name="viewport" content="width=device-width, initial-scale=1.0">
 		<meta http-equiv="cleartype" content="on">
 		<title>Account and Password Book</title>
+		<link rel="stylesheet" href="http://code.jquery.com/mobile/1.3.1/jquery.mobile-1.3.1.min.css" />
 		<link href="css/styles.css" rel="stylesheet" type="text/css" />
+		<script src="js/libs/modernizr.custom.min.js"></script>
 	</head>
 	<body>
-		<header><h1 id="add">Add An Account</h1></header>
-		<form action="#" method="post" id="addForm">
-			<fieldset id="infoFieldset">
-				<ul id= "errors"></ul>
-				<legend>Account Information</legend>
+		
+		<!--Form-->
+		<div data-role="page" id="additem" data-add-back-btn="true" data-theme="a">
+		
+			<div data-role="header" data-position="fixed" data-theme="a">
+					<h3>Account and Password Book</h3>
+			</div>
+			
+			<div data-role="content">
+			
+				<form action="" id="addForm">
+				
+					<legend><h3>Account Information</h3></legend>
+					
+					<!--AccountName-->
+					<div data-role="fieldcontain">
+						<label for="account">Account Name *</label>
+						<input type="text" name="account" id="account" placeholder="ex. Google" class="required" />
+					</div>
+					
+					<!--Email-->
+					<div data-role="fieldcontain">
+						<label for="email">Account Email *</label>
+						<input type="email" name="email" id="email" placeholder="ex. name@site.com" class="required email" />
+					</div>
+					
+					<!--Username-->
+					<div data-role="fieldcontain">
+						<label for="user">Account User Name *</label>
+						<input type="text" name="user" id="user" placeholder="ex. UserName123" class="required" />
+					</div>
+					
+					<!--Password-->
+					<div data-role="fieldcontain">
+						<label for="password">Account Password *</label>
+						<input type="password" name="password" id="password" class="required" />
+						<label for="password"><small>Case Sensitive.</small></label>
+					</div>
+										
+					
+					<legend><h3>Account Details</h3></legend>
+					
+					<!--Primary-->
+					<div data-role="fieldcontain">
+						<fieldset data-role="controlgroup" id="primary">
+							<legend>Is this your primary account?</legend>
+								<label for="Yes">Yes</label>
+								<input type="radio" checked value="Yes" id="Yes" name="primary" data-theme="a"/>
+								<label for="No">No</label>
+								<input type="radio" value="No" id="No" name="primary" data-theme="a"/>
+						</fieldset>
+					</div>	
+					
+					<!--Date-->		
+					<div data-role="content" data-theme="a">		
+						<label for="date">Sign-Up Date:</label>
+						<input type="date" value="date" id="date" value="" />
+						<label for="date"><small>Select</small></label>
+					</div>
+					
+					<!--Range-->
+					<div data-role="fieldcontain">		
+						<label for="range"> How often do you use this account?
+						<input type="range" name="range" id="range" value="5" min="1" max="10" step="1" data-theme="a"/>
+						<label for="range"><small>(Rate 1 to 10)</small></label>
+					</div>		
+					
+					<div data-role="fieldcontain">
+							<label for="type"> What kind of account is this?</label>
+							<select name="type" id="type" data-theme="a">
+								<option data-placeholder="true">Please Select One</option>
+								<option value="entertainment">Entertainment</option>
+								<option value="business">Business</option>
+								<option value="school">School</option>
+								<option value="personal">Personal</option>
+								<option value="other">Other</option>
+							</select>
+					</div>						
+					
+					<div data-role="fieldcontain">			
+							<label for="notes">Notes:</label>
+							<textarea id ="notes" data-theme="a" placeholder="Enter notes here..."></textarea>
+					</div>
+					
+					<div data-role="fieldcontain">			
+							<input type="submit" value="Save Account" data-theme="b" />
+							<br />
+							<input type="reset" value="Reset" data-theme="a" />
+					</div>
+					
+					<a href="#additemerrors" id="additemerrorslink" data-rel="dialog" data-transition="pop" >Open Errors</a>
+					
+				</form>
+			</div>
+						
+			<!--Navbar/Footer-->
+			<div data-role="navbar" data-position="fixed" data-id="nav">
 				<ul>
-					<li><label for="account">Account Name:</label><input type="text" id="account" placeholder="ex. Google"/></li>
-					<li><label for="email">Account Email:</label><input type="email" id="email" placeholder="name@site.com" /></li>
-					<li><label for="user">Account User Name:</label><input type="text" id="user" placeholder="ex. UserName123" /></li>
-					<li><label for="password">Account Password:</label><input type="password" id="password" /></li>
-					<!--<li><label for="confirm">Confirm Password:</label><input type="password" id="confirm" disabled /></li>-->
-				</ul>	
-			</fieldset>
-			<fieldset id="detailsFieldset">
-				<legend>Account Details</legend>
-				<ul>
-					<li>Is this your primary account?
-						<ul class="radio">
-							<li><input type="radio" checked value="Yes" id="Yes" name="primary" /><label for="Yes">Yes</label></li>
-							<li><input type="radio" value="No" id="No" name="primary" /><label for="No">No</label></li>
-						</ul>
-					</li>
-					<li>Sign-Up Date:
-						<ul class="date">
-							<input type="date" value="date" id="date" /><label for="date"><small>Select</small></label>
-						</ul>
-					</li>
-					<li>How often do you use this account?
-						<ul class="range">
-							<input type="range" value="5" id="range" min="1" max="10" step="1" /><label for="range"><small>(Rate 1 to 10)</small></label>
-						</ul>
-					</li>
-					<li id="select">What kind of account is this?
-						<!--<select>
-							<option value="Shopping">Shopping</option>
-							<option value="Entertainment">Entertainment</option>
-							<option value="Business">Business</option>
-							<option value="School">School</option>
-							<option value="Personal" selected>Personal</option>
-							<option value="Other">Other</option>
-						</select>  -->
-					</li>
-					<li>Notes:
-						<ul>
-							<textarea id ="notes" rows="3" cols="30" placeholder="Enter notes here..."></textarea>
-						</ul>
-					</li>
-					<li><input type="hidden" value="true" /></li>
+					<li><a href="index.html" id="homeNav" data-icon="home" data-theme="a">Home</a></li>
+					<li><a href="search.html" id="newsNav" rel="external" data-icon="search" data-theme="a">Search</a></li>
+					<li><a href="#" id="displayLink" data-icon="arrow-r"> Display Data</a></li>
 				</ul>
-			</fieldset>
-			<input type="button" value="Save Account" id="submit"/>
-		</form>
-			<br><a href="#" id="clear">Clear Stored Data</a> <a href="#" id="displayLink"> Display Data</a> <a href="additem.html" id="addNew" style="display:none;"> Add Another Account</a> <a href="search.html" id="search">Search</a>
+			</div>
+		</div>
+		
+		<!--Errors Page-->
+		<div data-role="dialog" id="additemerrors">
+		
+			<div data-role="header" data-position="fixed">
+					<h3>Missing Fields</h3>
+			</div>
+		
+			<div data-role="content">
+				<ul>
+					<li>Test</li>
+				</ul>
+			</div>
+		</div>
+		
+		<!--<br><a href="#" id="clear">Clear Stored Data</a> <a href="#" id="displayLink"> Display Data</a> <a href="additem.html" id="addNew" style="display:none;"> Add Another Account</a> <a href="search.html" id="search">Search</a>-->
+		<script src="http://code.jquery.com/jquery-1.9.1.min.js"></script>
+		<script src="http://code.jquery.com/mobile/1.3.1/jquery.mobile-1.3.1.min.js"></script>
+		<script src="js/libs/jquery.validate.min.js" type="text/javascript"></script>
 		<script src="js/json.js" type="text/javascript"></script>
 		<script src="js/main.js" type="text/javascript"></script>
 	</body>
