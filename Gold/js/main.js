@@ -7,31 +7,20 @@
 	//code needed for home page goes here
 //});	
 
-var storeData = function(data){
-	console.log(data);
-};
+var storeData = function(data){console.log(data)};
 
-var autofillData = function (){
-	 
-};
+var autofillData = function (){};
 
-var getData = function(){
+var getData = function(){};
 
-};
-
-
-var	deleteItem = function (){
-			
-};
+var	deleteItem = function (){};
 					
-var clearLocal = function(){
-
-};
+var clearLocal = function(){};
 		
 $('#additem').on('pageinit', function(){
 
 		var myForm = $('#addForm'),
-			additemerroslink = $('#additemerroslink')
+			additemerrorslink = $('#additemerrorslink')
 		;
 		    
 		    myForm.validate({
