@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="UTF-8"?> 
+
+<account11 
+		account="Dominos"
+		email="alex@gmail.com"
+		user="AlexHardtke"
+		password="alexh1"
+		notes="Dominos pizza account">
+</account11>
+<account12
+		account="Star Tribune"
+		email="alex@gmail.com"
+		user="Alex"
+		password="alex123"
+		notes="For Star Tribune's online newspaper">
+</account12>
+<account13
+		account="Reddit"
+		email="alex@gmail.com"
+		user="AlexH"
+		password="alexh123"
+		notes="Reddit account login">
+</account13>
+<account14
+		account="Guitar Center"
+		email="alex@gmail.com"
+		user="Alex123"
+		password="alexh"
+		notes="GC.com shopping account">
+</account14>		
+<account15
+		account="Lynda"
+		email="alex@fullsail.edu"
+		user="AlexH"
+		password="alexh123"
+		notes="Lynda.com school account">
+</account15>		
+<account16
+		account="GAIN"
+		email="alex@gmail.com"
+		user="Alex"
+		password="alex1"
+		notes="GAIN community account login">
+</account16>		
+<account17
+		account="Adobe"
+		email="alex@gmail.com"
+		user="AlexHardtke"
+		password="alexh111"
+		notes="Adobe user account">
+</account17>
+<account18
+		account="Avid"
+		email="alex@gmail.com"
+		user="Alex"
+		password="alex123"
+		notes="Avid account login">
+</account18>
+<account19
+		account="Netflix"
+		email="hardtke@yahoo.com"
+		user="Hardtke1"
+		password="hardtke123"
+		notes="Family's Netflix account">
+</account19>
+<account20
+		account="Yahoo Alternate"
+		email="adam@yahoo.com"
+		user="ADAM12"
+		password="adam123"
+		notes="Adam's Yahoo account">
+</account20>
