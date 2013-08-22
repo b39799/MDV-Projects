@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="UTF-8"?> 
+
+<accx>
+	<account> 
+		<accountName>Dominos</accountName>
+		<email>alex@gmail.com</email>
+		<user>AlexHardtke</user>
+		<password>alexh1</password>
+		<notes>Dominos pizza account</notes>
+	</account>
+	<account>
+		<accountName>Star Tribune</accountName>
+		<email>alex@gmail.com</email>
+		<user>Alex</user>
+		<password>alex123</password>
+		<notes>For Star Tribune's online newspaper</notes>
+	</account>
+	<account>
+		<accountName>Reddit</accountName>
+		<email>alex@gmail.com</email>
+		<user>AlexH</user>
+		<password>alexh123</password>
+		<notes>Reddit account login</notes>
+	</account>
+	<account>
+		<accountName>Guitar Center</accountName>
+		<email>alex@gmail.com</email>
+		<user>Alex123</user>
+		<password>alexh</password>
+		<notes>GC.com shopping account</notes>
+	</account>		
+	<account>
+		<accountName>Lynda</accountName>
+		<email>alex@fullsail.edu</email>
+		<user>AlexH</user>
+		<password>alexh123</password>
+		<notes>Lynda.com school account</notes>
+	</account>		
+	<account>
+		<accountName>GAIN</accountName>
+		<email>alex@gmail.com</email>
+		<user>Alex</user>
+		<password>alex1</password>
+		<notes>GAIN community account login</notes>
+	</account>		
+	<account>
+		<accountName>Adobe</accountName>
+		<email>alex@gmail.com</email>
+		<user>AlexHardtke</user>
+		<password>alexh111</password>
+		<notes>Adobe user account</notes>
+	</account>
+	<account>
+		<accountName>Avid</accountName>
+		<email>alex@gmail.com</email>
+		<user>Alex</user>
+		<password>alex123</password>
+		<notes>Avid account login</notes>
+	</account>
+	<account>
+		<accountName>Netflix</accountName>
+		<email>hardtke@yahoo.com</email>
+		<user>Hardtke1</user>
+		<password>hardtke123</password>
+		<notes>Family's Netflix account</notes>
+	</account>
+	<account>
+		<accountName>Yahoo Alternate</accountName>
+		<email>adam@yahoo.com</email>
+		<user>ADAM12</user>
+		<password>adam123</password>
+		<notes>Adam's Yahoo account</notes>
+	</account>
+</accx>

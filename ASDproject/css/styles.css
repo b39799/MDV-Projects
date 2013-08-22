@@ -1,0 +1,29 @@
+/*
+
+Alex Hardtke, ASD 1308, Week 1
+
+*/
+
+/* CSS code goes here */
+.ctatext {
+	text-align: center; 
+	padding: 5px;
+    font-style: italic; 
+	font-size: 12px;
+}
+	
+.button {
+	display: block;
+	text-align: center;
+	margin-left: 20px;
+	margin-right: 20px;
+}
+	
+h2 {
+	text-align: center;
+}
+
+#alert {
+	color: red;
+	text-align: center;
+}
