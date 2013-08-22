@@ -1,0 +1,9 @@
+$(document).ready(function(){
+	$.ajax({
+		"url": "_view/accounts",
+		"dataType": "json",
+		"success": function(data){
+			console.log(data);
+		}
+	});
+});
