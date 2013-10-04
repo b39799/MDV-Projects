@@ -40,8 +40,8 @@ $(document).on("pageinit", '#home', function(){
 	//Delete
 	$('body').on('click', '.delete', function(data){
 		var doc = {};
-			doc._id = $(this).data('id');
-			doc._rev = $(this).data('rev');
+			doc._id = $(this).data('_id');
+			doc._rev = $(this).data('_rev');
 			console.log(doc);
 		if(confirm("Delete account?")){
 			$.couch.db("asdproject").removeDoc(doc, {
