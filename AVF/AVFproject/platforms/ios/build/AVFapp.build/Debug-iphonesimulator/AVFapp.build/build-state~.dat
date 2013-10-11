@@ -1,0 +1,745 @@
+TAVFapp
+v6
+r1
+cCheck dependencies
+cProcessInfoPlistFile /Users/Alex/Desktop/MDV-Projects/AVF/AVFproject/platforms/ios/build/AVFapp.app/Info.plist /Users/Alex/Desktop/MDV-Projects/AVF/AVFproject/platforms/ios/AVFapp/AVFapp-Info.plist
+cPhaseScriptExecution Copy\ www\ directory /Users/Alex/Desktop/MDV-Projects/AVF/AVFproject/platforms/ios/build/AVFapp.build/Debug-iphonesimulator/AVFapp.build/Script-304B58A110DAC018002A0835.sh
+cCpResource AVFapp/config.xml build/AVFapp.app/config.xml
+cCpResource AVFapp/Resources/icons/icon-72.png build/AVFapp.app/icon-72.png
+cCpResource AVFapp/Resources/icons/icon.png build/AVFapp.app/icon.png
+cCpResource AVFapp/Resources/icons/icon@2x.png build/AVFapp.app/icon@2x.png
+cCopyStringsFile /Users/Alex/Desktop/MDV-Projects/AVF/AVFproject/platforms/ios/build/AVFapp.app/en.lproj/Localizable.strings AVFapp/Resources/en.lproj/Localizable.strings
+cCopyStringsFile /Users/Alex/Desktop/MDV-Projects/AVF/AVFproject/platforms/ios/build/AVFapp.app/es.lproj/Localizable.strings AVFapp/Resources/es.lproj/Localizable.strings
+cCompileXIB /Users/Alex/Desktop/MDV-Projects/AVF/AVFproject/platforms/ios/AVFapp/Classes/MainViewController.xib
+cCopyStringsFile /Users/Alex/Desktop/MDV-Projects/AVF/AVFproject/platforms/ios/build/AVFapp.app/de.lproj/Localizable.strings AVFapp/Resources/de.lproj/Localizable.strings
+cCopyStringsFile /Users/Alex/Desktop/MDV-Projects/AVF/AVFproject/platforms/ios/build/AVFapp.app/se.lproj/Localizable.strings AVFapp/Resources/se.lproj/Localizable.strings
+cCpResource AVFapp/Resources/splash/Default-Landscape@2x~ipad.png build/AVFapp.app/Default-Landscape@2x~ipad.png
+cCpResource AVFapp/Resources/splash/Default-Landscape~ipad.png build/AVFapp.app/Default-Landscape~ipad.png
+cCpResource AVFapp/Resources/splash/Default-Portrait@2x~ipad.png build/AVFapp.app/Default-Portrait@2x~ipad.png
+cCpResource AVFapp/Resources/splash/Default-Portrait~ipad.png build/AVFapp.app/Default-Portrait~ipad.png
+cCpResource AVFapp/Resources/splash/Default@2x~iphone.png build/AVFapp.app/Default@2x~iphone.png
+cCpResource AVFapp/Resources/splash/Default~iphone.png build/AVFapp.app/Default~iphone.png
+cCpResource AVFapp/Resources/splash/Default-568h@2x~iphone.png build/AVFapp.app/Default-568h@2x~iphone.png
+cCpResource AVFapp/Resources/icons/icon-72@2x.png build/AVFapp.app/icon-72@2x.png
+cProcessPCH /var/folders/rj/8v1jld814wv7409vpjcnzf780000gn/C/com.apple.DeveloperTools/5.0-5A1413/Xcode/SharedPrecompiledHeaders/AVFapp-Prefix-dznhawsogszhgefwsuanwqdtwplg/AVFapp-Prefix.pch.pch AVFapp/AVFapp-Prefix.pch normal i386 objective-c com.apple.compilers.llvm.clang.1_0.compiler
+cCompileC build/AVFapp.build/Debug-iphonesimulator/AVFapp.build/Objects-normal/i386/AppDelegate.o /Users/Alex/Desktop/MDV-Projects/AVF/AVFproject/platforms/ios/AVFapp/Classes/AppDelegate.m normal i386 objective-c com.apple.compilers.llvm.clang.1_0.compiler
+cCompileC build/AVFapp.build/Debug-iphonesimulator/AVFapp.build/Objects-normal/i386/MainViewController.o /Users/Alex/Desktop/MDV-Projects/AVF/AVFproject/platforms/ios/AVFapp/Classes/MainViewController.m normal i386 objective-c com.apple.compilers.llvm.clang.1_0.compiler
+cCompileC build/AVFapp.build/Debug-iphonesimulator/AVFapp.build/Objects-normal/i386/main.o /Users/Alex/Desktop/MDV-Projects/AVF/AVFproject/platforms/ios/AVFapp/main.m normal i386 objective-c com.apple.compilers.llvm.clang.1_0.compiler
+cLd /Users/Alex/Desktop/MDV-Projects/AVF/AVFproject/platforms/ios/build/AVFapp.app/AVFapp normal i386
+cGenerateDSYMFile /Users/Alex/Desktop/MDV-Projects/AVF/AVFproject/platforms/ios/build/AVFapp.app.dSYM /Users/Alex/Desktop/MDV-Projects/AVF/AVFproject/platforms/ios/build/AVFapp.app/AVFapp
+cTouch /Users/Alex/Desktop/MDV-Projects/AVF/AVFproject/platforms/ios/build/AVFapp.app
+
+N/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator7.0.sdk
+c00000000521BCCE50000000000000176
+t1377553637
+s374
+
+N/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator7.0.sdk/SDKSettings.plist
+c00000000523E89BA00000000000003B5
+t1379830202
+s949
+
+N/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator7.0.sdk/System/Library/CoreServices/SystemVersion.plist
+c00000000523E89BF000000000000019E
+t1379830207
+s414
+
+N/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator7.0.sdk/System/Library/Frameworks/AVFoundation.framework/AVFoundation
+c00000000523E89C0000000000047C8A0
+t1379830208
+s4704416
+
+N/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator7.0.sdk/System/Library/Frameworks/AddressBook.framework/AddressBook
+c00000000523E89C00000000000191F30
+t1379830208
+s1646384
+
+N/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator7.0.sdk/System/Library/Frameworks/AddressBookUI.framework/AddressBookUI
+c00000000523E89C000000000004F2C80
+t1379830208
+s5188736
+
+N/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator7.0.sdk/System/Library/Frameworks/AssetsLibrary.framework/AssetsLibrary
+c00000000523E89C00000000000057080
+t1379830208
+s356480
+
+N/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator7.0.sdk/System/Library/Frameworks/AudioToolbox.framework/AudioToolbox
+c00000000523E89C00000000000902E30
+t1379830208
+s9449008
+
+N/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator7.0.sdk/System/Library/Frameworks/CFNetwork.framework/CFNetwork
+c00000000523E89C00000000000583810
+t1379830208
+s5781520
+
+N/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator7.0.sdk/System/Library/Frameworks/CoreGraphics.framework/CoreGraphics
+c00000000523E89C10000000000445830
+t1379830209
+s4479024
+
+N/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator7.0.sdk/System/Library/Frameworks/CoreLocation.framework/CoreLocation
+c00000000523E89C000000000000EC820
+t1379830208
+s968736
+
+N/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator7.0.sdk/System/Library/Frameworks/CoreMedia.framework/CoreMedia
+c00000000523E89C10000000000133B60
+t1379830209
+s1260384
+
+N/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator7.0.sdk/System/Library/Frameworks/Foundation.framework/Foundation
+c00000000523E89C1000000000088B570
+t1379830209
+s8959344
+
+N/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator7.0.sdk/System/Library/Frameworks/ImageIO.framework/ImageIO
+c00000000523E89C20000000000666720
+t1379830210
+s6711072
+
+N/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator7.0.sdk/System/Library/Frameworks/MediaPlayer.framework/MediaPlayer
+c00000000523E89C20000000000714B70
+t1379830210
+s7424880
+
+N/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator7.0.sdk/System/Library/Frameworks/MobileCoreServices.framework/MobileCoreServices
+c00000000523E89C200000000001BA500
+t1379830210
+s1811712
+
+N/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator7.0.sdk/System/Library/Frameworks/OpenAL.framework/OpenAL
+c00000000523E89C2000000000007C070
+t1379830210
+s508016
+
+N/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator7.0.sdk/System/Library/Frameworks/QuartzCore.framework/QuartzCore
+c00000000523E89C30000000000484860
+t1379830211
+s4737120
+
+N/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator7.0.sdk/System/Library/Frameworks/SystemConfiguration.framework/SystemConfiguration
+c00000000523E89C300000000001081B0
+t1379830211
+s1081776
+
+N/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator7.0.sdk/System/Library/Frameworks/UIKit.framework/UIKit
+c00000000523E89C50000000001DB1C90
+t1379830213
+s31136912
+
+N/Users/Alex/Desktop/MDV-Projects/AVF/AVFproject/platforms/ios/AVFapp/AVFapp-Info.plist
+c00000000524DE7BF0000000000000743
+t1380837311
+s1859
+
+N/Users/Alex/Desktop/MDV-Projects/AVF/AVFproject/platforms/ios/AVFapp/AVFapp-Prefix.pch
+c00000000524DE7BE00000000000003BD
+t1380837310
+s957
+
+N/Users/Alex/Desktop/MDV-Projects/AVF/AVFproject/platforms/ios/AVFapp/Classes/AppDelegate.m
+c00000000524DE7BE00000000000013A3
+t1380837310
+s5027
+
+N/Users/Alex/Desktop/MDV-Projects/AVF/AVFproject/platforms/ios/AVFapp/Classes/MainViewController.m
+c00000000524DE7BE0000000000001267
+t1380837310
+s4711
+
+N/Users/Alex/Desktop/MDV-Projects/AVF/AVFproject/platforms/ios/AVFapp/Classes/MainViewController.xib
+c00000000524DE7BE0000000000001759
+t1380837310
+s5977
+
+N/Users/Alex/Desktop/MDV-Projects/AVF/AVFproject/platforms/ios/AVFapp/Resources/de.lproj/Localizable.strings
+c00000000524DE7BE00000000000004BF
+t1380837310
+s1215
+
+N/Users/Alex/Desktop/MDV-Projects/AVF/AVFproject/platforms/ios/AVFapp/Resources/en.lproj/Localizable.strings
+c00000000524DE7BE00000000000004AA
+t1380837310
+s1194
+
+N/Users/Alex/Desktop/MDV-Projects/AVF/AVFproject/platforms/ios/AVFapp/Resources/es.lproj/Localizable.strings
+c00000000524DE7BE00000000000004B7
+t1380837310
+s1207
+
+N/Users/Alex/Desktop/MDV-Projects/AVF/AVFproject/platforms/ios/AVFapp/Resources/icons/icon-72.png
+c00000000524DE7BE0000000000001350
+t1380837310
+s4944
+
+N/Users/Alex/Desktop/MDV-Projects/AVF/AVFproject/platforms/ios/AVFapp/Resources/icons/icon-72@2x.png
+c00000000524DE7BE0000000000002DBA
+t1380837310
+s11706
+
+N/Users/Alex/Desktop/MDV-Projects/AVF/AVFproject/platforms/ios/AVFapp/Resources/icons/icon.png
+c00000000524DE7BE0000000000000F3E
+t1380837310
+s3902
+
+N/Users/Alex/Desktop/MDV-Projects/AVF/AVFproject/platforms/ios/AVFapp/Resources/icons/icon@2x.png
+c00000000524DE7BE0000000000001EBD
+t1380837310
+s7869
+
+N/Users/Alex/Desktop/MDV-Projects/AVF/AVFproject/platforms/ios/AVFapp/Resources/se.lproj/Localizable.strings
+c00000000524DE7BE00000000000004AB
+t1380837310
+s1195
+
+N/Users/Alex/Desktop/MDV-Projects/AVF/AVFproject/platforms/ios/AVFapp/Resources/splash/Default-568h@2x~iphone.png
+c00000000524DE7BE00000000000085B1
+t1380837310
+s34225
+
+N/Users/Alex/Desktop/MDV-Projects/AVF/AVFproject/platforms/ios/AVFapp/Resources/splash/Default-Landscape@2x~ipad.png
+c00000000524DE7BE0000000000012DF4
+t1380837310
+s77300
+
+N/Users/Alex/Desktop/MDV-Projects/AVF/AVFproject/platforms/ios/AVFapp/Resources/splash/Default-Landscape~ipad.png
+c00000000524DE7BE0000000000008877
+t1380837310
+s34935
+
+N/Users/Alex/Desktop/MDV-Projects/AVF/AVFproject/platforms/ios/AVFapp/Resources/splash/Default-Portrait@2x~ipad.png
+c00000000524DE7BE0000000000012B02
+t1380837310
+s76546
+
+N/Users/Alex/Desktop/MDV-Projects/AVF/AVFproject/platforms/ios/AVFapp/Resources/splash/Default-Portrait~ipad.png
+c00000000524DE7BE00000000000085E6
+t1380837310
+s34278
+
+N/Users/Alex/Desktop/MDV-Projects/AVF/AVFproject/platforms/ios/AVFapp/Resources/splash/Default@2x~iphone.png
+c00000000524DE7BE0000000000007323
+t1380837310
+s29475
+
+N/Users/Alex/Desktop/MDV-Projects/AVF/AVFproject/platforms/ios/AVFapp/Resources/splash/Default~iphone.png
+c00000000524DE7BE000000000000289A
+t1380837310
+s10394
+
+N/Users/Alex/Desktop/MDV-Projects/AVF/AVFproject/platforms/ios/AVFapp/config.xml
+c00000000524DE7BF00000000000008A3
+t1380837311
+s2211
+
+N/Users/Alex/Desktop/MDV-Projects/AVF/AVFproject/platforms/ios/AVFapp/main.m
+c00000000524DE7BE0000000000000458
+t1380837310
+s1112
+
+N/Users/Alex/Desktop/MDV-Projects/AVF/AVFproject/platforms/ios/build/AVFapp.app
+t1380837333
+s748
+
+N/Users/Alex/Desktop/MDV-Projects/AVF/AVFproject/platforms/ios/build/AVFapp.app.dSYM
+t2
+s0
+
+N/Users/Alex/Desktop/MDV-Projects/AVF/AVFproject/platforms/ios/build/AVFapp.app/AVFapp
+t1380837333
+s281084
+
+N/Users/Alex/Desktop/MDV-Projects/AVF/AVFproject/platforms/ios/build/AVFapp.app/Default-568h@2x~iphone.png
+t1380837321
+s34225
+
+N/Users/Alex/Desktop/MDV-Projects/AVF/AVFproject/platforms/ios/build/AVFapp.app/Default-Landscape@2x~ipad.png
+t1380837321
+s77300
+
+N/Users/Alex/Desktop/MDV-Projects/AVF/AVFproject/platforms/ios/build/AVFapp.app/Default-Landscape~ipad.png
+t1380837321
+s34935
+
+N/Users/Alex/Desktop/MDV-Projects/AVF/AVFproject/platforms/ios/build/AVFapp.app/Default-Portrait@2x~ipad.png
+t1380837321
+s76546
+
+N/Users/Alex/Desktop/MDV-Projects/AVF/AVFproject/platforms/ios/build/AVFapp.app/Default-Portrait~ipad.png
+t1380837321
+s34278
+
+N/Users/Alex/Desktop/MDV-Projects/AVF/AVFproject/platforms/ios/build/AVFapp.app/Default@2x~iphone.png
+t1380837321
+s29475
+
+N/Users/Alex/Desktop/MDV-Projects/AVF/AVFproject/platforms/ios/build/AVFapp.app/Default~iphone.png
+t1380837321
+s10394
+
+N/Users/Alex/Desktop/MDV-Projects/AVF/AVFproject/platforms/ios/build/AVFapp.app/Info.plist
+t1380837321
+s1068
+
+N/Users/Alex/Desktop/MDV-Projects/AVF/AVFproject/platforms/ios/build/AVFapp.app/MainViewController.nib
+t1380837332
+s1332
+
+N/Users/Alex/Desktop/MDV-Projects/AVF/AVFproject/platforms/ios/build/AVFapp.app/PkgInfo
+t2
+s0
+
+N/Users/Alex/Desktop/MDV-Projects/AVF/AVFproject/platforms/ios/build/AVFapp.app/config.xml
+t1380837321
+s2211
+
+N/Users/Alex/Desktop/MDV-Projects/AVF/AVFproject/platforms/ios/build/AVFapp.app/de.lproj/Localizable.strings
+t1380837321
+s280
+
+N/Users/Alex/Desktop/MDV-Projects/AVF/AVFproject/platforms/ios/build/AVFapp.app/en.lproj/Localizable.strings
+t1380837321
+s166
+
+N/Users/Alex/Desktop/MDV-Projects/AVF/AVFproject/platforms/ios/build/AVFapp.app/es.lproj/Localizable.strings
+t1380837321
+s334
+
+N/Users/Alex/Desktop/MDV-Projects/AVF/AVFproject/platforms/ios/build/AVFapp.app/icon-72.png
+t1380837321
+s4944
+
+N/Users/Alex/Desktop/MDV-Projects/AVF/AVFproject/platforms/ios/build/AVFapp.app/icon-72@2x.png
+t1380837321
+s11706
+
+N/Users/Alex/Desktop/MDV-Projects/AVF/AVFproject/platforms/ios/build/AVFapp.app/icon.png
+t1380837321
+s3902
+
+N/Users/Alex/Desktop/MDV-Projects/AVF/AVFproject/platforms/ios/build/AVFapp.app/icon@2x.png
+t1380837321
+s7869
+
+N/Users/Alex/Desktop/MDV-Projects/AVF/AVFproject/platforms/ios/build/AVFapp.app/se.lproj/Localizable.strings
+t1380837321
+s283
+
+N/Users/Alex/Desktop/MDV-Projects/AVF/AVFproject/platforms/ios/build/AVFapp.build/Debug-iphonesimulator/AVFapp.build/Objects-normal/i386/AVFapp.LinkFileList
+c00000000524DE7C900000000000001C2
+t1380837321
+s450
+
+N/Users/Alex/Desktop/MDV-Projects/AVF/AVFproject/platforms/ios/build/AVFapp.build/Debug-iphonesimulator/AVFapp.build/Objects-normal/i386/AppDelegate.o
+t1380837332
+s77600
+
+N/Users/Alex/Desktop/MDV-Projects/AVF/AVFproject/platforms/ios/build/AVFapp.build/Debug-iphonesimulator/AVFapp.build/Objects-normal/i386/MainViewController.o
+t1380837332
+s53560
+
+N/Users/Alex/Desktop/MDV-Projects/AVF/AVFproject/platforms/ios/build/AVFapp.build/Debug-iphonesimulator/AVFapp.build/Objects-normal/i386/main.o
+t1380837332
+s3112
+
+N/Users/Alex/Desktop/MDV-Projects/AVF/AVFproject/platforms/ios/build/AVFapp.build/Debug-iphonesimulator/AVFapp.build/Script-304B58A110DAC018002A0835.sh
+c00000000524DE7C9000000000000051A
+t1380837321
+s1306
+
+N/Users/Alex/Desktop/MDV-Projects/AVF/AVFproject/platforms/ios/build/libCordova.a
+c00000000524DE7C900000000000E0D20
+t1380837321
+s920864
+
+N/var/folders/rj/8v1jld814wv7409vpjcnzf780000gn/C/com.apple.DeveloperTools/5.0-5A1413/Xcode/SharedPrecompiledHeaders/AVFapp-Prefix-dznhawsogszhgefwsuanwqdtwplg/AVFapp-Prefix.pch.pch
+t1380837332
+s5343496
+
+CCheck dependencies
+r0
+lSLF06#21%IDEActivityLogSection1@2#32"com.apple.dt.IDE.BuildLogSection18"Check dependencies18"Check dependenciesdcf56a491ffeb741^65006c491ffeb741^---0#1#1#--18"Check dependencies36"F1F045F3-884B-41C5-8012-1F2504F7CDA1-
+
+CCompileC build/AVFapp.build/Debug-iphonesimulator/AVFapp.build/Objects-normal/i386/AppDelegate.o /Users/Alex/Desktop/MDV-Projects/AVF/AVFproject/platforms/ios/AVFapp/Classes/AppDelegate.m normal i386 objective-c com.apple.compilers.llvm.clang.1_0.compiler
+s402530132.367270
+e402530132.417142
+r1
+xCompileC
+xbuild/AVFapp.build/Debug-iphonesimulator/AVFapp.build/Objects-normal/i386/AppDelegate.o
+x/Users/Alex/Desktop/MDV-Projects/AVF/AVFproject/platforms/ios/AVFapp/Classes/AppDelegate.m
+xnormal
+xi386
+xobjective-c
+xcom.apple.compilers.llvm.clang.1_0.compiler
+d/Users/Alex/Desktop/MDV-Projects/AVF/AVFproject/platforms/ios/AVFapp/Classes/AppDelegate.m
+d/Users/Alex/Desktop/MDV-Projects/AVF/AVFproject/platforms/ios/AVFapp/Classes/AppDelegate.h
+d/Users/Alex/Desktop/MDV-Projects/AVF/AVFproject/platforms/ios/build/include/Cordova/CDVViewController.h
+d/Users/Alex/Desktop/MDV-Projects/AVF/AVFproject/platforms/ios/build/include/Cordova/CDVAvailability.h
+d/Users/Alex/Desktop/MDV-Projects/AVF/AVFproject/platforms/ios/build/include/Cordova/CDVInvokedUrlCommand.h
+d/Users/Alex/Desktop/MDV-Projects/AVF/AVFproject/platforms/ios/build/include/Cordova/CDVCommandDelegate.h
+d/Users/Alex/Desktop/MDV-Projects/AVF/AVFproject/platforms/ios/build/include/Cordova/CDVCommandQueue.h
+d/Users/Alex/Desktop/MDV-Projects/AVF/AVFproject/platforms/ios/build/include/Cordova/CDVWhitelist.h
+d/Users/Alex/Desktop/MDV-Projects/AVF/AVFproject/platforms/ios/build/include/Cordova/CDVScreenOrientationDelegate.h
+d/Users/Alex/Desktop/MDV-Projects/AVF/AVFproject/platforms/ios/build/include/Cordova/CDVPlugin.h
+d/Users/Alex/Desktop/MDV-Projects/AVF/AVFproject/platforms/ios/build/include/Cordova/CDVPluginResult.h
+d/Users/Alex/Desktop/MDV-Projects/AVF/AVFproject/platforms/ios/build/include/Cordova/NSMutableArray+QueueAdditions.h
+d/Users/Alex/Desktop/MDV-Projects/AVF/AVFproject/platforms/ios/AVFapp/Classes/MainViewController.h
+d/Users/Alex/Desktop/MDV-Projects/AVF/AVFproject/platforms/ios/build/include/Cordova/CDVCommandDelegateImpl.h
+lSLF06#21%IDEActivityLogSection1@2#32"com.apple.dt.IDE.BuildLogSection98"Compile /Users/Alex/Desktop/MDV-Projects/AVF/AVFproject/platforms/ios/AVFapp/Classes/AppDelegate.m193"CompileC build/AVFapp.build/Debug-iphonesimulator/AVFapp.build/Objects-normal/i386/AppDelegate.o AVFapp/Classes/AppDelegate.m normal i386 objective-c com.apple.compilers.llvm.clang.1_0.compilerc2325e541ffeb741^47ca6a541ffeb741^---0#0#1#-19%DVTDocumentLocation2@106"file://localhost/Users/Alex/Desktop/MDV-Projects/AVF/AVFproject/platforms/ios/AVFapp/Classes/AppDelegate.m0000000000000000^3911"CompileC build/AVFapp.build/Debug-iphonesimulator/AVFapp.build/Objects-normal/i386/AppDelegate.o AVFapp/Classes/AppDelegate.m normal i386 objective-c com.apple.compilers.llvm.clang.1_0.compiler    cd /Users/Alex/Desktop/MDV-Projects/AVF/AVFproject/platforms/ios    setenv LANG en_US.US-ASCII    setenv PATH "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin:/Applications/Xcode.app/Contents/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin:/usr/local/bin:/usr/local/git/bin:/Applications/android-sdk-macosx/sdk/platform-tools:/Applications/android-sdk-macosx/sdk/tools"    /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/clang -x objective-c -arch i386 -fmessage-length=0 -fdiagnostics-show-note-include-stack -fmacro-backtrace-limit=0 -std=c99 -fobjc-arc -Wno-trigraphs -fpascal-strings -O0 -Wno-missing-field-initializers -Wno-missing-prototypes -Wno-implicit-atomic-properties -Wno-receiver-is-weak -Wno-arc-repeated-use-of-weak -Wduplicate-method-match -Wno-missing-braces -Wparentheses -Wswitch -Wno-unused-function -Wno-unused-label -Wno-unused-parameter -Wunused-variable -Wunused-value -Wno-empty-body -Wuninitialized -Wno-unknown-pragmas -Wno-shadow -Wno-four-char-constants -Wno-conversion -Wconstant-conversion -Wint-conversion -Wno-bool-conversion -Wenum-conversion -Wno-shorten-64-to-32 -Wpointer-sign -Wno-newline-eof -Wno-selector -Wno-strict-selector-match -Wno-undeclared-selector -Wno-deprecated-implementations -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator7.0.sdk -fexceptions -fasm-blocks -fstrict-aliasing -Wprotocol -Wdeprecated-declarations -g -fvisibility=hidden -Wno-sign-conversion -fobjc-abi-version=2 -fobjc-legacy-dispatch -mios-simulator-version-min=5.0 -iquote /Users/Alex/Desktop/MDV-Projects/AVF/AVFproject/platforms/ios/build/AVFapp.build/Debug-iphonesimulator/AVFapp.build/AVFapp-generated-files.hmap -I/Users/Alex/Desktop/MDV-Projects/AVF/AVFproject/platforms/ios/build/AVFapp.build/Debug-iphonesimulator/AVFapp.build/AVFapp-own-target-headers.hmap -I/Users/Alex/Desktop/MDV-Projects/AVF/AVFproject/platforms/ios/build/AVFapp.build/Debug-iphonesimulator/AVFapp.build/AVFapp-all-target-headers.hmap -iquote /Users/Alex/Desktop/MDV-Projects/AVF/AVFproject/platforms/ios/build/AVFapp.build/Debug-iphonesimulator/AVFapp.build/AVFapp-project-headers.hmap -I/Users/Alex/Desktop/MDV-Projects/AVF/AVFproject/platforms/ios/build/include -I/Users/Alex/Desktop/MDV-Projects/AVF/AVFproject/platforms/ios/build/usr/local/lib/include -I/Users/Alex/Desktop/MDV-Projects/AVF/AVFproject/platforms/ios/build/UninstalledProducts/include -I/Users/Alex/Desktop/MDV-Projects/AVF/AVFproject/platforms/ios/build -I/Users/Alex/Desktop/MDV-Projects/AVF/AVFproject/platforms/ios/build/AVFapp.build/Debug-iphonesimulator/AVFapp.build/DerivedSources/i386 -I/Users/Alex/Desktop/MDV-Projects/AVF/AVFproject/platforms/ios/build/AVFapp.build/Debug-iphonesimulator/AVFapp.build/DerivedSources -F/Users/Alex/Desktop/MDV-Projects/AVF/AVFproject/platforms/ios/build -include /var/folders/rj/8v1jld814wv7409vpjcnzf780000gn/C/com.apple.DeveloperTools/5.0-5A1413/Xcode/SharedPrecompiledHeaders/AVFapp-Prefix-dznhawsogszhgefwsuanwqdtwplg/AVFapp-Prefix.pch -MMD -MT dependencies -MF /Users/Alex/Desktop/MDV-Projects/AVF/AVFproject/platforms/ios/build/AVFapp.build/Debug-iphonesimulator/AVFapp.build/Objects-normal/i386/AppDelegate.d --serialize-diagnostics /Users/Alex/Desktop/MDV-Projects/AVF/AVFproject/platforms/ios/build/AVFapp.build/Debug-iphonesimulator/AVFapp.build/Objects-normal/i386/AppDelegate.dia -c /Users/Alex/Desktop/MDV-Projects/AVF/AVFproject/platforms/ios/AVFapp/Classes/AppDelegate.m -o /Users/Alex/Desktop/MDV-Projects/AVF/AVFproject/platforms/ios/build/AVFapp.build/Debug-iphonesimulator/AVFapp.build/Objects-normal/i386/AppDelegate.o36"3DD236D1-730B-4F5F-A22F-5D97430304F2-
+b568325CF-89C9-44EB-9798-A228956D85C5
+
+CCompileC build/AVFapp.build/Debug-iphonesimulator/AVFapp.build/Objects-normal/i386/MainViewController.o /Users/Alex/Desktop/MDV-Projects/AVF/AVFproject/platforms/ios/AVFapp/Classes/MainViewController.m normal i386 objective-c com.apple.compilers.llvm.clang.1_0.compiler
+s402530132.367273
+e402530132.409854
+r1
+xCompileC
+xbuild/AVFapp.build/Debug-iphonesimulator/AVFapp.build/Objects-normal/i386/MainViewController.o
+x/Users/Alex/Desktop/MDV-Projects/AVF/AVFproject/platforms/ios/AVFapp/Classes/MainViewController.m
+xnormal
+xi386
+xobjective-c
+xcom.apple.compilers.llvm.clang.1_0.compiler
+d/Users/Alex/Desktop/MDV-Projects/AVF/AVFproject/platforms/ios/AVFapp/Classes/MainViewController.m
+d/Users/Alex/Desktop/MDV-Projects/AVF/AVFproject/platforms/ios/AVFapp/Classes/MainViewController.h
+d/Users/Alex/Desktop/MDV-Projects/AVF/AVFproject/platforms/ios/build/include/Cordova/CDVViewController.h
+d/Users/Alex/Desktop/MDV-Projects/AVF/AVFproject/platforms/ios/build/include/Cordova/CDVAvailability.h
+d/Users/Alex/Desktop/MDV-Projects/AVF/AVFproject/platforms/ios/build/include/Cordova/CDVInvokedUrlCommand.h
+d/Users/Alex/Desktop/MDV-Projects/AVF/AVFproject/platforms/ios/build/include/Cordova/CDVCommandDelegate.h
+d/Users/Alex/Desktop/MDV-Projects/AVF/AVFproject/platforms/ios/build/include/Cordova/CDVCommandQueue.h
+d/Users/Alex/Desktop/MDV-Projects/AVF/AVFproject/platforms/ios/build/include/Cordova/CDVWhitelist.h
+d/Users/Alex/Desktop/MDV-Projects/AVF/AVFproject/platforms/ios/build/include/Cordova/CDVScreenOrientationDelegate.h
+d/Users/Alex/Desktop/MDV-Projects/AVF/AVFproject/platforms/ios/build/include/Cordova/CDVPlugin.h
+d/Users/Alex/Desktop/MDV-Projects/AVF/AVFproject/platforms/ios/build/include/Cordova/CDVPluginResult.h
+d/Users/Alex/Desktop/MDV-Projects/AVF/AVFproject/platforms/ios/build/include/Cordova/NSMutableArray+QueueAdditions.h
+d/Users/Alex/Desktop/MDV-Projects/AVF/AVFproject/platforms/ios/build/include/Cordova/CDVCommandDelegateImpl.h
+lSLF06#21%IDEActivityLogSection1@2#32"com.apple.dt.IDE.BuildLogSection105"Compile /Users/Alex/Desktop/MDV-Projects/AVF/AVFproject/platforms/ios/AVFapp/Classes/MainViewController.m207"CompileC build/AVFapp.build/Debug-iphonesimulator/AVFapp.build/Objects-normal/i386/MainViewController.o AVFapp/Classes/MainViewController.m normal i386 objective-c com.apple.compilers.llvm.clang.1_0.compilerc2325e541ffeb741^42ec68541ffeb741^---0#0#1#-19%DVTDocumentLocation2@113"file://localhost/Users/Alex/Desktop/MDV-Projects/AVF/AVFproject/platforms/ios/AVFapp/Classes/MainViewController.m0000000000000000^3953"CompileC build/AVFapp.build/Debug-iphonesimulator/AVFapp.build/Objects-normal/i386/MainViewController.o AVFapp/Classes/MainViewController.m normal i386 objective-c com.apple.compilers.llvm.clang.1_0.compiler    cd /Users/Alex/Desktop/MDV-Projects/AVF/AVFproject/platforms/ios    setenv LANG en_US.US-ASCII    setenv PATH "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin:/Applications/Xcode.app/Contents/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin:/usr/local/bin:/usr/local/git/bin:/Applications/android-sdk-macosx/sdk/platform-tools:/Applications/android-sdk-macosx/sdk/tools"    /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/clang -x objective-c -arch i386 -fmessage-length=0 -fdiagnostics-show-note-include-stack -fmacro-backtrace-limit=0 -std=c99 -fobjc-arc -Wno-trigraphs -fpascal-strings -O0 -Wno-missing-field-initializers -Wno-missing-prototypes -Wno-implicit-atomic-properties -Wno-receiver-is-weak -Wno-arc-repeated-use-of-weak -Wduplicate-method-match -Wno-missing-braces -Wparentheses -Wswitch -Wno-unused-function -Wno-unused-label -Wno-unused-parameter -Wunused-variable -Wunused-value -Wno-empty-body -Wuninitialized -Wno-unknown-pragmas -Wno-shadow -Wno-four-char-constants -Wno-conversion -Wconstant-conversion -Wint-conversion -Wno-bool-conversion -Wenum-conversion -Wno-shorten-64-to-32 -Wpointer-sign -Wno-newline-eof -Wno-selector -Wno-strict-selector-match -Wno-undeclared-selector -Wno-deprecated-implementations -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator7.0.sdk -fexceptions -fasm-blocks -fstrict-aliasing -Wprotocol -Wdeprecated-declarations -g -fvisibility=hidden -Wno-sign-conversion -fobjc-abi-version=2 -fobjc-legacy-dispatch -mios-simulator-version-min=5.0 -iquote /Users/Alex/Desktop/MDV-Projects/AVF/AVFproject/platforms/ios/build/AVFapp.build/Debug-iphonesimulator/AVFapp.build/AVFapp-generated-files.hmap -I/Users/Alex/Desktop/MDV-Projects/AVF/AVFproject/platforms/ios/build/AVFapp.build/Debug-iphonesimulator/AVFapp.build/AVFapp-own-target-headers.hmap -I/Users/Alex/Desktop/MDV-Projects/AVF/AVFproject/platforms/ios/build/AVFapp.build/Debug-iphonesimulator/AVFapp.build/AVFapp-all-target-headers.hmap -iquote /Users/Alex/Desktop/MDV-Projects/AVF/AVFproject/platforms/ios/build/AVFapp.build/Debug-iphonesimulator/AVFapp.build/AVFapp-project-headers.hmap -I/Users/Alex/Desktop/MDV-Projects/AVF/AVFproject/platforms/ios/build/include -I/Users/Alex/Desktop/MDV-Projects/AVF/AVFproject/platforms/ios/build/usr/local/lib/include -I/Users/Alex/Desktop/MDV-Projects/AVF/AVFproject/platforms/ios/build/UninstalledProducts/include -I/Users/Alex/Desktop/MDV-Projects/AVF/AVFproject/platforms/ios/build -I/Users/Alex/Desktop/MDV-Projects/AVF/AVFproject/platforms/ios/build/AVFapp.build/Debug-iphonesimulator/AVFapp.build/DerivedSources/i386 -I/Users/Alex/Desktop/MDV-Projects/AVF/AVFproject/platforms/ios/build/AVFapp.build/Debug-iphonesimulator/AVFapp.build/DerivedSources -F/Users/Alex/Desktop/MDV-Projects/AVF/AVFproject/platforms/ios/build -include /var/folders/rj/8v1jld814wv7409vpjcnzf780000gn/C/com.apple.DeveloperTools/5.0-5A1413/Xcode/SharedPrecompiledHeaders/AVFapp-Prefix-dznhawsogszhgefwsuanwqdtwplg/AVFapp-Prefix.pch -MMD -MT dependencies -MF /Users/Alex/Desktop/MDV-Projects/AVF/AVFproject/platforms/ios/build/AVFapp.build/Debug-iphonesimulator/AVFapp.build/Objects-normal/i386/MainViewController.d --serialize-diagnostics /Users/Alex/Desktop/MDV-Projects/AVF/AVFproject/platforms/ios/build/AVFapp.build/Debug-iphonesimulator/AVFapp.build/Objects-normal/i386/MainViewController.dia -c /Users/Alex/Desktop/MDV-Projects/AVF/AVFproject/platforms/ios/AVFapp/Classes/MainViewController.m -o /Users/Alex/Desktop/MDV-Projects/AVF/AVFproject/platforms/ios/build/AVFapp.build/Debug-iphonesimulator/AVFapp.build/Objects-normal/i386/MainViewController.o36"1A7B4B8E-FB49-4B1D-8201-C1C080A7418D-
+b568325CF-89C9-44EB-9798-A228956D85C5
+
+CCompileC build/AVFapp.build/Debug-iphonesimulator/AVFapp.build/Objects-normal/i386/main.o /Users/Alex/Desktop/MDV-Projects/AVF/AVFproject/platforms/ios/AVFapp/main.m normal i386 objective-c com.apple.compilers.llvm.clang.1_0.compiler
+s402530132.367263
+e402530132.386391
+r1
+xCompileC
+xbuild/AVFapp.build/Debug-iphonesimulator/AVFapp.build/Objects-normal/i386/main.o
+x/Users/Alex/Desktop/MDV-Projects/AVF/AVFproject/platforms/ios/AVFapp/main.m
+xnormal
+xi386
+xobjective-c
+xcom.apple.compilers.llvm.clang.1_0.compiler
+d/Users/Alex/Desktop/MDV-Projects/AVF/AVFproject/platforms/ios/AVFapp/main.m
+lSLF06#21%IDEActivityLogSection1@2#32"com.apple.dt.IDE.BuildLogSection83"Compile /Users/Alex/Desktop/MDV-Projects/AVF/AVFproject/platforms/ios/AVFapp/main.m171"CompileC build/AVFapp.build/Debug-iphonesimulator/AVFapp.build/Objects-normal/i386/main.o AVFapp/main.m normal i386 objective-c com.apple.compilers.llvm.clang.1_0.compiler7c275e541ffeb741^b8ea62541ffeb741^---0#0#1#-19%DVTDocumentLocation2@91"file://localhost/Users/Alex/Desktop/MDV-Projects/AVF/AVFproject/platforms/ios/AVFapp/main.m0000000000000000^3853"CompileC build/AVFapp.build/Debug-iphonesimulator/AVFapp.build/Objects-normal/i386/main.o AVFapp/main.m normal i386 objective-c com.apple.compilers.llvm.clang.1_0.compiler    cd /Users/Alex/Desktop/MDV-Projects/AVF/AVFproject/platforms/ios    setenv LANG en_US.US-ASCII    setenv PATH "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin:/Applications/Xcode.app/Contents/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin:/usr/local/bin:/usr/local/git/bin:/Applications/android-sdk-macosx/sdk/platform-tools:/Applications/android-sdk-macosx/sdk/tools"    /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/clang -x objective-c -arch i386 -fmessage-length=0 -fdiagnostics-show-note-include-stack -fmacro-backtrace-limit=0 -std=c99 -fobjc-arc -Wno-trigraphs -fpascal-strings -O0 -Wno-missing-field-initializers -Wno-missing-prototypes -Wno-implicit-atomic-properties -Wno-receiver-is-weak -Wno-arc-repeated-use-of-weak -Wduplicate-method-match -Wno-missing-braces -Wparentheses -Wswitch -Wno-unused-function -Wno-unused-label -Wno-unused-parameter -Wunused-variable -Wunused-value -Wno-empty-body -Wuninitialized -Wno-unknown-pragmas -Wno-shadow -Wno-four-char-constants -Wno-conversion -Wconstant-conversion -Wint-conversion -Wno-bool-conversion -Wenum-conversion -Wno-shorten-64-to-32 -Wpointer-sign -Wno-newline-eof -Wno-selector -Wno-strict-selector-match -Wno-undeclared-selector -Wno-deprecated-implementations -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator7.0.sdk -fexceptions -fasm-blocks -fstrict-aliasing -Wprotocol -Wdeprecated-declarations -g -fvisibility=hidden -Wno-sign-conversion -fobjc-abi-version=2 -fobjc-legacy-dispatch -mios-simulator-version-min=5.0 -iquote /Users/Alex/Desktop/MDV-Projects/AVF/AVFproject/platforms/ios/build/AVFapp.build/Debug-iphonesimulator/AVFapp.build/AVFapp-generated-files.hmap -I/Users/Alex/Desktop/MDV-Projects/AVF/AVFproject/platforms/ios/build/AVFapp.build/Debug-iphonesimulator/AVFapp.build/AVFapp-own-target-headers.hmap -I/Users/Alex/Desktop/MDV-Projects/AVF/AVFproject/platforms/ios/build/AVFapp.build/Debug-iphonesimulator/AVFapp.build/AVFapp-all-target-headers.hmap -iquote /Users/Alex/Desktop/MDV-Projects/AVF/AVFproject/platforms/ios/build/AVFapp.build/Debug-iphonesimulator/AVFapp.build/AVFapp-project-headers.hmap -I/Users/Alex/Desktop/MDV-Projects/AVF/AVFproject/platforms/ios/build/include -I/Users/Alex/Desktop/MDV-Projects/AVF/AVFproject/platforms/ios/build/usr/local/lib/include -I/Users/Alex/Desktop/MDV-Projects/AVF/AVFproject/platforms/ios/build/UninstalledProducts/include -I/Users/Alex/Desktop/MDV-Projects/AVF/AVFproject/platforms/ios/build -I/Users/Alex/Desktop/MDV-Projects/AVF/AVFproject/platforms/ios/build/AVFapp.build/Debug-iphonesimulator/AVFapp.build/DerivedSources/i386 -I/Users/Alex/Desktop/MDV-Projects/AVF/AVFproject/platforms/ios/build/AVFapp.build/Debug-iphonesimulator/AVFapp.build/DerivedSources -F/Users/Alex/Desktop/MDV-Projects/AVF/AVFproject/platforms/ios/build -include /var/folders/rj/8v1jld814wv7409vpjcnzf780000gn/C/com.apple.DeveloperTools/5.0-5A1413/Xcode/SharedPrecompiledHeaders/AVFapp-Prefix-dznhawsogszhgefwsuanwqdtwplg/AVFapp-Prefix.pch -MMD -MT dependencies -MF /Users/Alex/Desktop/MDV-Projects/AVF/AVFproject/platforms/ios/build/AVFapp.build/Debug-iphonesimulator/AVFapp.build/Objects-normal/i386/main.d --serialize-diagnostics /Users/Alex/Desktop/MDV-Projects/AVF/AVFproject/platforms/ios/build/AVFapp.build/Debug-iphonesimulator/AVFapp.build/Objects-normal/i386/main.dia -c /Users/Alex/Desktop/MDV-Projects/AVF/AVFproject/platforms/ios/AVFapp/main.m -o /Users/Alex/Desktop/MDV-Projects/AVF/AVFproject/platforms/ios/build/AVFapp.build/Debug-iphonesimulator/AVFapp.build/Objects-normal/i386/main.o36"CEDE8773-774A-4417-96D5-AD58EE478A34-
+b568325CF-89C9-44EB-9798-A228956D85C5
+
+CCompileXIB /Users/Alex/Desktop/MDV-Projects/AVF/AVFproject/platforms/ios/AVFapp/Classes/MainViewController.xib
+s402530121.709138
+e402530132.051522
+r1
+xCompileXIB
+x/Users/Alex/Desktop/MDV-Projects/AVF/AVFproject/platforms/ios/AVFapp/Classes/MainViewController.xib
+o2013-10-03 16:55:30.979 Interface Builder Cocoa Touch Tool[534:303] CFPreferences: user home directory at file:///Users/Alex/Library/Application%20Support/iPhone%20Simulator/User/ is unavailable. User domains will be volatile.
+lSLF06#21%IDEActivityLogSection1@2#32"com.apple.dt.IDE.BuildLogSection109"Compiling /Users/Alex/Desktop/MDV-Projects/AVF/AVFproject/platforms/ios/AVFapp/Classes/MainViewController.xib48"CompileXIB AVFapp/Classes/MainViewController.xib5da3b5491ffeb741^be300d541ffeb741^-227"2013-10-03 16:55:30.979 Interface Builder Cocoa Touch Tool[534:303] CFPreferences: user home directory at file:///Users/Alex/Library/Application%20Support/iPhone%20Simulator/User/ is unavailable. User domains will be volatile.-0#0#1#-19%DVTDocumentLocation2@115"file://localhost/Users/Alex/Desktop/MDV-Projects/AVF/AVFproject/platforms/ios/AVFapp/Classes/MainViewController.xib0000000000000000^949"CompileXIB AVFapp/Classes/MainViewController.xib    cd /Users/Alex/Desktop/MDV-Projects/AVF/AVFproject/platforms/ios    setenv PATH "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin:/Applications/Xcode.app/Contents/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin:/usr/local/bin:/usr/local/git/bin:/Applications/android-sdk-macosx/sdk/platform-tools:/Applications/android-sdk-macosx/sdk/tools"    setenv XCODE_DEVELOPER_USR_PATH /Applications/Xcode.app/Contents/Developer/usr/bin/..    /Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin/ibtool --errors --warnings --notices --minimum-deployment-target 5.0 --output-format human-readable-text --compile /Users/Alex/Desktop/MDV-Projects/AVF/AVFproject/platforms/ios/build/AVFapp.app/MainViewController.nib /Users/Alex/Desktop/MDV-Projects/AVF/AVFproject/platforms/ios/AVFapp/Classes/MainViewController.xib36"2EB9EE74-F6AB-4DE3-906C-B6D29FC61A6B-
+b568325CF-89C9-44EB-9798-A228956D85C5
+
+CCopyStringsFile /Users/Alex/Desktop/MDV-Projects/AVF/AVFproject/platforms/ios/build/AVFapp.app/de.lproj/Localizable.strings AVFapp/Resources/de.lproj/Localizable.strings
+s402530121.709273
+e402530121.741722
+r1
+xCopyStringsFile
+x/Users/Alex/Desktop/MDV-Projects/AVF/AVFproject/platforms/ios/build/AVFapp.app/de.lproj/Localizable.strings
+xAVFapp/Resources/de.lproj/Localizable.strings
+lSLF06#21%IDEActivityLogSection1@2#32"com.apple.dt.IDE.BuildLogSection50"Copy AVFapp/Resources/de.lproj/Localizable.strings107"CopyStringsFile build/AVFapp.app/de.lproj/Localizable.strings AVFapp/Resources/de.lproj/Localizable.stringsbea4b5491ffeb741^00e3bd491ffeb741^---0#0#1#-19%DVTDocumentLocation2@123"file://localhost/Users/Alex/Desktop/MDV-Projects/AVF/AVFproject/platforms/ios/AVFapp/Resources/de.lproj/Localizable.strings0000000000000000^728"CopyStringsFile build/AVFapp.app/de.lproj/Localizable.strings AVFapp/Resources/de.lproj/Localizable.strings    cd /Users/Alex/Desktop/MDV-Projects/AVF/AVFproject/platforms/ios    setenv PATH "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin:/Applications/Xcode.app/Contents/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin:/usr/local/bin:/usr/local/git/bin:/Applications/android-sdk-macosx/sdk/platform-tools:/Applications/android-sdk-macosx/sdk/tools"    builtin-copyStrings --validate --inputencoding utf-8 --outputencoding binary --outdir /Users/Alex/Desktop/MDV-Projects/AVF/AVFproject/platforms/ios/build/AVFapp.app/de.lproj -- AVFapp/Resources/de.lproj/Localizable.strings36"57473DCC-05F1-4D56-99BA-05956C6557BC-
+b568325CF-89C9-44EB-9798-A228956D85C5
+
+CCopyStringsFile /Users/Alex/Desktop/MDV-Projects/AVF/AVFproject/platforms/ios/build/AVFapp.app/en.lproj/Localizable.strings AVFapp/Resources/en.lproj/Localizable.strings
+s402530121.709119
+e402530121.714806
+r1
+xCopyStringsFile
+x/Users/Alex/Desktop/MDV-Projects/AVF/AVFproject/platforms/ios/build/AVFapp.app/en.lproj/Localizable.strings
+xAVFapp/Resources/en.lproj/Localizable.strings
+lSLF06#21%IDEActivityLogSection1@2#32"com.apple.dt.IDE.BuildLogSection50"Copy AVFapp/Resources/en.lproj/Localizable.strings107"CopyStringsFile build/AVFapp.app/en.lproj/Localizable.strings AVFapp/Resources/en.lproj/Localizable.strings12a1b5491ffeb741^cafdb6491ffeb741^---0#0#1#-19%DVTDocumentLocation2@123"file://localhost/Users/Alex/Desktop/MDV-Projects/AVF/AVFproject/platforms/ios/AVFapp/Resources/en.lproj/Localizable.strings0000000000000000^728"CopyStringsFile build/AVFapp.app/en.lproj/Localizable.strings AVFapp/Resources/en.lproj/Localizable.strings    cd /Users/Alex/Desktop/MDV-Projects/AVF/AVFproject/platforms/ios    setenv PATH "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin:/Applications/Xcode.app/Contents/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin:/usr/local/bin:/usr/local/git/bin:/Applications/android-sdk-macosx/sdk/platform-tools:/Applications/android-sdk-macosx/sdk/tools"    builtin-copyStrings --validate --inputencoding utf-8 --outputencoding binary --outdir /Users/Alex/Desktop/MDV-Projects/AVF/AVFproject/platforms/ios/build/AVFapp.app/en.lproj -- AVFapp/Resources/en.lproj/Localizable.strings36"3BEC51EE-EEDC-495C-BFA2-3D8D8A29A129-
+b568325CF-89C9-44EB-9798-A228956D85C5
+
+CCopyStringsFile /Users/Alex/Desktop/MDV-Projects/AVF/AVFproject/platforms/ios/build/AVFapp.app/es.lproj/Localizable.strings AVFapp/Resources/es.lproj/Localizable.strings
+s402530121.709131
+e402530121.715973
+r1
+xCopyStringsFile
+x/Users/Alex/Desktop/MDV-Projects/AVF/AVFproject/platforms/ios/build/AVFapp.app/es.lproj/Localizable.strings
+xAVFapp/Resources/es.lproj/Localizable.strings
+lSLF06#21%IDEActivityLogSection1@2#32"com.apple.dt.IDE.BuildLogSection50"Copy AVFapp/Resources/es.lproj/Localizable.strings107"CopyStringsFile build/AVFapp.app/es.lproj/Localizable.strings AVFapp/Resources/es.lproj/Localizable.stringsb6a2b5491ffeb741^774ab7491ffeb741^---0#0#1#-19%DVTDocumentLocation2@123"file://localhost/Users/Alex/Desktop/MDV-Projects/AVF/AVFproject/platforms/ios/AVFapp/Resources/es.lproj/Localizable.strings0000000000000000^728"CopyStringsFile build/AVFapp.app/es.lproj/Localizable.strings AVFapp/Resources/es.lproj/Localizable.strings    cd /Users/Alex/Desktop/MDV-Projects/AVF/AVFproject/platforms/ios    setenv PATH "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin:/Applications/Xcode.app/Contents/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin:/usr/local/bin:/usr/local/git/bin:/Applications/android-sdk-macosx/sdk/platform-tools:/Applications/android-sdk-macosx/sdk/tools"    builtin-copyStrings --validate --inputencoding utf-8 --outputencoding binary --outdir /Users/Alex/Desktop/MDV-Projects/AVF/AVFproject/platforms/ios/build/AVFapp.app/es.lproj -- AVFapp/Resources/es.lproj/Localizable.strings36"CB798BA7-50A7-4313-A546-C3A3DC06D97E-
+b568325CF-89C9-44EB-9798-A228956D85C5
+
+CCopyStringsFile /Users/Alex/Desktop/MDV-Projects/AVF/AVFproject/platforms/ios/build/AVFapp.app/se.lproj/Localizable.strings AVFapp/Resources/se.lproj/Localizable.strings
+s402530121.712530
+e402530121.741736
+r1
+xCopyStringsFile
+x/Users/Alex/Desktop/MDV-Projects/AVF/AVFproject/platforms/ios/build/AVFapp.app/se.lproj/Localizable.strings
+xAVFapp/Resources/se.lproj/Localizable.strings
+lSLF06#21%IDEActivityLogSection1@2#32"com.apple.dt.IDE.BuildLogSection50"Copy AVFapp/Resources/se.lproj/Localizable.strings107"CopyStringsFile build/AVFapp.app/se.lproj/Localizable.strings AVFapp/Resources/se.lproj/Localizable.strings9b75b6491ffeb741^c4e8bd491ffeb741^---0#0#1#-19%DVTDocumentLocation2@123"file://localhost/Users/Alex/Desktop/MDV-Projects/AVF/AVFproject/platforms/ios/AVFapp/Resources/se.lproj/Localizable.strings0000000000000000^728"CopyStringsFile build/AVFapp.app/se.lproj/Localizable.strings AVFapp/Resources/se.lproj/Localizable.strings    cd /Users/Alex/Desktop/MDV-Projects/AVF/AVFproject/platforms/ios    setenv PATH "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin:/Applications/Xcode.app/Contents/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin:/usr/local/bin:/usr/local/git/bin:/Applications/android-sdk-macosx/sdk/platform-tools:/Applications/android-sdk-macosx/sdk/tools"    builtin-copyStrings --validate --inputencoding utf-8 --outputencoding binary --outdir /Users/Alex/Desktop/MDV-Projects/AVF/AVFproject/platforms/ios/build/AVFapp.app/se.lproj -- AVFapp/Resources/se.lproj/Localizable.strings36"89320446-8829-4C10-A2BD-46BB54FE88F8-
+b568325CF-89C9-44EB-9798-A228956D85C5
+
+CCpResource AVFapp/Resources/icons/icon-72.png build/AVFapp.app/icon-72.png
+s402530121.709059
+e402530121.712319
+r1
+xCpResource
+xAVFapp/Resources/icons/icon-72.png
+xbuild/AVFapp.app/icon-72.png
+lSLF06#21%IDEActivityLogSection1@2#32"com.apple.dt.IDE.BuildLogSection33"Copy build/AVFapp.app/icon-72.png74"CpResource AVFapp/Resources/icons/icon-72.png build/AVFapp.app/icon-72.png809bb5491ffeb741^bc5ab6491ffeb741^---0#0#1#-19%DVTDocumentLocation2@106"file://localhost/Users/Alex/Desktop/MDV-Projects/AVF/AVFproject/platforms/ios/build/AVFapp.app/icon-72.png00385420dfffdf42^756"CpResource AVFapp/Resources/icons/icon-72.png build/AVFapp.app/icon-72.png    cd /Users/Alex/Desktop/MDV-Projects/AVF/AVFproject/platforms/ios    setenv PATH "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin:/Applications/Xcode.app/Contents/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin:/usr/local/bin:/usr/local/git/bin:/Applications/android-sdk-macosx/sdk/platform-tools:/Applications/android-sdk-macosx/sdk/tools"    builtin-copy -exclude .DS_Store -exclude CVS -exclude .svn -exclude .git -exclude .hg -resolve-src-symlinks /Users/Alex/Desktop/MDV-Projects/AVF/AVFproject/platforms/ios/AVFapp/Resources/icons/icon-72.png /Users/Alex/Desktop/MDV-Projects/AVF/AVFproject/platforms/ios/build/AVFapp.app36"8A5D44A7-FAA5-4520-AB3D-A1F2C4A37788-
+b568325CF-89C9-44EB-9798-A228956D85C5
+
+CCpResource AVFapp/Resources/icons/icon-72@2x.png build/AVFapp.app/icon-72@2x.png
+s402530121.725133
+e402530121.730377
+r1
+xCpResource
+xAVFapp/Resources/icons/icon-72@2x.png
+xbuild/AVFapp.app/icon-72@2x.png
+lSLF06#21%IDEActivityLogSection1@2#32"com.apple.dt.IDE.BuildLogSection36"Copy build/AVFapp.app/icon-72@2x.png80"CpResource AVFapp/Resources/icons/icon-72@2x.png build/AVFapp.app/icon-72@2x.pngc0afb9491ffeb741^a4faba491ffeb741^---0#0#1#-19%DVTDocumentLocation2@109"file://localhost/Users/Alex/Desktop/MDV-Projects/AVF/AVFproject/platforms/ios/build/AVFapp.app/icon-72@2x.png00385420dfffdf42^765"CpResource AVFapp/Resources/icons/icon-72@2x.png build/AVFapp.app/icon-72@2x.png    cd /Users/Alex/Desktop/MDV-Projects/AVF/AVFproject/platforms/ios    setenv PATH "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin:/Applications/Xcode.app/Contents/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin:/usr/local/bin:/usr/local/git/bin:/Applications/android-sdk-macosx/sdk/platform-tools:/Applications/android-sdk-macosx/sdk/tools"    builtin-copy -exclude .DS_Store -exclude CVS -exclude .svn -exclude .git -exclude .hg -resolve-src-symlinks /Users/Alex/Desktop/MDV-Projects/AVF/AVFproject/platforms/ios/AVFapp/Resources/icons/icon-72@2x.png /Users/Alex/Desktop/MDV-Projects/AVF/AVFproject/platforms/ios/build/AVFapp.app36"FF3EFFB5-E1F0-4326-8D11-55630D6D48F9-
+b568325CF-89C9-44EB-9798-A228956D85C5
+
+CCpResource AVFapp/Resources/icons/icon.png build/AVFapp.app/icon.png
+s402530121.709068
+e402530121.711388
+r1
+xCpResource
+xAVFapp/Resources/icons/icon.png
+xbuild/AVFapp.app/icon.png
+lSLF06#21%IDEActivityLogSection1@2#32"com.apple.dt.IDE.BuildLogSection30"Copy build/AVFapp.app/icon.png68"CpResource AVFapp/Resources/icons/icon.png build/AVFapp.app/icon.png9a99b5491ffeb741^b81db6491ffeb741^---0#0#1#-19%DVTDocumentLocation2@103"file://localhost/Users/Alex/Desktop/MDV-Projects/AVF/AVFproject/platforms/ios/build/AVFapp.app/icon.png00385420dfffdf42^747"CpResource AVFapp/Resources/icons/icon.png build/AVFapp.app/icon.png    cd /Users/Alex/Desktop/MDV-Projects/AVF/AVFproject/platforms/ios    setenv PATH "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin:/Applications/Xcode.app/Contents/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin:/usr/local/bin:/usr/local/git/bin:/Applications/android-sdk-macosx/sdk/platform-tools:/Applications/android-sdk-macosx/sdk/tools"    builtin-copy -exclude .DS_Store -exclude CVS -exclude .svn -exclude .git -exclude .hg -resolve-src-symlinks /Users/Alex/Desktop/MDV-Projects/AVF/AVFproject/platforms/ios/AVFapp/Resources/icons/icon.png /Users/Alex/Desktop/MDV-Projects/AVF/AVFproject/platforms/ios/build/AVFapp.app36"C693B2DC-7562-4DA2-A35C-29DCAB0B1F14-
+b568325CF-89C9-44EB-9798-A228956D85C5
+
+CCpResource AVFapp/Resources/icons/icon@2x.png build/AVFapp.app/icon@2x.png
+s402530121.709080
+e402530121.717989
+r1
+xCpResource
+xAVFapp/Resources/icons/icon@2x.png
+xbuild/AVFapp.app/icon@2x.png
+lSLF06#21%IDEActivityLogSection1@2#32"com.apple.dt.IDE.BuildLogSection33"Copy build/AVFapp.app/icon@2x.png74"CpResource AVFapp/Resources/icons/icon@2x.png build/AVFapp.app/icon@2x.pngf9a2b5491ffeb741^74ceb7491ffeb741^---0#0#1#-19%DVTDocumentLocation2@106"file://localhost/Users/Alex/Desktop/MDV-Projects/AVF/AVFproject/platforms/ios/build/AVFapp.app/icon@2x.png00385420dfffdf42^756"CpResource AVFapp/Resources/icons/icon@2x.png build/AVFapp.app/icon@2x.png    cd /Users/Alex/Desktop/MDV-Projects/AVF/AVFproject/platforms/ios    setenv PATH "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin:/Applications/Xcode.app/Contents/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin:/usr/local/bin:/usr/local/git/bin:/Applications/android-sdk-macosx/sdk/platform-tools:/Applications/android-sdk-macosx/sdk/tools"    builtin-copy -exclude .DS_Store -exclude CVS -exclude .svn -exclude .git -exclude .hg -resolve-src-symlinks /Users/Alex/Desktop/MDV-Projects/AVF/AVFproject/platforms/ios/AVFapp/Resources/icons/icon@2x.png /Users/Alex/Desktop/MDV-Projects/AVF/AVFproject/platforms/ios/build/AVFapp.app36"F3C3C2E3-4B3A-4C1D-9382-DB73482BC56C-
+b568325CF-89C9-44EB-9798-A228956D85C5
+
+CCpResource AVFapp/Resources/splash/Default-568h@2x~iphone.png build/AVFapp.app/Default-568h@2x~iphone.png
+s402530121.723891
+e402530121.729029
+r1
+xCpResource
+xAVFapp/Resources/splash/Default-568h@2x~iphone.png
+xbuild/AVFapp.app/Default-568h@2x~iphone.png
+lSLF06#21%IDEActivityLogSection1@2#32"com.apple.dt.IDE.BuildLogSection48"Copy build/AVFapp.app/Default-568h@2x~iphone.png105"CpResource AVFapp/Resources/splash/Default-568h@2x~iphone.png build/AVFapp.app/Default-568h@2x~iphone.png105cb9491ffeb741^1aa2ba491ffeb741^---0#0#1#-19%DVTDocumentLocation2@121"file://localhost/Users/Alex/Desktop/MDV-Projects/AVF/AVFproject/platforms/ios/build/AVFapp.app/Default-568h@2x~iphone.png00385420dfffdf42^803"CpResource AVFapp/Resources/splash/Default-568h@2x~iphone.png build/AVFapp.app/Default-568h@2x~iphone.png    cd /Users/Alex/Desktop/MDV-Projects/AVF/AVFproject/platforms/ios    setenv PATH "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin:/Applications/Xcode.app/Contents/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin:/usr/local/bin:/usr/local/git/bin:/Applications/android-sdk-macosx/sdk/platform-tools:/Applications/android-sdk-macosx/sdk/tools"    builtin-copy -exclude .DS_Store -exclude CVS -exclude .svn -exclude .git -exclude .hg -resolve-src-symlinks /Users/Alex/Desktop/MDV-Projects/AVF/AVFproject/platforms/ios/AVFapp/Resources/splash/Default-568h@2x~iphone.png /Users/Alex/Desktop/MDV-Projects/AVF/AVFproject/platforms/ios/build/AVFapp.app36"163884CE-2263-402F-832B-DB74E0B85D5A-
+b568325CF-89C9-44EB-9798-A228956D85C5
+
+CCpResource AVFapp/Resources/splash/Default-Landscape@2x~ipad.png build/AVFapp.app/Default-Landscape@2x~ipad.png
+s402530121.712639
+e402530121.721493
+r1
+xCpResource
+xAVFapp/Resources/splash/Default-Landscape@2x~ipad.png
+xbuild/AVFapp.app/Default-Landscape@2x~ipad.png
+lSLF06#21%IDEActivityLogSection1@2#32"com.apple.dt.IDE.BuildLogSection51"Copy build/AVFapp.app/Default-Landscape@2x~ipad.png111"CpResource AVFapp/Resources/splash/Default-Landscape@2x~ipad.png build/AVFapp.app/Default-Landscape@2x~ipad.pngf67bb6491ffeb741^57b5b8491ffeb741^---0#0#1#-19%DVTDocumentLocation2@124"file://localhost/Users/Alex/Desktop/MDV-Projects/AVF/AVFproject/platforms/ios/build/AVFapp.app/Default-Landscape@2x~ipad.png00385420dfffdf42^812"CpResource AVFapp/Resources/splash/Default-Landscape@2x~ipad.png build/AVFapp.app/Default-Landscape@2x~ipad.png    cd /Users/Alex/Desktop/MDV-Projects/AVF/AVFproject/platforms/ios    setenv PATH "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin:/Applications/Xcode.app/Contents/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin:/usr/local/bin:/usr/local/git/bin:/Applications/android-sdk-macosx/sdk/platform-tools:/Applications/android-sdk-macosx/sdk/tools"    builtin-copy -exclude .DS_Store -exclude CVS -exclude .svn -exclude .git -exclude .hg -resolve-src-symlinks /Users/Alex/Desktop/MDV-Projects/AVF/AVFproject/platforms/ios/AVFapp/Resources/splash/Default-Landscape@2x~ipad.png /Users/Alex/Desktop/MDV-Projects/AVF/AVFproject/platforms/ios/build/AVFapp.app36"1DB67DF8-7B8A-4BB9-865E-DA03BE656557-
+b568325CF-89C9-44EB-9798-A228956D85C5
+
+CCpResource AVFapp/Resources/splash/Default-Landscape~ipad.png build/AVFapp.app/Default-Landscape~ipad.png
+s402530121.714532
+e402530121.722763
+r1
+xCpResource
+xAVFapp/Resources/splash/Default-Landscape~ipad.png
+xbuild/AVFapp.app/Default-Landscape~ipad.png
+lSLF06#21%IDEActivityLogSection1@2#32"com.apple.dt.IDE.BuildLogSection48"Copy build/AVFapp.app/Default-Landscape~ipad.png105"CpResource AVFapp/Resources/splash/Default-Landscape~ipad.png build/AVFapp.app/Default-Landscape~ipad.pngadf8b6491ffeb741^6407b9491ffeb741^---0#0#1#-19%DVTDocumentLocation2@121"file://localhost/Users/Alex/Desktop/MDV-Projects/AVF/AVFproject/platforms/ios/build/AVFapp.app/Default-Landscape~ipad.png00385420dfffdf42^803"CpResource AVFapp/Resources/splash/Default-Landscape~ipad.png build/AVFapp.app/Default-Landscape~ipad.png    cd /Users/Alex/Desktop/MDV-Projects/AVF/AVFproject/platforms/ios    setenv PATH "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin:/Applications/Xcode.app/Contents/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin:/usr/local/bin:/usr/local/git/bin:/Applications/android-sdk-macosx/sdk/platform-tools:/Applications/android-sdk-macosx/sdk/tools"    builtin-copy -exclude .DS_Store -exclude CVS -exclude .svn -exclude .git -exclude .hg -resolve-src-symlinks /Users/Alex/Desktop/MDV-Projects/AVF/AVFproject/platforms/ios/AVFapp/Resources/splash/Default-Landscape~ipad.png /Users/Alex/Desktop/MDV-Projects/AVF/AVFproject/platforms/ios/build/AVFapp.app36"59B8F2AF-CA12-4BE8-8AF7-A862917EEA1E-
+b568325CF-89C9-44EB-9798-A228956D85C5
+
+CCpResource AVFapp/Resources/splash/Default-Portrait@2x~ipad.png build/AVFapp.app/Default-Portrait@2x~ipad.png
+s402530121.715943
+e402530121.724028
+r1
+xCpResource
+xAVFapp/Resources/splash/Default-Portrait@2x~ipad.png
+xbuild/AVFapp.app/Default-Portrait@2x~ipad.png
+lSLF06#21%IDEActivityLogSection1@2#32"com.apple.dt.IDE.BuildLogSection50"Copy build/AVFapp.app/Default-Portrait@2x~ipad.png109"CpResource AVFapp/Resources/splash/Default-Portrait@2x~ipad.png build/AVFapp.app/Default-Portrait@2x~ipad.png4c54b7491ffeb741^4b5ab9491ffeb741^---0#0#1#-19%DVTDocumentLocation2@123"file://localhost/Users/Alex/Desktop/MDV-Projects/AVF/AVFproject/platforms/ios/build/AVFapp.app/Default-Portrait@2x~ipad.png00385420dfffdf42^809"CpResource AVFapp/Resources/splash/Default-Portrait@2x~ipad.png build/AVFapp.app/Default-Portrait@2x~ipad.png    cd /Users/Alex/Desktop/MDV-Projects/AVF/AVFproject/platforms/ios    setenv PATH "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin:/Applications/Xcode.app/Contents/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin:/usr/local/bin:/usr/local/git/bin:/Applications/android-sdk-macosx/sdk/platform-tools:/Applications/android-sdk-macosx/sdk/tools"    builtin-copy -exclude .DS_Store -exclude CVS -exclude .svn -exclude .git -exclude .hg -resolve-src-symlinks /Users/Alex/Desktop/MDV-Projects/AVF/AVFproject/platforms/ios/AVFapp/Resources/splash/Default-Portrait@2x~ipad.png /Users/Alex/Desktop/MDV-Projects/AVF/AVFproject/platforms/ios/build/AVFapp.app36"0874E03B-8024-4FC0-A24E-408189E72FE9-
+b568325CF-89C9-44EB-9798-A228956D85C5
+
+CCpResource AVFapp/Resources/splash/Default-Portrait~ipad.png build/AVFapp.app/Default-Portrait~ipad.png
+s402530121.717146
+e402530121.725313
+r1
+xCpResource
+xAVFapp/Resources/splash/Default-Portrait~ipad.png
+xbuild/AVFapp.app/Default-Portrait~ipad.png
+lSLF06#21%IDEActivityLogSection1@2#32"com.apple.dt.IDE.BuildLogSection47"Copy build/AVFapp.app/Default-Portrait~ipad.png103"CpResource AVFapp/Resources/splash/Default-Portrait~ipad.png build/AVFapp.app/Default-Portrait~ipad.png2ba1b7491ffeb741^d5aeb9491ffeb741^---0#0#1#-19%DVTDocumentLocation2@120"file://localhost/Users/Alex/Desktop/MDV-Projects/AVF/AVFproject/platforms/ios/build/AVFapp.app/Default-Portrait~ipad.png00385420dfffdf42^800"CpResource AVFapp/Resources/splash/Default-Portrait~ipad.png build/AVFapp.app/Default-Portrait~ipad.png    cd /Users/Alex/Desktop/MDV-Projects/AVF/AVFproject/platforms/ios    setenv PATH "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin:/Applications/Xcode.app/Contents/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin:/usr/local/bin:/usr/local/git/bin:/Applications/android-sdk-macosx/sdk/platform-tools:/Applications/android-sdk-macosx/sdk/tools"    builtin-copy -exclude .DS_Store -exclude CVS -exclude .svn -exclude .git -exclude .hg -resolve-src-symlinks /Users/Alex/Desktop/MDV-Projects/AVF/AVFproject/platforms/ios/AVFapp/Resources/splash/Default-Portrait~ipad.png /Users/Alex/Desktop/MDV-Projects/AVF/AVFproject/platforms/ios/build/AVFapp.app36"1476BA38-092B-474B-9613-57C41EC31A93-
+b568325CF-89C9-44EB-9798-A228956D85C5
+
+CCpResource AVFapp/Resources/splash/Default@2x~iphone.png build/AVFapp.app/Default@2x~iphone.png
+s402530121.719190
+e402530121.726542
+r1
+xCpResource
+xAVFapp/Resources/splash/Default@2x~iphone.png
+xbuild/AVFapp.app/Default@2x~iphone.png
+lSLF06#21%IDEActivityLogSection1@2#32"com.apple.dt.IDE.BuildLogSection43"Copy build/AVFapp.app/Default@2x~iphone.png95"CpResource AVFapp/Resources/splash/Default@2x~iphone.png build/AVFapp.app/Default@2x~iphone.png3127b8491ffeb741^71ffb9491ffeb741^---0#0#1#-19%DVTDocumentLocation2@116"file://localhost/Users/Alex/Desktop/MDV-Projects/AVF/AVFproject/platforms/ios/build/AVFapp.app/Default@2x~iphone.png00385420dfffdf42^788"CpResource AVFapp/Resources/splash/Default@2x~iphone.png build/AVFapp.app/Default@2x~iphone.png    cd /Users/Alex/Desktop/MDV-Projects/AVF/AVFproject/platforms/ios    setenv PATH "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin:/Applications/Xcode.app/Contents/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin:/usr/local/bin:/usr/local/git/bin:/Applications/android-sdk-macosx/sdk/platform-tools:/Applications/android-sdk-macosx/sdk/tools"    builtin-copy -exclude .DS_Store -exclude CVS -exclude .svn -exclude .git -exclude .hg -resolve-src-symlinks /Users/Alex/Desktop/MDV-Projects/AVF/AVFproject/platforms/ios/AVFapp/Resources/splash/Default@2x~iphone.png /Users/Alex/Desktop/MDV-Projects/AVF/AVFproject/platforms/ios/build/AVFapp.app36"2B559343-0F20-4198-9954-8F1934277242-
+b568325CF-89C9-44EB-9798-A228956D85C5
+
+CCpResource AVFapp/Resources/splash/Default~iphone.png build/AVFapp.app/Default~iphone.png
+s402530121.722596
+e402530121.727824
+r1
+xCpResource
+xAVFapp/Resources/splash/Default~iphone.png
+xbuild/AVFapp.app/Default~iphone.png
+lSLF06#21%IDEActivityLogSection1@2#32"com.apple.dt.IDE.BuildLogSection40"Copy build/AVFapp.app/Default~iphone.png89"CpResource AVFapp/Resources/splash/Default~iphone.png build/AVFapp.app/Default~iphone.png1007b9491ffeb741^5453ba491ffeb741^---0#0#1#-19%DVTDocumentLocation2@113"file://localhost/Users/Alex/Desktop/MDV-Projects/AVF/AVFproject/platforms/ios/build/AVFapp.app/Default~iphone.png00385420dfffdf42^779"CpResource AVFapp/Resources/splash/Default~iphone.png build/AVFapp.app/Default~iphone.png    cd /Users/Alex/Desktop/MDV-Projects/AVF/AVFproject/platforms/ios    setenv PATH "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin:/Applications/Xcode.app/Contents/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin:/usr/local/bin:/usr/local/git/bin:/Applications/android-sdk-macosx/sdk/platform-tools:/Applications/android-sdk-macosx/sdk/tools"    builtin-copy -exclude .DS_Store -exclude CVS -exclude .svn -exclude .git -exclude .hg -resolve-src-symlinks /Users/Alex/Desktop/MDV-Projects/AVF/AVFproject/platforms/ios/AVFapp/Resources/splash/Default~iphone.png /Users/Alex/Desktop/MDV-Projects/AVF/AVFproject/platforms/ios/build/AVFapp.app36"665EBC82-E57A-4727-A395-5A986FFD885D-
+b568325CF-89C9-44EB-9798-A228956D85C5
+
+CCpResource AVFapp/config.xml build/AVFapp.app/config.xml
+s402530121.709056
+e402530121.713400
+r1
+xCpResource
+xAVFapp/config.xml
+xbuild/AVFapp.app/config.xml
+lSLF06#21%IDEActivityLogSection1@2#32"com.apple.dt.IDE.BuildLogSection32"Copy build/AVFapp.app/config.xml56"CpResource AVFapp/config.xml build/AVFapp.app/config.xml2499b5491ffeb741^b6a1b6491ffeb741^---0#0#1#-19%DVTDocumentLocation2@105"file://localhost/Users/Alex/Desktop/MDV-Projects/AVF/AVFproject/platforms/ios/build/AVFapp.app/config.xml00385420dfffdf42^721"CpResource AVFapp/config.xml build/AVFapp.app/config.xml    cd /Users/Alex/Desktop/MDV-Projects/AVF/AVFproject/platforms/ios    setenv PATH "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin:/Applications/Xcode.app/Contents/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin:/usr/local/bin:/usr/local/git/bin:/Applications/android-sdk-macosx/sdk/platform-tools:/Applications/android-sdk-macosx/sdk/tools"    builtin-copy -exclude .DS_Store -exclude CVS -exclude .svn -exclude .git -exclude .hg -resolve-src-symlinks /Users/Alex/Desktop/MDV-Projects/AVF/AVFproject/platforms/ios/AVFapp/config.xml /Users/Alex/Desktop/MDV-Projects/AVF/AVFproject/platforms/ios/build/AVFapp.app36"155B74BC-0AFC-4CC6-90D9-3398796F680D-
+b568325CF-89C9-44EB-9798-A228956D85C5
+
+CGenerateDSYMFile /Users/Alex/Desktop/MDV-Projects/AVF/AVFproject/platforms/ios/build/AVFapp.app.dSYM /Users/Alex/Desktop/MDV-Projects/AVF/AVFproject/platforms/ios/build/AVFapp.app/AVFapp
+s402530133.362579
+e402530133.506734
+r1
+xGenerateDSYMFile
+x/Users/Alex/Desktop/MDV-Projects/AVF/AVFproject/platforms/ios/build/AVFapp.app.dSYM
+x/Users/Alex/Desktop/MDV-Projects/AVF/AVFproject/platforms/ios/build/AVFapp.app/AVFapp
+lSLF06#21%IDEActivityLogSection1@2#32"com.apple.dt.IDE.BuildLogSection92"Generate /Users/Alex/Desktop/MDV-Projects/AVF/AVFproject/platforms/ios/build/AVFapp.app.dSYM62"GenerateDSYMFile build/AVFapp.app.dSYM build/AVFapp.app/AVFapp4ce25c551ffeb741^c7b981551ffeb741^---0#0#1#-19%DVTDocumentLocation2@99"file://localhost/Users/Alex/Desktop/MDV-Projects/AVF/AVFproject/platforms/ios/build/AVFapp.app.dSYM00385420dfffdf42^729"GenerateDSYMFile build/AVFapp.app.dSYM build/AVFapp.app/AVFapp    cd /Users/Alex/Desktop/MDV-Projects/AVF/AVFproject/platforms/ios    setenv PATH "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin:/Applications/Xcode.app/Contents/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin:/usr/local/bin:/usr/local/git/bin:/Applications/android-sdk-macosx/sdk/platform-tools:/Applications/android-sdk-macosx/sdk/tools"    /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/dsymutil /Users/Alex/Desktop/MDV-Projects/AVF/AVFproject/platforms/ios/build/AVFapp.app/AVFapp -o /Users/Alex/Desktop/MDV-Projects/AVF/AVFproject/platforms/ios/build/AVFapp.app.dSYM36"C72B0AC0-CD41-4C71-8F38-9BA6CE7F3A58-
+b568325CF-89C9-44EB-9798-A228956D85C5
+
+CLd /Users/Alex/Desktop/MDV-Projects/AVF/AVFproject/platforms/ios/build/AVFapp.app/AVFapp normal i386
+s402530132.457617
+e402530133.353726
+r1
+xLd
+x/Users/Alex/Desktop/MDV-Projects/AVF/AVFproject/platforms/ios/build/AVFapp.app/AVFapp
+xnormal
+xi386
+d/Users/Alex/Desktop/MDV-Projects/AVF/AVFproject/platforms/ios/build/AVFapp.build/Debug-iphonesimulator/AVFapp.build/Objects-normal/i386/AVFapp.LinkFileList
+d/Users/Alex/Desktop/MDV-Projects/AVF/AVFproject/platforms/ios/build/libCordova.a
+d/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator7.0.sdk/usr/lib/crt1.o
+d/Users/Alex/Desktop/MDV-Projects/AVF/AVFproject/platforms/ios/build/AVFapp.build/Debug-iphonesimulator/AVFapp.build/Objects-normal/i386/main.o
+d/Users/Alex/Desktop/MDV-Projects/AVF/AVFproject/platforms/ios/build/AVFapp.build/Debug-iphonesimulator/AVFapp.build/Objects-normal/i386/AppDelegate.o
+d/Users/Alex/Desktop/MDV-Projects/AVF/AVFproject/platforms/ios/build/AVFapp.build/Debug-iphonesimulator/AVFapp.build/Objects-normal/i386/MainViewController.o
+d/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator7.0.sdk/System/Library/Frameworks/CoreFoundation.framework/CoreFoundation
+d/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator7.0.sdk/System/Library/Frameworks/UIKit.framework/UIKit
+d/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator7.0.sdk/System/Library/Frameworks/AVFoundation.framework/AVFoundation
+d/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator7.0.sdk/System/Library/Frameworks/CoreMedia.framework/CoreMedia
+d/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator7.0.sdk/usr/lib/libSystem.dylib
+d/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator7.0.sdk/System/Library/Frameworks/CoreLocation.framework/CoreLocation
+d/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator7.0.sdk/System/Library/Frameworks/ImageIO.framework/ImageIO
+d/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator7.0.sdk/System/Library/Frameworks/OpenAL.framework/OpenAL
+d/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator7.0.sdk/System/Library/Frameworks/AssetsLibrary.framework/AssetsLibrary
+d/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator7.0.sdk/System/Library/Frameworks/Foundation.framework/Foundation
+d/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator7.0.sdk/System/Library/Frameworks/CoreGraphics.framework/CoreGraphics
+d/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator7.0.sdk/System/Library/Frameworks/AddressBook.framework/AddressBook
+d/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator7.0.sdk/System/Library/Frameworks/AddressBookUI.framework/AddressBookUI
+d/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator7.0.sdk/System/Library/Frameworks/AudioToolbox.framework/AudioToolbox
+d/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator7.0.sdk/System/Library/Frameworks/CFNetwork.framework/CFNetwork
+d/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator7.0.sdk/System/Library/Frameworks/MediaPlayer.framework/MediaPlayer
+d/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator7.0.sdk/System/Library/Frameworks/QuartzCore.framework/QuartzCore
+d/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator7.0.sdk/System/Library/Frameworks/SystemConfiguration.framework/SystemConfiguration
+d/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator7.0.sdk/System/Library/Frameworks/MobileCoreServices.framework/MobileCoreServices
+d/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/arc/libarclite_iphonesimulator.a
+d/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator7.0.sdk/usr/lib/libobjc.dylib
+d/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/clang/5.0/lib/darwin/libclang_rt.ios.a
+d/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator7.0.sdk/System/Library/Frameworks/AVFoundation.framework/libAVFAudio.dylib
+d/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator7.0.sdk/usr/lib/system/libsystem_override.dylib
+d/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator7.0.sdk/usr/lib/system/libcache_sim.dylib
+d/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator7.0.sdk/usr/lib/system/libcommonCrypto_sim.dylib
+d/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator7.0.sdk/usr/lib/system/libcompiler_rt_sim.dylib
+d/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator7.0.sdk/usr/lib/system/libcopyfile_sim.dylib
+d/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator7.0.sdk/usr/lib/system/libdispatch.dylib
+d/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator7.0.sdk/usr/lib/system/libdyld_sim.dylib
+d/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator7.0.sdk/usr/lib/system/libmacho_sim.dylib
+d/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator7.0.sdk/usr/lib/system/libnotify_sim.dylib
+d/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator7.0.sdk/usr/lib/system/libremovefile_sim.dylib
+d/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator7.0.sdk/usr/lib/system/libsystem_sim_blocks.dylib
+d/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator7.0.sdk/usr/lib/system/libsystem_sim_c.dylib
+d/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator7.0.sdk/usr/lib/system/libsystem_sim_dnssd.dylib
+d/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator7.0.sdk/usr/lib/system/libsystem_sim_info.dylib
+d/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator7.0.sdk/usr/lib/system/libsystem_sim_m.dylib
+d/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator7.0.sdk/usr/lib/system/libsystem_network.dylib
+d/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator7.0.sdk/usr/lib/system/libunwind_sim.dylib
+d/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator7.0.sdk/usr/lib/system/libxpc.dylib
+d/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator7.0.sdk/usr/lib/system/libsystem_sim_configuration.dylib
+d/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator7.0.sdk/usr/lib/system/libsystem_sim_asl.dylib
+d/usr/lib/libSystem.B.dylib
+d/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator7.0.sdk/System/Library/PrivateFrameworks/UIFoundation.framework/UIFoundation
+d/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator7.0.sdk/usr/lib/system/host/libdyld.dylib
+d/usr/lib/system/libcache.dylib
+d/usr/lib/system/libcommonCrypto.dylib
+d/usr/lib/system/libcompiler_rt.dylib
+d/usr/lib/system/libcopyfile.dylib
+d/usr/lib/system/libdnsinfo.dylib
+d/usr/lib/system/libkeymgr.dylib
+d/usr/lib/system/liblaunch.dylib
+d/usr/lib/system/libmacho.dylib
+d/usr/lib/system/libquarantine.dylib
+d/usr/lib/system/libremovefile.dylib
+d/usr/lib/system/libsystem_blocks.dylib
+d/usr/lib/system/libsystem_c.dylib
+d/usr/lib/system/libsystem_dnssd.dylib
+d/usr/lib/system/libsystem_info.dylib
+d/usr/lib/system/libsystem_kernel.dylib
+d/usr/lib/system/libsystem_m.dylib
+d/usr/lib/system/libsystem_notify.dylib
+d/usr/lib/system/libsystem_sandbox.dylib
+d/usr/lib/system/libunc.dylib
+d/usr/lib/system/libunwind.dylib
+lSLF06#21%IDEActivityLogSection1@2#32"com.apple.dt.IDE.BuildLogSection90"Link /Users/Alex/Desktop/MDV-Projects/AVF/AVFproject/platforms/ios/build/AVFapp.app/AVFapp38"Ld build/AVFapp.app/AVFapp normal i3865f4675541ffeb741^508e5a551ffeb741^---0#0#1#--2165"Ld build/AVFapp.app/AVFapp normal i386    cd /Users/Alex/Desktop/MDV-Projects/AVF/AVFproject/platforms/ios    setenv IPHONEOS_DEPLOYMENT_TARGET 5.0    setenv PATH "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin:/Applications/Xcode.app/Contents/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin:/usr/local/bin:/usr/local/git/bin:/Applications/android-sdk-macosx/sdk/platform-tools:/Applications/android-sdk-macosx/sdk/tools"    /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/clang -arch i386 -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator7.0.sdk -L/Users/Alex/Desktop/MDV-Projects/AVF/AVFproject/platforms/ios/build -F/Users/Alex/Desktop/MDV-Projects/AVF/AVFproject/platforms/ios/build -filelist /Users/Alex/Desktop/MDV-Projects/AVF/AVFproject/platforms/ios/build/AVFapp.build/Debug-iphonesimulator/AVFapp.build/Objects-normal/i386/AVFapp.LinkFileList -Xlinker -objc_abi_version -Xlinker 2 -weak_framework CoreFoundation -weak_framework UIKit -weak_framework AVFoundation -weak_framework CoreMedia -weak-lSystem -force_load /Users/Alex/Desktop/MDV-Projects/AVF/AVFproject/platforms/ios/build/libCordova.a -ObjC -fobjc-arc -fobjc-link-runtime -Xlinker -no_implicit_dylibs -mios-simulator-version-min=5.0 -framework CoreLocation -framework ImageIO -framework OpenAL -framework AssetsLibrary /Users/Alex/Desktop/MDV-Projects/AVF/AVFproject/platforms/ios/build/libCordova.a -framework Foundation -weak_framework UIKit -framework CoreGraphics -framework AddressBook -framework AddressBookUI -framework AudioToolbox -weak_framework AVFoundation -framework CFNetwork -framework MediaPlayer -framework QuartzCore -framework SystemConfiguration -framework MobileCoreServices -weak_framework CoreMedia -framework CoreLocation -Xlinker -dependency_info -Xlinker /Users/Alex/Desktop/MDV-Projects/AVF/AVFproject/platforms/ios/build/AVFapp.build/Debug-iphonesimulator/AVFapp.build/Objects-normal/i386/AVFapp_dependency_info.dat -o /Users/Alex/Desktop/MDV-Projects/AVF/AVFproject/platforms/ios/build/AVFapp.app/AVFapp36"623899E9-8787-4C96-BB89-29932A593C6E-
+b568325CF-89C9-44EB-9798-A228956D85C5
+
+CPhaseScriptExecution Copy\ www\ directory /Users/Alex/Desktop/MDV-Projects/AVF/AVFproject/platforms/ios/build/AVFapp.build/Debug-iphonesimulator/AVFapp.build/Script-304B58A110DAC018002A0835.sh
+s402530121.436426
+e402530121.700713
+r1
+xPhaseScriptExecution
+xCopy www directory
+x/Users/Alex/Desktop/MDV-Projects/AVF/AVFproject/platforms/ios/build/AVFapp.build/Debug-iphonesimulator/AVFapp.build/Script-304B58A110DAC018002A0835.sh
+o
+oreal	0m0.248s
+ouser	0m0.073s
+osys	0m0.081s
+lSLF06#21%IDEActivityLogSection1@2#32"com.apple.dt.IDE.BuildLogSection44"Run custom shell script 'Copy www directory'130"PhaseScriptExecution Copy\ www\ directory build/AVFapp.build/Debug-iphonesimulator/AVFapp.build/Script-304B58A110DAC018002A0835.sh904f70491ffeb741^9965b3491ffeb741^-42"real	0m0.248suser	0m0.073ssys	0m0.081s3(21%IDEActivityLogMessage2@14"real	0m0.248s-402530121#1#14#-0#-----2@14"user	0m0.073s-402530121#15#14#-0#-----2@13"sys	0m0.081s-402530121#29#13#-0#-----0#0#1#--22311"PhaseScriptExecution Copy\ www\ directory build/AVFapp.build/Debug-iphonesimulator/AVFapp.build/Script-304B58A110DAC018002A0835.sh    cd /Users/Alex/Desktop/MDV-Projects/AVF/AVFproject/platforms/ios    setenv ACTION build    setenv AD_HOC_CODE_SIGNING_ALLOWED NO    setenv ALTERNATE_GROUP staff    setenv ALTERNATE_MODE u+w,go-w,a+rX    setenv ALTERNATE_OWNER Alex    setenv ALWAYS_SEARCH_USER_PATHS NO    setenv ALWAYS_USE_SEPARATE_HEADERMAPS YES    setenv APPLE_INTERNAL_DEVELOPER_DIR /AppleInternal/Developer    setenv APPLE_INTERNAL_DIR /AppleInternal    setenv APPLE_INTERNAL_DOCUMENTATION_DIR /AppleInternal/Documentation    setenv APPLE_INTERNAL_LIBRARY_DIR /AppleInternal/Library    setenv APPLE_INTERNAL_TOOLS /AppleInternal/Developer/Tools    setenv APPLY_RULES_IN_COPY_FILES NO    setenv ARCHS i386    setenv ARCHS_STANDARD i386    setenv ARCHS_STANDARD_32_64_BIT i386    setenv ARCHS_STANDARD_32_BIT i386    setenv ARCHS_STANDARD_64_BIT x86_64    setenv ARCHS_STANDARD_INCLUDING_64_BIT "i386 x86_64"    setenv AVAILABLE_PLATFORMS "iphonesimulator macosx iphoneos"    setenv BUILD_COMPONENTS "headers build"    setenv BUILD_DIR /Users/Alex/Desktop/MDV-Projects/AVF/AVFproject/platforms/ios/build    setenv BUILD_ROOT /Users/Alex/Desktop/MDV-Projects/AVF/AVFproject/platforms/ios/build    setenv BUILD_STYLE     setenv BUILD_VARIANTS normal    setenv BUILT_PRODUCTS_DIR /Users/Alex/Desktop/MDV-Projects/AVF/AVFproject/platforms/ios/build    setenv CACHE_ROOT /var/folders/rj/8v1jld814wv7409vpjcnzf780000gn/C/com.apple.DeveloperTools/5.0-5A1413/Xcode    setenv CCHROOT /var/folders/rj/8v1jld814wv7409vpjcnzf780000gn/C/com.apple.DeveloperTools/5.0-5A1413/Xcode    setenv CHMOD /bin/chmod    setenv CHOWN /usr/sbin/chown    setenv CLANG_ENABLE_OBJC_ARC YES    setenv CLANG_WARN_CONSTANT_CONVERSION YES    setenv CLANG_WARN_ENUM_CONVERSION YES    setenv CLANG_WARN_INT_CONVERSION YES    setenv CLANG_WARN__DUPLICATE_METHOD_MATCH YES    setenv CLASS_FILE_DIR /Users/Alex/Desktop/MDV-Projects/AVF/AVFproject/platforms/ios/build/AVFapp.build/Debug-iphonesimulator/AVFapp.build/JavaClasses    setenv CLEAN_PRECOMPS YES    setenv CLONE_HEADERS NO    setenv CODESIGNING_FOLDER_PATH /Users/Alex/Desktop/MDV-Projects/AVF/AVFproject/platforms/ios/build/AVFapp.app    setenv CODE_SIGNING_ALLOWED NO    setenv CODE_SIGN_CONTEXT_CLASS XCiPhoneSimulatorCodeSignContext    setenv COLOR_DIAGNOSTICS NO    setenv COMBINE_HIDPI_IMAGES NO    setenv COMMAND_MODE legacy    setenv COMPOSITE_SDK_DIRS /var/folders/rj/8v1jld814wv7409vpjcnzf780000gn/C/com.apple.DeveloperTools/5.0-5A1413/Xcode/CompositeSDKs    setenv COMPRESS_PNG_FILES YES    setenv CONFIGURATION Debug    setenv CONFIGURATION_BUILD_DIR /Users/Alex/Desktop/MDV-Projects/AVF/AVFproject/platforms/ios/build    setenv CONFIGURATION_TEMP_DIR /Users/Alex/Desktop/MDV-Projects/AVF/AVFproject/platforms/ios/build/AVFapp.build/Debug-iphonesimulator    setenv CONTENTS_FOLDER_PATH AVFapp.app    setenv COPYING_PRESERVES_HFS_DATA NO    setenv COPY_PHASE_STRIP NO    setenv COPY_RESOURCES_FROM_STATIC_FRAMEWORKS YES    setenv CP /bin/cp    setenv CREATE_INFOPLIST_SECTION_IN_BINARY NO    setenv CURRENT_ARCH i386    setenv CURRENT_VARIANT normal    setenv DEAD_CODE_STRIPPING NO    setenv DEBUGGING_SYMBOLS YES    setenv DEBUG_INFORMATION_FORMAT dwarf-with-dsym    setenv DEFAULT_COMPILER com.apple.compilers.llvm.clang.1_0    setenv DEFAULT_KEXT_INSTALL_PATH /System/Library/Extensions    setenv DEPLOYMENT_LOCATION NO    setenv DEPLOYMENT_POSTPROCESSING NO    setenv DERIVED_FILES_DIR /Users/Alex/Desktop/MDV-Projects/AVF/AVFproject/platforms/ios/build/AVFapp.build/Debug-iphonesimulator/AVFapp.build/DerivedSources    setenv DERIVED_FILE_DIR /Users/Alex/Desktop/MDV-Projects/AVF/AVFproject/platforms/ios/build/AVFapp.build/Debug-iphonesimulator/AVFapp.build/DerivedSources    setenv DERIVED_SOURCES_DIR /Users/Alex/Desktop/MDV-Projects/AVF/AVFproject/platforms/ios/build/AVFapp.build/Debug-iphonesimulator/AVFapp.build/DerivedSources    setenv DEVELOPER_APPLICATIONS_DIR /Applications/Xcode.app/Contents/Developer/Applications    setenv DEVELOPER_BIN_DIR /Applications/Xcode.app/Contents/Developer/usr/bin    setenv DEVELOPER_DIR /Applications/Xcode.app/Contents/Developer    setenv DEVELOPER_FRAMEWORKS_DIR /Applications/Xcode.app/Contents/Developer/Library/Frameworks    setenv DEVELOPER_FRAMEWORKS_DIR_QUOTED /Applications/Xcode.app/Contents/Developer/Library/Frameworks    setenv DEVELOPER_LIBRARY_DIR /Applications/Xcode.app/Contents/Developer/Library    setenv DEVELOPER_SDK_DIR /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs    setenv DEVELOPER_TOOLS_DIR /Applications/Xcode.app/Contents/Developer/Tools    setenv DEVELOPER_USR_DIR /Applications/Xcode.app/Contents/Developer/usr    setenv DEVELOPMENT_LANGUAGE English    setenv DOCUMENTATION_FOLDER_PATH AVFapp.app/English.lproj/Documentation    setenv DO_HEADER_SCANNING_IN_JAM NO    setenv DSTROOT /tmp/AVFapp.dst    setenv DT_TOOLCHAIN_DIR /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain    setenv DWARF_DSYM_FILE_NAME AVFapp.app.dSYM    setenv DWARF_DSYM_FILE_SHOULD_ACCOMPANY_PRODUCT NO    setenv DWARF_DSYM_FOLDER_PATH /Users/Alex/Desktop/MDV-Projects/AVF/AVFproject/platforms/ios/build    setenv EFFECTIVE_PLATFORM_NAME -iphonesimulator    setenv ENABLE_HEADER_DEPENDENCIES YES    setenv EXCLUDED_INSTALLSRC_SUBDIRECTORY_PATTERNS ".DS_Store .svn .git .hg CVS"    setenv EXCLUDED_RECURSIVE_SEARCH_PATH_SUBDIRECTORIES "*.nib *.lproj *.framework *.gch (*) .DS_Store CVS .svn .git .hg *.xcodeproj *.xcode *.pbproj *.pbxproj"    setenv EXECUTABLES_FOLDER_PATH AVFapp.app/Executables    setenv EXECUTABLE_FOLDER_PATH AVFapp.app    setenv EXECUTABLE_NAME AVFapp    setenv EXECUTABLE_PATH AVFapp.app/AVFapp    setenv FILE_LIST /Users/Alex/Desktop/MDV-Projects/AVF/AVFproject/platforms/ios/build/AVFapp.build/Debug-iphonesimulator/AVFapp.build/Objects/LinkFileList    setenv FIXED_FILES_DIR /Users/Alex/Desktop/MDV-Projects/AVF/AVFproject/platforms/ios/build/AVFapp.build/Debug-iphonesimulator/AVFapp.build/FixedFiles    setenv FRAMEWORKS_FOLDER_PATH AVFapp.app/Frameworks    setenv FRAMEWORK_FLAG_PREFIX -framework    setenv FRAMEWORK_SEARCH_PATHS "/Users/Alex/Desktop/MDV-Projects/AVF/AVFproject/platforms/ios/build "    setenv FRAMEWORK_VERSION A    setenv FULL_PRODUCT_NAME AVFapp.app    setenv GCC3_VERSION 3.3    setenv GCC_C_LANGUAGE_STANDARD c99    setenv GCC_DYNAMIC_NO_PIC NO    setenv GCC_INLINES_ARE_PRIVATE_EXTERN YES    setenv GCC_OBJC_LEGACY_DISPATCH YES    setenv GCC_OPTIMIZATION_LEVEL 0    setenv GCC_PFE_FILE_C_DIALECTS "c objective-c c++ objective-c++"    setenv GCC_PRECOMPILE_PREFIX_HEADER YES    setenv GCC_PREFIX_HEADER AVFapp/AVFapp-Prefix.pch    setenv GCC_SYMBOLS_PRIVATE_EXTERN YES    setenv GCC_THUMB_SUPPORT NO    setenv GCC_TREAT_WARNINGS_AS_ERRORS NO    setenv GCC_VERSION com.apple.compilers.llvm.clang.1_0    setenv GCC_VERSION_IDENTIFIER com_apple_compilers_llvm_clang_1_0    setenv GCC_WARN_ABOUT_RETURN_TYPE YES    setenv GCC_WARN_UNINITIALIZED_AUTOS YES    setenv GCC_WARN_UNUSED_VARIABLE YES    setenv GENERATE_MASTER_OBJECT_FILE NO    setenv GENERATE_PKGINFO_FILE YES    setenv GENERATE_PROFILING_CODE NO    setenv GID 20    setenv GROUP staff    setenv HEADERMAP_INCLUDES_FLAT_ENTRIES_FOR_TARGET_BEING_BUILT YES    setenv HEADERMAP_INCLUDES_FRAMEWORK_ENTRIES_FOR_ALL_PRODUCT_TYPES YES    setenv HEADERMAP_INCLUDES_NONPUBLIC_NONPRIVATE_HEADERS YES    setenv HEADERMAP_INCLUDES_PROJECT_HEADERS YES    setenv HEADER_SEARCH_PATHS "/Users/Alex/Desktop/MDV-Projects/AVF/AVFproject/platforms/ios/build/include \"/Users/Alex/Desktop/MDV-Projects/AVF/AVFproject/platforms/ios/build/usr/local/lib/include\" \"/Users/Alex/Desktop/MDV-Projects/AVF/AVFproject/platforms/ios/build/UninstalledProducts/include\" \"/Users/Alex/Desktop/MDV-Projects/AVF/AVFproject/platforms/ios/build\""    setenv ICONV /usr/bin/iconv    setenv INFOPLIST_EXPAND_BUILD_SETTINGS YES    setenv INFOPLIST_FILE AVFapp/AVFapp-Info.plist    setenv INFOPLIST_OUTPUT_FORMAT binary    setenv INFOPLIST_PATH AVFapp.app/Info.plist    setenv INFOPLIST_PREPROCESS NO    setenv INFOSTRINGS_PATH AVFapp.app/English.lproj/InfoPlist.strings    setenv INSTALL_DIR /tmp/AVFapp.dst/Applications    setenv INSTALL_GROUP staff    setenv INSTALL_MODE_FLAG u+w,go-w,a+rX    setenv INSTALL_OWNER Alex    setenv INSTALL_PATH /Applications    setenv INSTALL_ROOT /tmp/AVFapp.dst    setenv IPHONEOS_DEPLOYMENT_TARGET 5.0    setenv JAVAC_DEFAULT_FLAGS "-J-Xms64m -J-XX:NewSize=4M -J-Dfile.encoding=UTF8"    setenv JAVA_APP_STUB /System/Library/Frameworks/JavaVM.framework/Resources/MacOS/JavaApplicationStub    setenv JAVA_ARCHIVE_CLASSES YES    setenv JAVA_ARCHIVE_TYPE JAR    setenv JAVA_COMPILER /usr/bin/javac    setenv JAVA_FOLDER_PATH AVFapp.app/Java    setenv JAVA_FRAMEWORK_RESOURCES_DIRS Resources    setenv JAVA_JAR_FLAGS cv    setenv JAVA_SOURCE_SUBDIR .    setenv JAVA_USE_DEPENDENCIES YES    setenv JAVA_ZIP_FLAGS -urg    setenv JIKES_DEFAULT_FLAGS "+E +OLDCSO"    setenv KEEP_PRIVATE_EXTERNS NO    setenv LD_DEPENDENCY_INFO_FILE /Users/Alex/Desktop/MDV-Projects/AVF/AVFproject/platforms/ios/build/AVFapp.build/Debug-iphonesimulator/AVFapp.build/Objects-normal/i386/AVFapp_dependency_info.dat    setenv LD_GENERATE_MAP_FILE NO    setenv LD_MAP_FILE_PATH /Users/Alex/Desktop/MDV-Projects/AVF/AVFproject/platforms/ios/build/AVFapp.build/Debug-iphonesimulator/AVFapp.build/AVFapp-LinkMap-normal-i386.txt    setenv LD_NO_PIE NO    setenv LD_QUOTE_LINKER_ARGUMENTS_FOR_COMPILER_DRIVER YES    setenv LEGACY_DEVELOPER_DIR /Applications/Xcode.app/Contents/PlugIns/Xcode3Core.ideplugin/Contents/SharedSupport/Developer    setenv LEX lex    setenv LIBRARY_FLAG_NOSPACE YES    setenv LIBRARY_FLAG_PREFIX -l    setenv LIBRARY_KEXT_INSTALL_PATH /Library/Extensions    setenv LIBRARY_SEARCH_PATHS "/Users/Alex/Desktop/MDV-Projects/AVF/AVFproject/platforms/ios/build "    setenv LINKER_DISPLAYS_MANGLED_NAMES NO    setenv LINK_FILE_LIST_normal_i386 /Users/Alex/Desktop/MDV-Projects/AVF/AVFproject/platforms/ios/build/AVFapp.build/Debug-iphonesimulator/AVFapp.build/Objects-normal/i386/AVFapp.LinkFileList    setenv LINK_WITH_STANDARD_LIBRARIES YES    setenv LOCALIZED_RESOURCES_FOLDER_PATH AVFapp.app/English.lproj    setenv LOCAL_ADMIN_APPS_DIR /Applications/Utilities    setenv LOCAL_APPS_DIR /Applications    setenv LOCAL_DEVELOPER_DIR /Library/Developer    setenv LOCAL_LIBRARY_DIR /Library    setenv MACH_O_TYPE mh_execute    setenv MACOSX_DEPLOYMENT_TARGET 10.6    setenv MAC_OS_X_PRODUCT_BUILD_VERSION 12F37    setenv MAC_OS_X_VERSION_ACTUAL 1085    setenv MAC_OS_X_VERSION_MAJOR 1080    setenv MAC_OS_X_VERSION_MINOR 0805    setenv MODULE_CACHE_DIR /var/folders/rj/8v1jld814wv7409vpjcnzf780000gn/C/com.apple.DeveloperTools/5.0-5A1413/Xcode/ModuleCache    setenv NATIVE_ARCH i386    setenv NATIVE_ARCH_32_BIT i386    setenv NATIVE_ARCH_64_BIT x86_64    setenv NATIVE_ARCH_ACTUAL x86_64    setenv NO_COMMON YES    setenv OBJC_ABI_VERSION 2    setenv OBJECT_FILE_DIR /Users/Alex/Desktop/MDV-Projects/AVF/AVFproject/platforms/ios/build/AVFapp.build/Debug-iphonesimulator/AVFapp.build/Objects    setenv OBJECT_FILE_DIR_normal /Users/Alex/Desktop/MDV-Projects/AVF/AVFproject/platforms/ios/build/AVFapp.build/Debug-iphonesimulator/AVFapp.build/Objects-normal    setenv OBJROOT /Users/Alex/Desktop/MDV-Projects/AVF/AVFproject/platforms/ios/build    setenv ONLY_ACTIVE_ARCH NO    setenv OPTIMIZATION_LEVEL 0    setenv OS MACOS    setenv OSAC /usr/bin/osacompile    setenv OTHER_LDFLAGS "-weak_framework CoreFoundation -weak_framework UIKit -weak_framework AVFoundation -weak_framework CoreMedia -weak-lSystem -force_load \"/Users/Alex/Desktop/MDV-Projects/AVF/AVFproject/platforms/ios/build/libCordova.a\" -ObjC"    setenv PACKAGE_TYPE com.apple.package-type.wrapper.application    setenv PASCAL_STRINGS YES    setenv PATH "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin:/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/libexec:/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin:/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/usr/local/bin:/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/usr/bin:/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/usr/local/bin:/Applications/Xcode.app/Contents/Developer/usr/bin:/Applications/Xcode.app/Contents/Developer/usr/local/bin:/Applications/Xcode.app/Contents/Developer/Tools:/usr/bin:/bin:/usr/sbin:/sbin:/usr/local/bin:/usr/local/git/bin:/Applications/android-sdk-macosx/sdk/platform-tools:/Applications/android-sdk-macosx/sdk/tools"    setenv PATH_PREFIXES_EXCLUDED_FROM_HEADER_DEPENDENCIES "/usr/include /usr/local/include /System/Library/Frameworks /System/Library/PrivateFrameworks /Applications/Xcode.app/Contents/Developer/Headers /Applications/Xcode.app/Contents/Developer/SDKs /Applications/Xcode.app/Contents/Developer/Platforms"    setenv PBDEVELOPMENTPLIST_PATH AVFapp.app/pbdevelopment.plist    setenv PFE_FILE_C_DIALECTS objective-c    setenv PKGINFO_FILE_PATH /Users/Alex/Desktop/MDV-Projects/AVF/AVFproject/platforms/ios/build/AVFapp.build/Debug-iphonesimulator/AVFapp.build/PkgInfo    setenv PKGINFO_PATH AVFapp.app/PkgInfo    setenv PLATFORM_DEVELOPER_APPLICATIONS_DIR /Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/Applications    setenv PLATFORM_DEVELOPER_BIN_DIR /Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin    setenv PLATFORM_DEVELOPER_LIBRARY_DIR /Applications/Xcode.app/Contents/PlugIns/Xcode3Core.ideplugin/Contents/SharedSupport/Developer/Library    setenv PLATFORM_DEVELOPER_SDK_DIR /Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs    setenv PLATFORM_DEVELOPER_TOOLS_DIR /Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/Tools    setenv PLATFORM_DEVELOPER_USR_DIR /Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/usr    setenv PLATFORM_DIR /Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform    setenv PLATFORM_NAME iphonesimulator    setenv PLATFORM_PREFERRED_ARCH i386    setenv PLATFORM_PRODUCT_BUILD_VERSION 11A465    setenv PLATFORM_VERSION_AVAILABILITY_H_FORMAT 70000    setenv PLIST_FILE_OUTPUT_FORMAT binary    setenv PLUGINS_FOLDER_PATH AVFapp.app/PlugIns    setenv PRECOMPS_INCLUDE_HEADERS_FROM_BUILT_PRODUCTS_DIR YES    setenv PRECOMP_DESTINATION_DIR /Users/Alex/Desktop/MDV-Projects/AVF/AVFproject/platforms/ios/build/AVFapp.build/Debug-iphonesimulator/AVFapp.build/PrefixHeaders    setenv PRESERVE_DEAD_CODE_INITS_AND_TERMS NO    setenv PRIVATE_HEADERS_FOLDER_PATH AVFapp.app/PrivateHeaders    setenv PRODUCT_NAME AVFapp    setenv PRODUCT_SETTINGS_PATH /Users/Alex/Desktop/MDV-Projects/AVF/AVFproject/platforms/ios/AVFapp/AVFapp-Info.plist    setenv PRODUCT_TYPE com.apple.product-type.application    setenv PROFILING_CODE NO    setenv PROJECT AVFapp    setenv PROJECT_DERIVED_FILE_DIR /Users/Alex/Desktop/MDV-Projects/AVF/AVFproject/platforms/ios/build/AVFapp.build/DerivedSources    setenv PROJECT_DIR /Users/Alex/Desktop/MDV-Projects/AVF/AVFproject/platforms/ios    setenv PROJECT_FILE_PATH /Users/Alex/Desktop/MDV-Projects/AVF/AVFproject/platforms/ios/AVFapp.xcodeproj    setenv PROJECT_NAME AVFapp    setenv PROJECT_TEMP_DIR /Users/Alex/Desktop/MDV-Projects/AVF/AVFproject/platforms/ios/build/AVFapp.build    setenv PROJECT_TEMP_ROOT /Users/Alex/Desktop/MDV-Projects/AVF/AVFproject/platforms/ios/build    setenv PUBLIC_HEADERS_FOLDER_PATH AVFapp.app/Headers    setenv RECURSIVE_SEARCH_PATHS_FOLLOW_SYMLINKS YES    setenv REMOVE_CVS_FROM_RESOURCES YES    setenv REMOVE_GIT_FROM_RESOURCES YES    setenv REMOVE_HG_FROM_RESOURCES YES    setenv REMOVE_SVN_FROM_RESOURCES YES    setenv REZ_COLLECTOR_DIR /Users/Alex/Desktop/MDV-Projects/AVF/AVFproject/platforms/ios/build/AVFapp.build/Debug-iphonesimulator/AVFapp.build/ResourceManagerResources    setenv REZ_OBJECTS_DIR /Users/Alex/Desktop/MDV-Projects/AVF/AVFproject/platforms/ios/build/AVFapp.build/Debug-iphonesimulator/AVFapp.build/ResourceManagerResources/Objects    setenv REZ_SEARCH_PATHS "/Users/Alex/Desktop/MDV-Projects/AVF/AVFproject/platforms/ios/build "    setenv SCAN_ALL_SOURCE_FILES_FOR_INCLUDES NO    setenv SCRIPTS_FOLDER_PATH AVFapp.app/Scripts    setenv SCRIPT_INPUT_FILE_COUNT 0    setenv SCRIPT_OUTPUT_FILE_COUNT 0    setenv SDKROOT /Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator7.0.sdk    setenv SDK_DIR /Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator7.0.sdk    setenv SDK_NAME iphonesimulator7.0    setenv SDK_PRODUCT_BUILD_VERSION 11A465    setenv SED /usr/bin/sed    setenv SEPARATE_STRIP NO    setenv SEPARATE_SYMBOL_EDIT NO    setenv SET_DIR_MODE_OWNER_GROUP YES    setenv SET_FILE_MODE_OWNER_GROUP NO    setenv SHALLOW_BUNDLE YES    setenv SHARED_DERIVED_FILE_DIR /Users/Alex/Desktop/MDV-Projects/AVF/AVFproject/platforms/ios/build/DerivedSources    setenv SHARED_FRAMEWORKS_FOLDER_PATH AVFapp.app/SharedFrameworks    setenv SHARED_PRECOMPS_DIR /var/folders/rj/8v1jld814wv7409vpjcnzf780000gn/C/com.apple.DeveloperTools/5.0-5A1413/Xcode/SharedPrecompiledHeaders    setenv SHARED_SUPPORT_FOLDER_PATH AVFapp.app/SharedSupport    setenv SKIP_INSTALL NO    setenv SOURCE_ROOT /Users/Alex/Desktop/MDV-Projects/AVF/AVFproject/platforms/ios    setenv SRCROOT /Users/Alex/Desktop/MDV-Projects/AVF/AVFproject/platforms/ios    setenv STRINGS_FILE_OUTPUT_ENCODING binary    setenv STRIP_INSTALLED_PRODUCT YES    setenv STRIP_STYLE all    setenv SUPPORTED_DEVICE_FAMILIES "1 2"    setenv SUPPORTED_PLATFORMS "iphonesimulator iphoneos"    setenv SYMROOT /Users/Alex/Desktop/MDV-Projects/AVF/AVFproject/platforms/ios/build    setenv SYSTEM_ADMIN_APPS_DIR /Applications/Utilities    setenv SYSTEM_APPS_DIR /Applications    setenv SYSTEM_CORE_SERVICES_DIR /System/Library/CoreServices    setenv SYSTEM_DEMOS_DIR /Applications/Extras    setenv SYSTEM_DEVELOPER_APPS_DIR /Applications/Xcode.app/Contents/Developer/Applications    setenv SYSTEM_DEVELOPER_BIN_DIR /Applications/Xcode.app/Contents/Developer/usr/bin    setenv SYSTEM_DEVELOPER_DEMOS_DIR "/Applications/Xcode.app/Contents/Developer/Applications/Utilities/Built Examples"    setenv SYSTEM_DEVELOPER_DIR /Applications/Xcode.app/Contents/Developer    setenv SYSTEM_DEVELOPER_DOC_DIR "/Applications/Xcode.app/Contents/Developer/ADC Reference Library"    setenv SYSTEM_DEVELOPER_GRAPHICS_TOOLS_DIR "/Applications/Xcode.app/Contents/Developer/Applications/Graphics Tools"    setenv SYSTEM_DEVELOPER_JAVA_TOOLS_DIR "/Applications/Xcode.app/Contents/Developer/Applications/Java Tools"    setenv SYSTEM_DEVELOPER_PERFORMANCE_TOOLS_DIR "/Applications/Xcode.app/Contents/Developer/Applications/Performance Tools"    setenv SYSTEM_DEVELOPER_RELEASENOTES_DIR "/Applications/Xcode.app/Contents/Developer/ADC Reference Library/releasenotes"    setenv SYSTEM_DEVELOPER_TOOLS /Applications/Xcode.app/Contents/Developer/Tools    setenv SYSTEM_DEVELOPER_TOOLS_DOC_DIR "/Applications/Xcode.app/Contents/Developer/ADC Reference Library/documentation/DeveloperTools"    setenv SYSTEM_DEVELOPER_TOOLS_RELEASENOTES_DIR "/Applications/Xcode.app/Contents/Developer/ADC Reference Library/releasenotes/DeveloperTools"    setenv SYSTEM_DEVELOPER_USR_DIR /Applications/Xcode.app/Contents/Developer/usr    setenv SYSTEM_DEVELOPER_UTILITIES_DIR /Applications/Xcode.app/Contents/Developer/Applications/Utilities    setenv SYSTEM_DOCUMENTATION_DIR /Library/Documentation    setenv SYSTEM_KEXT_INSTALL_PATH /System/Library/Extensions    setenv SYSTEM_LIBRARY_DIR /System/Library    setenv TARGETED_DEVICE_FAMILY 1,2    setenv TARGETNAME AVFapp    setenv TARGET_BUILD_DIR /Users/Alex/Desktop/MDV-Projects/AVF/AVFproject/platforms/ios/build    setenv TARGET_NAME AVFapp    setenv TARGET_TEMP_DIR /Users/Alex/Desktop/MDV-Projects/AVF/AVFproject/platforms/ios/build/AVFapp.build/Debug-iphonesimulator/AVFapp.build    setenv TEMP_DIR /Users/Alex/Desktop/MDV-Projects/AVF/AVFproject/platforms/ios/build/AVFapp.build/Debug-iphonesimulator/AVFapp.build    setenv TEMP_FILES_DIR /Users/Alex/Desktop/MDV-Projects/AVF/AVFproject/platforms/ios/build/AVFapp.build/Debug-iphonesimulator/AVFapp.build    setenv TEMP_FILE_DIR /Users/Alex/Desktop/MDV-Projects/AVF/AVFproject/platforms/ios/build/AVFapp.build/Debug-iphonesimulator/AVFapp.build    setenv TEMP_ROOT /Users/Alex/Desktop/MDV-Projects/AVF/AVFproject/platforms/ios/build    setenv TOOLCHAINS com.apple.dt.toolchain.XcodeDefault    setenv UID 501    setenv UNLOCALIZED_RESOURCES_FOLDER_PATH AVFapp.app    setenv UNSTRIPPED_PRODUCT NO    setenv USER Alex    setenv USER_APPS_DIR /Users/Alex/Applications    setenv USER_LIBRARY_DIR /Users/Alex/Library    setenv USE_DYNAMIC_NO_PIC YES    setenv USE_HEADERMAP YES    setenv USE_HEADER_SYMLINKS NO    setenv VALIDATE_PRODUCT NO    setenv VALID_ARCHS i386    setenv VERBOSE_PBXCP NO    setenv VERSIONPLIST_PATH AVFapp.app/version.plist    setenv VERSION_INFO_BUILDER Alex    setenv VERSION_INFO_FILE AVFapp_vers.c    setenv VERSION_INFO_STRING "\"@(#)PROGRAM:AVFapp  PROJECT:AVFapp-\""    setenv WRAPPER_EXTENSION app    setenv WRAPPER_NAME AVFapp.app    setenv WRAPPER_SUFFIX .app    setenv XCODE_APP_SUPPORT_DIR /Applications/Xcode.app/Contents/Developer/Library/Xcode    setenv XCODE_PRODUCT_BUILD_VERSION 5A1413    setenv XCODE_VERSION_ACTUAL 0500    setenv XCODE_VERSION_MAJOR 0500    setenv XCODE_VERSION_MINOR 0500    setenv XPCSERVICES_FOLDER_PATH AVFapp.app/XPCServices    setenv YACC yacc    setenv arch i386    setenv variant normal    /bin/sh -c /Users/Alex/Desktop/MDV-Projects/AVF/AVFproject/platforms/ios/build/AVFapp.build/Debug-iphonesimulator/AVFapp.build/Script-304B58A110DAC018002A0835.sh36"D9BC1224-C84A-4C81-AF31-F2EC6B79A734-
+b568325CF-89C9-44EB-9798-A228956D85C5
+
+CProcessInfoPlistFile /Users/Alex/Desktop/MDV-Projects/AVF/AVFproject/platforms/ios/build/AVFapp.app/Info.plist /Users/Alex/Desktop/MDV-Projects/AVF/AVFproject/platforms/ios/AVFapp/AVFapp-Info.plist
+s402530121.423921
+e402530121.427173
+r1
+xProcessInfoPlistFile
+x/Users/Alex/Desktop/MDV-Projects/AVF/AVFproject/platforms/ios/build/AVFapp.app/Info.plist
+x/Users/Alex/Desktop/MDV-Projects/AVF/AVFproject/platforms/ios/AVFapp/AVFapp-Info.plist
+lSLF06#21%IDEActivityLogSection1@2#32"com.apple.dt.IDE.BuildLogSection94"Process /Users/Alex/Desktop/MDV-Projects/AVF/AVFproject/platforms/ios/AVFapp/AVFapp-Info.plist73"ProcessInfoPlistFile build/AVFapp.app/Info.plist AVFapp/AVFapp-Info.plist4a996c491ffeb741^575b6d491ffeb741^---0#0#1#-19%DVTDocumentLocation2@102"file://localhost/Users/Alex/Desktop/MDV-Projects/AVF/AVFproject/platforms/ios/AVFapp/AVFapp-Info.plist0000000000000000^837"ProcessInfoPlistFile build/AVFapp.app/Info.plist AVFapp/AVFapp-Info.plist    cd /Users/Alex/Desktop/MDV-Projects/AVF/AVFproject/platforms/ios    setenv PATH "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin:/Applications/Xcode.app/Contents/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin:/usr/local/bin:/usr/local/git/bin:/Applications/android-sdk-macosx/sdk/platform-tools:/Applications/android-sdk-macosx/sdk/tools"    builtin-infoPlistUtility /Users/Alex/Desktop/MDV-Projects/AVF/AVFproject/platforms/ios/AVFapp/AVFapp-Info.plist -genpkginfo /Users/Alex/Desktop/MDV-Projects/AVF/AVFproject/platforms/ios/build/AVFapp.app/PkgInfo -expandbuildsettings -format binary -platform iphonesimulator -o /Users/Alex/Desktop/MDV-Projects/AVF/AVFproject/platforms/ios/build/AVFapp.app/Info.plist36"554C5A79-C2D7-4591-86C6-7E1CDDB74739-
+b568325CF-89C9-44EB-9798-A228956D85C5
+
+CProcessPCH /var/folders/rj/8v1jld814wv7409vpjcnzf780000gn/C/com.apple.DeveloperTools/5.0-5A1413/Xcode/SharedPrecompiledHeaders/AVFapp-Prefix-dznhawsogszhgefwsuanwqdtwplg/AVFapp-Prefix.pch.pch AVFapp/AVFapp-Prefix.pch normal i386 objective-c com.apple.compilers.llvm.clang.1_0.compiler
+s402530132.061947
+e402530132.358060
+r1
+xProcessPCH
+x/var/folders/rj/8v1jld814wv7409vpjcnzf780000gn/C/com.apple.DeveloperTools/5.0-5A1413/Xcode/SharedPrecompiledHeaders/AVFapp-Prefix-dznhawsogszhgefwsuanwqdtwplg/AVFapp-Prefix.pch.pch
+xAVFapp/AVFapp-Prefix.pch
+xnormal
+xi386
+xobjective-c
+xcom.apple.compilers.llvm.clang.1_0.compiler
+d/Users/Alex/Desktop/MDV-Projects/AVF/AVFproject/platforms/ios/AVFapp/AVFapp-Prefix.pch
+lSLF06#21%IDEActivityLogSection1@2#32"com.apple.dt.IDE.BuildLogSection35"Precompile AVFapp/AVFapp-Prefix.pch284"ProcessPCH /var/folders/rj/8v1jld814wv7409vpjcnzf780000gn/C/com.apple.DeveloperTools/5.0-5A1413/Xcode/SharedPrecompiledHeaders/AVFapp-Prefix-dznhawsogszhgefwsuanwqdtwplg/AVFapp-Prefix.pch.pch AVFapp/AVFapp-Prefix.pch normal i386 objective-c com.apple.compilers.llvm.clang.1_0.compiler1d0110541ffeb741^fcab5b541ffeb741^---0#0#1#-19%DVTDocumentLocation2@102"file://localhost/Users/Alex/Desktop/MDV-Projects/AVF/AVFproject/platforms/ios/AVFapp/AVFapp-Prefix.pch0000000000000000^3908"ProcessPCH /var/folders/rj/8v1jld814wv7409vpjcnzf780000gn/C/com.apple.DeveloperTools/5.0-5A1413/Xcode/SharedPrecompiledHeaders/AVFapp-Prefix-dznhawsogszhgefwsuanwqdtwplg/AVFapp-Prefix.pch.pch AVFapp/AVFapp-Prefix.pch normal i386 objective-c com.apple.compilers.llvm.clang.1_0.compiler    cd /Users/Alex/Desktop/MDV-Projects/AVF/AVFproject/platforms/ios    setenv LANG en_US.US-ASCII    setenv PATH "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin:/Applications/Xcode.app/Contents/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin:/usr/local/bin:/usr/local/git/bin:/Applications/android-sdk-macosx/sdk/platform-tools:/Applications/android-sdk-macosx/sdk/tools"    /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/clang -x objective-c-header -arch i386 -fmessage-length=0 -fdiagnostics-show-note-include-stack -fmacro-backtrace-limit=0 -std=c99 -fobjc-arc -Wno-trigraphs -fpascal-strings -O0 -Wno-missing-field-initializers -Wno-missing-prototypes -Wno-implicit-atomic-properties -Wno-receiver-is-weak -Wno-arc-repeated-use-of-weak -Wduplicate-method-match -Wno-missing-braces -Wparentheses -Wswitch -Wno-unused-function -Wno-unused-label -Wno-unused-parameter -Wunused-variable -Wunused-value -Wno-empty-body -Wuninitialized -Wno-unknown-pragmas -Wno-shadow -Wno-four-char-constants -Wno-conversion -Wconstant-conversion -Wint-conversion -Wno-bool-conversion -Wenum-conversion -Wno-shorten-64-to-32 -Wpointer-sign -Wno-newline-eof -Wno-selector -Wno-strict-selector-match -Wno-undeclared-selector -Wno-deprecated-implementations -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator7.0.sdk -fexceptions -fasm-blocks -fstrict-aliasing -Wprotocol -Wdeprecated-declarations -g -fvisibility=hidden -Wno-sign-conversion -fobjc-abi-version=2 -fobjc-legacy-dispatch -mios-simulator-version-min=5.0 -iquote /Users/Alex/Desktop/MDV-Projects/AVF/AVFproject/platforms/ios/build/AVFapp.build/Debug-iphonesimulator/AVFapp.build/AVFapp-generated-files.hmap -I/Users/Alex/Desktop/MDV-Projects/AVF/AVFproject/platforms/ios/build/AVFapp.build/Debug-iphonesimulator/AVFapp.build/AVFapp-own-target-headers.hmap -I/Users/Alex/Desktop/MDV-Projects/AVF/AVFproject/platforms/ios/build/AVFapp.build/Debug-iphonesimulator/AVFapp.build/AVFapp-all-target-headers.hmap -iquote /Users/Alex/Desktop/MDV-Projects/AVF/AVFproject/platforms/ios/build/AVFapp.build/Debug-iphonesimulator/AVFapp.build/AVFapp-project-headers.hmap -I/Users/Alex/Desktop/MDV-Projects/AVF/AVFproject/platforms/ios/build/include -I/Users/Alex/Desktop/MDV-Projects/AVF/AVFproject/platforms/ios/build/usr/local/lib/include -I/Users/Alex/Desktop/MDV-Projects/AVF/AVFproject/platforms/ios/build/UninstalledProducts/include -I/Users/Alex/Desktop/MDV-Projects/AVF/AVFproject/platforms/ios/build -I/Users/Alex/Desktop/MDV-Projects/AVF/AVFproject/platforms/ios/build/AVFapp.build/Debug-iphonesimulator/AVFapp.build/DerivedSources/i386 -I/Users/Alex/Desktop/MDV-Projects/AVF/AVFproject/platforms/ios/build/AVFapp.build/Debug-iphonesimulator/AVFapp.build/DerivedSources -F/Users/Alex/Desktop/MDV-Projects/AVF/AVFproject/platforms/ios/build --serialize-diagnostics /var/folders/rj/8v1jld814wv7409vpjcnzf780000gn/C/com.apple.DeveloperTools/5.0-5A1413/Xcode/SharedPrecompiledHeaders/AVFapp-Prefix-dznhawsogszhgefwsuanwqdtwplg/AVFapp-Prefix.pch.dia -MMD -MT dependencies -MF /var/folders/rj/8v1jld814wv7409vpjcnzf780000gn/C/com.apple.DeveloperTools/5.0-5A1413/Xcode/SharedPrecompiledHeaders/AVFapp-Prefix-dznhawsogszhgefwsuanwqdtwplg/AVFapp-Prefix.pch.d -c /Users/Alex/Desktop/MDV-Projects/AVF/AVFproject/platforms/ios/AVFapp/AVFapp-Prefix.pch -o /var/folders/rj/8v1jld814wv7409vpjcnzf780000gn/C/com.apple.DeveloperTools/5.0-5A1413/Xcode/SharedPrecompiledHeaders/AVFapp-Prefix-dznhawsogszhgefwsuanwqdtwplg/AVFapp-Prefix.pch.pch36"B5988D2D-F0C5-4557-A923-CE78F3701BE6-
+b568325CF-89C9-44EB-9798-A228956D85C5
+
+CTouch /Users/Alex/Desktop/MDV-Projects/AVF/AVFproject/platforms/ios/build/AVFapp.app
+s402530133.516022
+e402530133.549191
+r1
+xTouch
+x/Users/Alex/Desktop/MDV-Projects/AVF/AVFproject/platforms/ios/build/AVFapp.app
+lSLF06#21%IDEActivityLogSection1@2#32"com.apple.dt.IDE.BuildLogSection84"Touch /Users/Alex/Desktop/MDV-Projects/AVF/AVFproject/platforms/ios/build/AVFapp.app22"Touch build/AVFapp.appcc2a84551ffeb741^d4988c551ffeb741^---0#0#1#--517"Touch build/AVFapp.app    cd /Users/Alex/Desktop/MDV-Projects/AVF/AVFproject/platforms/ios    setenv PATH "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin:/Applications/Xcode.app/Contents/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin:/usr/local/bin:/usr/local/git/bin:/Applications/android-sdk-macosx/sdk/platform-tools:/Applications/android-sdk-macosx/sdk/tools"    /usr/bin/touch -c /Users/Alex/Desktop/MDV-Projects/AVF/AVFproject/platforms/ios/build/AVFapp.app36"1F1A4A27-E4BA-4286-92BD-A2F4084A6956-
+b568325CF-89C9-44EB-9798-A228956D85C5
+
