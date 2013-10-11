@@ -5,7 +5,6 @@
 	};
 	objectVersion = 46;
 	objects = {
-
 /* Begin PBXBuildFile section */
 		1D3623260D0F684500981E51 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 1D3623250D0F684500981E51 /* AppDelegate.m */; };
 		1D60589B0D05DD56006BFB54 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 29B97316FDCFA39411CA2CEA /* main.m */; };
@@ -45,6 +44,10 @@
 		5B1594DD16A7569C00FEF299 /* AssetsLibrary.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5B1594DC16A7569C00FEF299 /* AssetsLibrary.framework */; };
 		D4A0D8761607E02300AEF8BB /* Default-568h@2x~iphone.png in Resources */ = {isa = PBXBuildFile; fileRef = D4A0D8751607E02300AEF8BB /* Default-568h@2x~iphone.png */; };
 		F840E1F1165FE0F500CFE078 /* config.xml in Resources */ = {isa = PBXBuildFile; fileRef = F840E1F0165FE0F500CFE078 /* config.xml */; };
+		1A73A3382A784FD68257DD5C /* CDVDevice.m in Sources */ = {isa = PBXBuildFile; fileRef = B410E034D4694C54914D3B45 /* CDVDevice.m */; };
+		77DCEA6588944DB08BB1F60F /* CDVCamera.m in Sources */ = {isa = PBXBuildFile; fileRef = 580119260FD04F05B6555474 /* CDVCamera.m */; };
+		5AAF8264B6764B16A0D11A49 /* CDVJpegHeaderWriter.m in Sources */ = {isa = PBXBuildFile; fileRef = 19749C8FFF2E4EB7A9A13A5B /* CDVJpegHeaderWriter.m */; };
+		B316EEC8EE2B46B58FAF3390 /* CDVSound.m in Sources */ = {isa = PBXBuildFile; fileRef = 82245A9A65E74B39AB5806F9 /* CDVSound.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -110,6 +113,15 @@
 		8D1107310486CEB800E47090 /* AVFapp-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; name = "AVFapp-Info.plist"; path = "../AVFapp-Info.plist"; plistStructureDefinitionIdentifier = "com.apple.xcode.plist.structure-definition.iphone.info-plist"; sourceTree = "<group>"; };
 		D4A0D8751607E02300AEF8BB /* Default-568h@2x~iphone.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default-568h@2x~iphone.png"; sourceTree = "<group>"; };
 		F840E1F0165FE0F500CFE078 /* config.xml */ = {isa = PBXFileReference; lastKnownFileType = text.xml; name = config.xml; path = AVFapp/config.xml; sourceTree = "<group>"; };
+		B410E034D4694C54914D3B45 /* CDVDevice.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; name = "CDVDevice.m"; path = "org.apache.cordova.device/CDVDevice.m"; sourceTree = "<group>"; fileEncoding = 4; };
+		DFA15B98B72E46A5861AC7A7 /* CDVDevice.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = "CDVDevice.h"; path = "org.apache.cordova.device/CDVDevice.h"; sourceTree = "<group>"; fileEncoding = 4; };
+		580119260FD04F05B6555474 /* CDVCamera.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; name = "CDVCamera.m"; path = "org.apache.cordova.camera/CDVCamera.m"; sourceTree = "<group>"; fileEncoding = 4; };
+		19749C8FFF2E4EB7A9A13A5B /* CDVJpegHeaderWriter.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; name = "CDVJpegHeaderWriter.m"; path = "org.apache.cordova.camera/CDVJpegHeaderWriter.m"; sourceTree = "<group>"; fileEncoding = 4; };
+		A19393AEEA48424C9BC7C589 /* CDVCamera.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = "CDVCamera.h"; path = "org.apache.cordova.camera/CDVCamera.h"; sourceTree = "<group>"; fileEncoding = 4; };
+		4ABCC832DB094313BC4FAC6E /* CDVJpegHeaderWriter.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = "CDVJpegHeaderWriter.h"; path = "org.apache.cordova.camera/CDVJpegHeaderWriter.h"; sourceTree = "<group>"; fileEncoding = 4; };
+		FA5B772B1CB4420F89044F9B /* CDVExif.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = "CDVExif.h"; path = "org.apache.cordova.camera/CDVExif.h"; sourceTree = "<group>"; fileEncoding = 4; };
+		82245A9A65E74B39AB5806F9 /* CDVSound.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; name = "CDVSound.m"; path = "org.apache.cordova.media/CDVSound.m"; sourceTree = "<group>"; fileEncoding = 4; };
+		C706EE1817614E91838FE1EB /* CDVSound.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = "CDVSound.h"; path = "org.apache.cordova.media/CDVSound.h"; sourceTree = "<group>"; fileEncoding = 4; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -255,6 +267,15 @@
 		307C750510C5A3420062BCA9 /* Plugins */ = {
 			isa = PBXGroup;
 			children = (
+				B410E034D4694C54914D3B45 /* CDVDevice.m */,
+				DFA15B98B72E46A5861AC7A7 /* CDVDevice.h */,
+				580119260FD04F05B6555474 /* CDVCamera.m */,
+				19749C8FFF2E4EB7A9A13A5B /* CDVJpegHeaderWriter.m */,
+				A19393AEEA48424C9BC7C589 /* CDVCamera.h */,
+				4ABCC832DB094313BC4FAC6E /* CDVJpegHeaderWriter.h */,
+				FA5B772B1CB4420F89044F9B /* CDVExif.h */,
+				82245A9A65E74B39AB5806F9 /* CDVSound.m */,
+				C706EE1817614E91838FE1EB /* CDVSound.h */,
 			);
 			name = Plugins;
 			path = AVFapp/Plugins;
@@ -329,7 +350,7 @@
 		29B97313FDCFA39411CA2CEA /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
-				LastUpgradeCheck = 0500;
+				LastUpgradeCheck = 500;
 			};
 			buildConfigurationList = C01FCF4E08A954540054247B /* Build configuration list for PBXProject "AVFapp" */;
 			compatibilityVersion = "Xcode 3.2";
@@ -422,6 +443,10 @@
 				1D60589B0D05DD56006BFB54 /* main.m in Sources */,
 				1D3623260D0F684500981E51 /* AppDelegate.m in Sources */,
 				302D95F114D2391D003F00A1 /* MainViewController.m in Sources */,
+				1A73A3382A784FD68257DD5C /* CDVDevice.m in Sources */,
+				77DCEA6588944DB08BB1F60F /* CDVCamera.m in Sources */,
+				5AAF8264B6764B16A0D11A49 /* CDVJpegHeaderWriter.m in Sources */,
+				B316EEC8EE2B46B58FAF3390 /* CDVSound.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
