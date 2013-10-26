@@ -25,12 +25,16 @@
         <meta charset="utf-8" />
         <meta name="format-detection" content="telephone=no" />
         <meta name="viewport" content="user-scalable=no, initial-scale=1, maximum-scale=1, minimum-scale=1, width=device-width, height=device-height, target-densitydpi=device-dpi" />
+		<link rel="stylesheet" href="http://code.jquery.com/mobile/1.3.2/jquery.mobile-1.3.2.min.css" />
         <link rel="stylesheet" type="text/css" href="css/index.css" />
-        <link rel="stylesheet" href="http://code.jquery.com/mobile/1.3.2/jquery.mobile-1.3.2.min.css" />
         <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
         <title>AVF Demo App</title>
     </head>
     <body>
+        
+        
+        <!--  H O M E  -->
+        
         <div id="home" data-role="page" data-theme="a">
             
             <div data-role="header" data-position="fixed" data-theme="a">
@@ -39,27 +43,27 @@
             
             <div class="content" data-role="content">
                 <h1>Alex Hardtke</h1>
-                <p>AVF1309</p>
+                <p>AVF1310</p>
             </div>
             
             <div data-role="content">
-                <ul data-role="listview">
+                <ul data-role="listview" data-inset="true">
                     <li><a href="#">Week 1 Discussion Research</a></li>
-                    <li><a href="#">Week 2 Discussion Research</a></li>
+                    <li><a href="#weektwo">Week 2 Discussion Research</a></li>
                     <li><a href="#">Week 3 Discussion Research</a></li>
                     <li><a href="#">Week 4 Discussion Research</a></li>
                 </ul>
             </div><br/>
             
             <div data-role="content">
-                <ul data-role="listview">
-                    <li><a href="#">Native Components</a></li>
-                    <li><a href="#">Data API Resources</a></li>
+                <ul data-role="listview" data-inset="true">
+                    <li><a href="#native">Native Components</a></li>
                 </ul>
             </div><br/>
             
             <div data-role="content">
-                <ul data-role="listview">
+                <ul data-role="listview" data-inset="true">
+					<h3>Data API Resources</h3>
                     <li><a href="#espn">ESPN</a></li>
                     <li><a href="#instagram">Instagram</a></li>
                 </ul>
@@ -73,14 +77,28 @@
                     </ul>
                 </nav>
             </footer>
-            
         </div> <!--/#home-->
         
         
-        <section id="instagram" data-role="page" data-theme="a">
+        <!--   I N S T A G R A M   -->
+        
+        <section id="instagram" data-role="page" data-theme="a" data-add-back-btn="true">
             <header data-role="header" data-position="fixed" data-theme="a">
                 <h1>AVFapp Demo</h1>
             </header>
+            
+            <ul data-role="listview" data-inset="true">
+				<li><button onclick="capturePhoto();">Capture Photo</button></li>
+				<li><button onclick="getPhoto(pictureSource.PHOTOLIBRARY);">From Photo Library</button></li>
+			</ul>
+			
+			<img style= "display:none; width:460px; height:460px; margin-left:auto; margin-right:auto;" id="smallImage" src="" />
+			<label for="smallImage" id="deviceProperties">Label</label>
+			
+			<div class="newPic">
+				
+				<a href="http://instagram.com/accounts/login/" id="uploadPic" data-role="button" data-inline="true" data-mini="true" data-icon="arrow-up" style="text-align:center;">Upload to Instagram</a>
+			</div>
             
             <div class="display" data-role="content" data-theme="c">
                 <ul id="data-output">
@@ -96,17 +114,18 @@
                     </ul>
                 </nav>
             </footer>
-            
         </section> <!--/#instagram-->
         
         
-        <section id="espn" data-role="page" data-theme="a">
+        <!--   E S P N   -->
+        
+        <section id="espn" data-role="page" data-theme="a" data-add-back-btn="true">
             <header data-role="header" data-position="fixed" data-theme="a">
                 <h1>AVFapp Demo</h1>
             </header>
             
             <div class="display" data-role="content" data-theme="c">
-                <ul id="data-output">
+                <ul id="data-output" data-role="listview">
                     <li id="espn-msg"><h2>Searching ESPN...</h2></li>
                 </ul>
             </div>
@@ -119,11 +138,144 @@
                     </ul>
                 </nav>
             </footer>
-            
         </section> <!--/#espn-->
+        
+        
+        <!--   N A T I V E  C O M P O N E N T S   -->
+        
+        <section id="native" data-role="page" data-theme="a" data-add-back-btn="true">
+            <header data-role="header" data-position="fixed" data-theme="a">
+                <h1>AVFapp Demo</h1>
+            </header>
+			
+			<div data-role="content">
+				<ul data-role="listview" data-inset="true">
+					<li><a href="#camera">Camera</a></li>
+					<li><a href="#device">Device</a></li>
+					<li><a href="#browser">InAppBrowser</a></li>
+				</ul>
+			</div>
+
+            <footer>
+                <nav data-role="navbar" data-position="fixed" data-id="nav">
+                    <ul>
+                        <li><a href="#home" id="homeNav" data-icon="home" data-theme="a">Home</a></li>
+                        <li><a href="#tools" id="toolsNav" data-icon="search" data-theme="a">Tools</a></li>
+                    </ul>
+                </nav>
+            </footer>
+            
+        </section> <!--/#native-->
+		
+        
+        <!--   C A M E R A   -->
+        
+        <section id="camera" data-role="page" data-theme="a" data-add-back-btn="true">
+            <header data-role="header" data-position="fixed" data-theme="a">
+                <h1>AVFapp Demo</h1>
+            </header>
+            
+			<h1>Camera</h1
+			
+            <div data-role="content">
+				<ul data-role="listview" data-inset="true">
+					<li><button onclick="capturePhoto();">Capture Photo</button></li>
+					<li><button onclick="capturePhotoEdit();">Capture Editable Photo</button></li>
+					<li><button onclick="getPhoto(pictureSource.PHOTOLIBRARY);">From Photo Library</button></li>
+					<li><button onclick="getPhoto(pictureSource.SAVEDPHOTOALBUM);">From Photo Album</button></li>
+				</ul>
+			</div>
+			
+			<img style= "display:none; width:60px; height=60px;" id="smallImage" src="" />
+			<img style= "display:none;" id="largeImage" src="" />
+			
+            
+            <footer>
+                <nav data-role="navbar" data-position="fixed" data-id="nav">
+                    <ul>
+                        <li><a href="#home" id="homeNav" data-icon="home" data-theme="a">Home</a></li>
+                        <li><a href="#tools" id="toolsNav" data-icon="search" data-theme="a">Tools</a></li>
+                    </ul>
+                </nav>
+            </footer>
+        </section> <!--/#camera-->
+		
+		
+		<!--   D E V I C E   -->
+        
+        <section id="device" data-role="page" data-theme="a" data-add-back-btn="true">
+            <header data-role="header" data-position="fixed" data-theme="a">
+                <h1>AVFapp Demo</h1>
+            </header>
+            
+			<h1>Device</h1
+				
+			<div data-role="content">
+				<p id="deviceProperties">Loading device properties...</p>
+			</div>
+				
+			<footer>
+				<nav data-role="navbar" data-position="fixed" data-id="nav">
+					<ul>
+						<li><a href="#home" id="homeNav" data-icon="home" data-theme="a">Home</a></li>
+						<li><a href="#tools" id="toolsNav" data-icon="search" data-theme="a">Tools</a></li>
+					</ul>
+				</nav>
+			</footer>
+		</section> <!--/#device-->
+		
+		
+		<!--   B R O W S E R   -->
+        
+        <section id="browser" data-role="page" data-theme="a" data-add-back-btn="true">
+            <header data-role="header" data-position="fixed" data-theme="a">
+                <h1>AVFapp Demo</h1>
+            </header>
+				
+			<footer>
+				<nav data-role="navbar" data-position="fixed" data-id="nav">
+					<ul>
+						<li><a href="#home" id="homeNav" data-icon="home" data-theme="a">Home</a></li>
+						<li><a href="#tools" id="toolsNav" data-icon="search" data-theme="a">Tools</a></li>
+					</ul>
+				</nav>
+			</footer>
+		</section> <!--/#browser-->
+		
+		<!--  W E E K  2  -->
+		
+		<section id="weektwo" data-role="page" data-theme="a" data-add-back-btn="true">
+            <header data-role="header" data-position="fixed" data-theme="a">
+                <h1>AVFapp Demo</h1>
+            </header>
+            
+			<h1>Week 2 Discussion Research: Accessibility</h1><br />
+			
+			<h4>What are some of the ways that you could change your HTML on your Demo app to be more accessible? (Remember, you can use the Section tag with jQuery, for instance)</h4><br />
+			<p>As I move forward with my Demo app, I’d like to use my HTML to better organize both my code and the actual app. For instance, using headline, anchor, link and image tags where appropriate will help organize my code, and it will be compatible with screen readers.</p><br />
+			
+			<h4>Visit a video service on the web (like YouTube) and search for "Screen Reader Demo" and "Mobile Screen Reader" - what are some of the common frustrations (or common support mechanisms) that you see among the examples that are given - how could you fix them (or use them)?</h4><br />
+			<p>The most common frustration is unfortunately the usability. The Screen Reader Demo I watched was from a few years ago and I’m sure this technology has improved since then, but the Reader voice is very robotic and hard to follow. Large portions of text would be very tough to sift through to find the info you’re looking for, in that it’s time consuming and very inefficient. Generally, I think the ideas are there, but they need to be implemented better from a usability standpoint.</p><br />
+			
+			<h4>Devices: Please list two devices (and some of their features) that are made specifically to support Accessibility.</h4><br />
+			<p>Probably the best accessibility device available is the iPad. There are special accessibility settings for people with poor or no vision, hearing impaired, learning disabled, and physically disabled. Safari has some nice accessibility features as well for a web browser. For people with poor vision, it allows the user to use a mouse gesture (double-tap) to zoom in on a selected area. It also has options to set a minimum text size.</p><br />
+			
+			<h4>Mobile Apps: Please list two apps (either Android or iOS, or both) that are made specifically to support Accessibility.</h4><br />
+			<p>On Android, there is an app called Flash Notification that flashes your screen when you receive a notification. This would be more for the hearing impaired. There is another app called Flash Alarm that is a timer/alarm clock that flashes the screen at a specific time, which again would be geared towards the hearing impaired.</p><br />
+			
+			<footer>
+				<nav data-role="navbar" data-position="fixed" data-id="nav">
+					<ul>
+						<li><a href="#home" id="homeNav" data-icon="home" data-theme="a">Home</a></li>
+						<li><a href="#tools" id="toolsNav" data-icon="search" data-theme="a">Tools</a></li>
+					</ul>
+				</nav>
+			</footer>
+		</section> <!--/#weektwo-->
+        
         <script src="http://code.jquery.com/jquery-1.9.1.min.js"></script>
         <script src="http://code.jquery.com/mobile/1.3.2/jquery.mobile-1.3.2.min.js"></script>
-        <script type="text/javascript" src="phonegap.js"></script>
+        <!--<script type="text/javascript" src="phonegap.js"></script>-->
         <script type="text/javascript" src="cordova.js"></script>
         <script type="text/javascript" src="js/index.js"></script>
     </body>

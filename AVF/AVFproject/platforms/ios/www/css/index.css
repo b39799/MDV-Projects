@@ -115,6 +115,24 @@
 //}
 
 
+
+
+
+//BEGIN CSS
+
+.newPic{
+	margin-left: auto;
+	margin-right: auto;
+	text-align:center;
+	
+}
+
+h1 {text-align: center;}
+
+h3 {padding-left: 20px;}
+
+ul {list-style-type: none;}
+
 .content {
     margin-top: 50px;
     margin-left: 20px;
@@ -123,4 +141,36 @@
     font-size: 20px;
     font-weight: bold;
     text-align: center;
+}
+
+// E S P N
+
+#espn div.ui-content h2 {
+	margin-left: auto;
+	margin-right: auto;
+	text-align: center;
+}
+
+#espn img {
+	border: 1px solid black;
+	display: block;
+	margin-left: auto;
+	margin-right: auto;
+}
+
+
+
+
+
+//C A M E R A
+
+#camera h1{ text-align: center;}
+
+#camera img {
+	border: 1px solid black;
+	display: block;
+	margin-top: auto;
+	margin-bottom: auto;
+	margin-left: auto;
+	margin-right: auto;
 }

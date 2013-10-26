@@ -34,6 +34,7 @@ var app = {
     // function, we must explicity call 'app.receivedEvent(...);'
     onDeviceReady: function() {
         app.receivedEvent('deviceready');
+        
     },
     // Update DOM on a Received Event
     receivedEvent: function(id) {
@@ -46,21 +47,28 @@ var app = {
 
         console.log('Received Event: ' + id);
     }
+    
+    
+    
+    
+    
+    
     // var contacts = function(){};
-    	//Access contacts database.
-    	
+    //Access contacts database.
+    
     // var map = function(){};
-    	//Gets map data and displays on page.
+    //Gets map data and displays on page.
     
     // var cam = function(){};
-    	//Accesses camera app.
+    //Accesses camera app.
     
     // var InAppBrowser = function(){};
-    	//Calls web browser window in app.
-    	
+    //Calls web browser window in app.
+    
     // var storage = function(){};
-    	//Access to storage options.
+    //Access to storage options.
 };
+
 
 $('#home').on('pageinit', function(){
 
@@ -101,13 +109,95 @@ $('#home').on('pageinit', function(){
               //alert("screenOutput");
               console.log(info);
               
-              $('#espn-msg').html("<h2>ESPN Top Headlines:</h2>")
               
               $.each(info.feed, function(index, item){
-                     var head = "<li><img src='" + item.images[0].url + "' /><h3>" + item.headline + "</h3></li>";
+                     var head = "<li><img src='" + item.images[0].url + "' alt+'" + item.linkText + "' /><h3>" + item.headline + "</h3></li>";
                      $("#espn").append(head);
                      
                      });
               }
               
 });
+
+
+
+
+// N A T I V E
+
+
+var pictureSource;   // picture source
+var destinationType; // sets the format of returned value
+var watchID = null;
+
+document.addEventListener("deviceready",onDeviceReady,false);
+
+
+function onDeviceReady() {
+	
+	//CAMERA
+	pictureSource=navigator.camera.PictureSourceType;
+	destinationType=navigator.camera.DestinationType;
+	
+	
+	// DEVICE
+	var element = document.getElementById('deviceProperties');
+	element.innerHTML = 'Device Name: '     + device.name     + '<br />' +
+	'Device Cordova: '  + device.cordova  + '<br />' +
+	'Device Platform: ' + device.platform + '<br />' +
+	'Device UUID: '     + device.uuid     + '<br />' +
+	'Device Model: '    + device.model    + '<br />' +
+	'Device Version: '  + device.version  + '<br />';
+	
+	
+	//WEB BROWSER
+	$('#browser').on('click', function(){
+		var ref = window.open(encodeURI('http://google.com'), '_blank', 'location=yes');
+        	ref = window.open('next.html', '_self');
+    });
+}
+
+
+
+
+// C A M E R A
+
+function onPhotoDataSuccess(imageData) {
+	
+	var smallImage = document.getElementById('smallImage');
+		
+	smallImage.style.display = 'block';
+		
+	smallImage.src = "data:image/jpeg;base64," + imageData;
+}
+
+function onPhotoURISuccess(imageURI) {
+	
+	var largeImage = document.getElementById('largeImage');
+		
+	largeImage.style.display = 'block';
+	
+	largeImage.src = imageURI;
+}
+
+function capturePhoto() {
+
+	navigator.camera.getPicture(onPhotoDataSuccess, onFail, { quality: 50,
+								destinationType: destinationType.DATA_URL });
+}
+
+function capturePhotoEdit() {
+
+	navigator.camera.getPicture(onPhotoDataSuccess, onFail, { quality: 20, allowEdit: true,
+								destinationType: destinationType.DATA_URL });
+}
+
+function getPhoto(source) {
+
+	navigator.camera.getPicture(onPhotoURISuccess, onFail, { quality: 50,
+								destinationType: destinationType.FILE_URI,
+								sourceType: source });
+}
+
+function onFail(message) {
+	alert('Failed because: ' + message);
+}
